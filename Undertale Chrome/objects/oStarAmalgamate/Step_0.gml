@@ -1,7 +1,7 @@
 var player = instance_nearest(x, y, obj_player); // Find the nearest player
-var distance_threshold = 80; // Distance threshold for transformation
+var distance_threshold = 140; // Distance threshold for transformation
 var player_distance = point_distance(x, y, player.x, player.y);
-show_debug_message("Distance from star: " + string(player_distance));
+//show_debug_message("Distance from star: " + string(player_distance));
 
 if (player != noone) {
     if (player_distance > distance_threshold) {

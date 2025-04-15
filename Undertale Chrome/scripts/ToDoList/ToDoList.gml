@@ -1,33 +1,21 @@
 /*
 PROLOGUE 
+//Loads it from: C:\Users\Myles\AppData\Local\Undertale_Chrome or search for %localappdata%
 
-Environment
-- Polish Room 7
-- Polish Room 8
-- Add Music
 
 Dialogue
-- Add Dialogue to Environment in Room 1
-- Add Dialogue to Environment in Room 2 
-- Add Dialogue to Environment in Room 3
-- Add Dialogue to Environment in Room 4
-- Add Dialogue to Environment in Room 5
-- Add Dialogue to Environment in Room 6
-- Add Dialogue to Environment in Room 7
-- Add Dialogue to Environment in Room 8
 - In Dialogue only battles, automatically progress dialogue
 
 Cutscenes
-- Initial Rosey Human Clones/Failed Clones Introduction
+- Chrome Soul
+- Initial Rosey Human Clones
+- Failed Clones Introduction
 - Post Battle Cutscene
 - Credits
 
 Battle/Enemies
-- Create Enemies
 - Create Boss
-- Create Enemy Bullet Patterns
 - Create Boss Bullet Patterns
-- Enemy Music
 - Boss Music
 
 Last Stuff
@@ -70,6 +58,9 @@ Environment
 - Polish Room 5
 - Create Environment Objects
 - Polish Room 6
+- Polish Room 7
+- Polish Room 8
+- Add Music
 
 Player
 - Cleanup Keyboard Controls
@@ -85,10 +76,21 @@ NPCs
 - Add Rosey Human clones to debug room
 
 Dialogue
--
+- Add Dialogue to Environment in Room 1
+- Add Dialogue to Environment in Room 2 
+- Add Dialogue to Environment in Room 3
+- Add Dialogue to Environment in Room 4
+- Add Dialogue to Environment in Room 5
+- Add Dialogue to Environment in Room 6
+- Add Dialogue to Environment in Room 7
+- Add Dialogue to Environment in Room 8
 
 Battle/Enemies
 - Set up battle triggers in areas of true lab
+- FIX MUSIC BUG AFTER BATTLE [NOT DOING]
+- Create Enemies [NOT DOING]
+- Create Enemy Bullet Patterns [NOT DOING]
+- Enemy Music [NOT DOING]
 
 Cutscenes
 -

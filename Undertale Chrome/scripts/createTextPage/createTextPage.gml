@@ -71,7 +71,7 @@ function setTextShake(_start, _end) {
 
 /// @param text
 /// @param [character]
-function createTextPage(_text, _character_text_information, _switch_speaker_side = false, _text_vertical_adjustment = 0, _textbox_option_sprite = noone, _hide_indicator = false) {
+function createTextPage(_text, _character_text_information, _switch_speaker_side = false, _text_vertical_adjustment = 0, _textbox_option_sprite = noone, _hide_indicator = false, _hide_textbox = false) {
 	setDefaultsForText();
 	text[page_number] = _text;
 	
@@ -95,6 +95,13 @@ function createTextPage(_text, _character_text_information, _switch_speaker_side
 	if(_hide_indicator)
 	{
 		speaker_indicator[page_number] = false;
+	}
+	
+	if(_hide_textbox)
+	{
+		global.hide_textbox = true;
+	} else {
+		global.hide_textbox = false;
 	}
 	
 	

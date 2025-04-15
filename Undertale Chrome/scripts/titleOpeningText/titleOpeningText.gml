@@ -1,7 +1,7 @@
 /// @function createTitleOpeningText
 function createTitleOpeningText() {
 	global.title_opening_text = [
-	    ["Long ago, two races ruled over Earth.|    HUMANS and MONSTERS.|"],
+	    ["Long ago, two races ruled over Earth.|         HUMANS and MONSTERS.|"],
 	    ["One day, war broke out between the two races.|"],
 	    ["After a very long battle...the humans were victorious.|"],
 		["They sealed the monsters underground with a magic spell.|"],
@@ -18,6 +18,6 @@ function createTitleOpeningText() {
 	    ["As you take your first steps, you can feel it. No matter what lies ahead, you know one thing for certain...|"],
 	    ["You won't be broken.|   This is your story.|"],
 	    ["Welcome to the world of        monsters...|"],
-	    ["        No...      Welcome to the world of...|"]
+	    ["        No...           Welcome to the world of...|"]
 	];
 }

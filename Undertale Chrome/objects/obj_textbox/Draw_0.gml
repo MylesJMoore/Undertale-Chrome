@@ -45,7 +45,7 @@ if (gamepad_button_check_pressed(0, gp_face1))
 {
     confirm_key = 1;
 }
-
+global.in_title_intro = false;
 if(global.in_title_intro && confirm_key == 1) {
 	confirm_key = 0;
 	show_debug_message("IN TITLE INTRO. DISABLING THE CONFIRM KEY");
@@ -253,11 +253,13 @@ if(global.dialogue_is_done_typing) {
 	        dialogue_indicator_x = dialogue_indicator_x_default;
 	}
 	
+	/* COMMENTING OUT THE INDICATOR DUE TO ERROR TODO: FIX INDICATOR
 	if(speaker_indicator[page]) {
 		instance_create_depth(textbox_x + dialogue_indicator_x, textbox_y + dialogue_indicator_y, -999999, obj_dialogue_indicator);
 		obj_dialogue_indicator.image_xscale = .5;
 		obj_dialogue_indicator.image_yscale = .5;
 	}
+	*/
 }
 	
 	
@@ -328,7 +330,9 @@ if(speaker_sprite[page] != noone)
 }
 
 //Back of the textbox
-draw_sprite_ext(textbox_sprite[page], textbox_image, _txtb_x, _txtb_y, textbox_width/textbox_sprite_width, textbox_height/textbox_sprite_height, 0, c_white, 1);
+if(!global.hide_textbox) {
+    draw_sprite_ext(textbox_sprite[page], textbox_image, _txtb_x, _txtb_y, textbox_width/textbox_sprite_width, textbox_height/textbox_sprite_height, 0, c_white, 1);
+}
 
 //Option Logic
 if (draw_character == text_length[page] && page == page_number - 1) 

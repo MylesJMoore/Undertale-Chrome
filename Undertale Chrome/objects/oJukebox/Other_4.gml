@@ -29,4 +29,8 @@ switch (room)
         setSongInGame(TRUELAB_3_MUSIC, 0, 0);
     break;
 	
+	case TRUELAB_8:
+        audio_stop_all();
+    break;
+	
 }

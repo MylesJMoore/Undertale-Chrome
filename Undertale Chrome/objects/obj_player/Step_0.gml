@@ -224,15 +224,17 @@ if (global.player_can_move) {
 	#region Player Follower Creation
 	//Set Player Moved Flag
 	if (right_key > 0 || left_key > 0 || up_key > 0 || down_key > 0) && (global.player_has_moved == false) {
-		//Follower Creation
-		var follower_1 = instance_create_layer(x, y, "Player", obj_follower1);
-		follower_1.recordPosition = 14;
+		//Follower Creation (ONLY CREATE FOLLOWERS IF WE ARE NOT A CHILD OR IN A FLASHBACK OR HIDE FOLLOWERS ON)
+		if(!global.player_set_to_child && !global.hide_all_followers) {
+			var follower_1 = instance_create_layer(x, y, "Player", obj_follower1);
+			follower_1.recordPosition = 14;
 
-		var follower_2 = instance_create_layer(x, y, "Player", obj_follower2);
-		follower_2.recordPosition = 26;
+			var follower_2 = instance_create_layer(x, y, "Player", obj_follower2);
+			follower_2.recordPosition = 26;
 
-		//var follower_3 = instance_create_layer(x, y, "Player", obj_follower3);
-		//follower_3.recordPosition = 36;
+			//var follower_3 = instance_create_layer(x, y, "Player", obj_follower3);
+			//follower_3.recordPosition = 36;
+		}
 	
 		for (var i = recordedPositions -1; i >= 0; i--) {
 			pos_x[i] = x;

@@ -32,6 +32,9 @@ textbox_image_speed = 0; //<number>/60
 textbox_sprite_width = 0;
 textbox_sprite_height = 0;
 
+// Initialize globals
+global.hide_textbox = false;
+
 //Text
 page = 0;
 page_number = 0;

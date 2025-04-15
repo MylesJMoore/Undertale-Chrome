@@ -7,6 +7,7 @@ global.in_title_intro = false;
 global.save_file = 0;
 global.show_title_after_chapter = false;
 global.words_of_save_wisdom = 0;
+global.hide_all_followers = true;
 global.player_has_moved = false;
 global.allow_random_encounters = false;
 global.sfx_master_volume = 1;
@@ -30,11 +31,15 @@ global.default_textbox_width = 200;
 global.default_textbox_height = 64;
 global.textbox_x_adjustment = 0;
 global.textbox_y_adjustment = 144;
-global.textbox_width = 200;
+global.textbox_width = 220;
 global.textbox_height = 64;
 
 //Player Face Information
 global.player_face_direction = "Down";
+
+//Player Sprite Information
+global.in_truelab = true;
+global.player_set_to_child = false;
 
 //Follower Cutscene Faces
 global.follower1_cutscene_face = IDLEDOWN;
@@ -152,3 +157,7 @@ global.overworld_battle_triggers_defeated = [];
 
 //Enemy Bullet Variables
 global.monster_bullet_pattern = 0;
+
+//Cutscenes
+global.start_prologue_cutscene = false;
+global.start_prologue_open_chrome_jar = false;

@@ -140,7 +140,7 @@ function CreateSaveData() {
 
 /// @function saveGameProgress
 function saveGameProgress(_fileNum = 0) {
-	//Saves it to: C:\Users\Myles\AppData\Local\Walnut_Hill or search for %localappdata%
+	//Saves it to: C:\Users\Myles\AppData\Local\Undertale_Chrome or search for %localappdata%
 	var _saveArray = array_create(0);
 	
 	//Save the current game progress

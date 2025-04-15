@@ -91,7 +91,7 @@ function getSpeakerTextbox(_character) {
 			
 		//*********************************************************************//	
 		default:
-			_textbox_sprite = spr_textbox;
+			_textbox_sprite = spr_black_textbox;
 	}
 	
 	return _textbox_sprite;

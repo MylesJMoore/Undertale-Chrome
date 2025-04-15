@@ -8,9 +8,11 @@ if (gamepad_button_check_pressed(0, gp_face1))
     confirm_key = 1;
 }
 
-if ((position_meeting(mouse_x, mouse_y, id) && mouse_check_button_pressed(mb_left)) || (place_meeting(x, y, obj_player) && confirm_key == 1 && !global.textbox_is_open)) 
+
+if ((place_meeting(x, y, obj_player) && confirm_key == 1 && !global.textbox_is_open && global.player_can_move)) 
 {
 	global.player_can_move = false;
+	obj_player.image_speed = 0; //Stop moving animation
 	global.textbox_is_open = true;
 	global.speakblock_x = x;
 	global.speakblock_y = y;
@@ -19,8 +21,9 @@ if ((position_meeting(mouse_x, mouse_y, id) && mouse_check_button_pressed(mb_lef
 	createTextbox(text_id);
 }
 
-if(place_meeting(x, y, obj_player) && !instance_exists(obj_textbox) && confirm_key == 0) {
+if(place_meeting(x, y, obj_player) && !instance_exists(obj_textbox) && confirm_key == 0 && !global.open_menu) {
 	global.textbox_is_open = false;
 	global.player_can_move = true;
+	obj_player.image_speed = 1; //Allow normal moving animation speed
 	removeAllEmotes();
 }

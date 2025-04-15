@@ -1,0 +1,1 @@
+text_id = "truelab_room_4_monitor_1";
