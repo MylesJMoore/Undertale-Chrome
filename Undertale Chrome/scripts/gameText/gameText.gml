@@ -624,58 +624,80 @@ function gameText(_text_id) {
 		//=====================================================================//
 		//===============    Prologue Pre-Boss Dialogue       =================//
 		//=====================================================================//
+		case "rosey_human_scared": 
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* You should run.", noone, false, 0, noone, true);
+			setTextColor(0,100,c_red,c_red,c_red,c_red);
+			break;
 		// Rosey Human Clones
 		case "rosey_human_apathy": 
-			createTextPage("* Hmmm. Seems like our calculations were off a bit.", noone, false, 0, noone, true);
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* Hmmm. Seems like our calculations were off a bit.", noone, false, 0, noone, true, true);
 			break;
 		case "rosey_human_despair": 
-			createTextPage("* It does seem to be semi-sentient at the moment.", noone, false, 0, noone, true);
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* It does seem to be semi-sentient at the moment.", noone, false, 0, noone, true, true);
 			break;
 		case "rosey_human_impulsiveness": 
-			createTextPage("* More research will be needed. Great opportunity to observe.", noone, false, 0, noone, true);
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* More research will be needed. Great opportunity to observe.", noone, false, 0, noone, true, true);
 			break;
 		case "rosey_human_vengeance": 
-			createTextPage("* Tsk. Tsk. This one seems like a failure.", noone, false, 0, noone, true);
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* Tsk. Tsk. This one seems like a failure.", noone, false, 0, noone, true, true);
 			break;
 		case "rosey_human_deceit": 
-			createTextPage("* Who lowered the dosage for the most recent batch of humans?", noone, false, 0, noone, true);
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* Who lowered the dosage for the most recent batch of humans?", noone, false, 0, noone, true, true);
 			break;
 		case "rosey_human_fear": 
-			createTextPage("* The Soul seems to have bonded...", noone, false, 0, noone, true);
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* The Soul seems to have bonded...", noone, false, 0, noone, true, true);
 			break;
 		case "rosey_human_cruelty": 
-			createTextPage("* Why does *this* one get to bond with it?", noone, false, 0, noone, true);
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* Why does this one get to bond with it?", noone, false, 0, noone, true, true);
+			createTextPage("* I hate humans.", noone, false, 0, noone, true, true);
 			break;
 		case "rosey_human_corruption_1": 
+			createTextPage("* ...", noone, false, 0, noone, true);
 			createTextPage("* ...Ahem.", noone, false, 0, noone, true);
-			createTextPage("* Thank you ladies. That will be all.", noone, false, 0, noone, true);
+			createTextPage("* Thank you ladies. That will be all.", noone, false, 0, noone, true, true);
 			break;
 		case "rosey_human_corruption_2": 
-			createTextPage("* ...", noone, false, 0, noone, true);
-			createTextPage("* Human Child 066.", noone, false, 0, noone, true);
-			createTextPage("* Consider yourself a lucky winner today.", noone, false, 0, noone, true);
-			createTextPage("* 65 failed experiments and finally 1 successful merge.", noone, false, 0, noone, true);
-			createTextPage("* Thank you. We're all one step closer to the perfect soul...", noone, false, 0, noone, true);
+			createTextPage("* ...", noone, false, 0, noone, true,true);
+			createTextPage("* Human Child 066.", noone, false, 0, noone, true, true);
+			setTextColor(0,100,c_red,c_red,c_red,c_red);
+			createTextPage("* Consider yourself lucky today.", noone, false, 0, noone, true);
+			createTextPage("* 65 failed experiments...", noone, false, 0, noone, true);
+			createTextPage("* ...and finally a success.", noone, false, 0, noone, true);
+			createTextPage("* Thank you.", noone, false, 0, noone, true);
+			createTextPage("* We're all one step closer to the perfect soul...", noone, false, 0, noone, true);
 			createTextPage("* A Monster...", noone, false, 0, noone, true);
 			createTextPage("* ...and a human.", noone, false, 0, noone, true);
 			createTextPage("* Arcadia will be so proud.", noone, false, 0, noone, true);
-			createTextPage("* Now then. I just have one question for you.", noone, false, 0, noone, true);
+			setTextColor(2,10,c_red,c_red,c_red,c_red);
+			setTextFloat(2,10);
+			createTextPage("* Now then.", noone, false, 0, noone, true);
+			createTextPage("* I just have one question for you.", noone, false, 0, noone, true);
 			createTextPage("* What happens when a human loses their soul?", noone, false, 0, noone, true);
 			createOption("(Run)", "prologue boss - yes"); 
 			createOption("(Seriously. RUN.)", "prologue boss - no");
 			break;
 			case "prologue boss - yes": 
-				createTextPage("* I can’t wait to see.", noone, false, 0, noone, true);
+				createTextPage("* I can't wait to see.", noone, false, 15, noone, true, true);
 				setTextColor(0,100,c_red,c_red,c_red,c_red);
 				setTextShake(0,100);
-				createTextPage("* Also try not to scream please. It ruins the data.", noone, false, 0, noone, true);
+				createTextPage("* Also try not to scream please.", noone, false, 0, noone, true);
+				createTextPage("* It ruins the data.", noone, false, 0, noone, true);
 			break;
 
 			case "prologue boss - no": 
-				createTextPage("* I can’t wait to see.", noone, false, 0, noone, true);
+				createTextPage("* I can't wait to see.", noone, false, 15, noone, true, true);
 				setTextColor(0,100,c_red,c_red,c_red,c_red);
 				setTextShake(0,100);
-				createTextPage("* Also try not to scream please. It ruins the data.", noone, false, 0, noone, true);
+				createTextPage("* Also try not to scream please.", noone, false, 0, noone, true);
+				createTextPage("* It ruins the data.", noone, false, 0, noone, true);
 			break;
 		
 		//=====================================================================//

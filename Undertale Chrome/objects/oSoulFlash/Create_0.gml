@@ -13,7 +13,7 @@ is_using_emote = true;
 image_alpha = 0;
 image_yscale = .5;
 image_xscale = .5;
-
 createPlayerEmote(EMOTE_REACTION, -20);
 audio_stop_all();
 audio_play_sound(snd_battle_encounter_start, 11, false);
+

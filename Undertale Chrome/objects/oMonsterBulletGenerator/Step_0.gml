@@ -90,3 +90,27 @@ if(hide_outside_box) {
 	outside_hidden = true;
 	hide_outside_box = false;
 }
+
+//BOSS INTRO MUSIC + ANIMATION
+if (global.fighting_failed_human_boss && global.battle_turn == 0 && !audio_is_playing(snd_bergentruckung_slowed)) {
+    show_debug_message("BOSS INTRO IS DONE");
+    oFailedHuman.image_index = 5;
+    alarm[0] = true;
+} else {
+    audio_timestamp++;
+
+    // 0–4s: hands together
+    if (audio_timestamp == 1) oFailedHuman.image_index = 0;
+	
+	if (audio_timestamp >= 120 && audio_timestamp < 180) {
+        oFailedHuman.image_index = 1;
+    }
+	
+	if (audio_timestamp >= 180 && audio_timestamp < 240) {
+        oFailedHuman.image_index = 2;
+    }
+	
+	if (audio_timestamp >= 240 && audio_timestamp < 420) {
+        oFailedHuman.image_index = 0;
+    }
+}

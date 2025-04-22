@@ -35,5 +35,5 @@
     "path": "sprites/spr_failed_human_clone/spr_failed_human_clone.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

@@ -48,6 +48,8 @@ for (var i = 0; i < TextLength; i++) {
 			colour = c_fuchsia;
 		if string_char_at(TextToDraw, i + 2) == "S"
 			colour = c_silver;
+		if string_char_at(TextToDraw, i + 2) == "E"
+			colour = c_gray;
 		if string_char_at(TextToDraw, i + 2) == "D"
 			colour = DefaultColour;
 		i += 2;
@@ -85,6 +87,27 @@ for (var i = 0; i < TextLength; i++) {
 	// For the Soul Selection Battle Menu or any text element you can set a selection color
 	// USAGE: "89 ^Snowdin {Lane&Underground }& Co"
 	if (string_char_at(TextToDraw, i + 1) == "^") {
+		if(global.fighting_failed_human_boss && !global.fighting_failed_human_boss_last_soul) {
+			if string_char_at(TextToDraw, i + 2) == "R"
+				colour = c_gray;
+			if string_char_at(TextToDraw, i + 2) == "D"
+				colour = c_red;
+			if string_char_at(TextToDraw, i + 2) == "B"
+				colour = c_orange;
+			if string_char_at(TextToDraw, i + 2) == "J"
+				colour = c_yellow;
+			if string_char_at(TextToDraw, i + 2) == "K"
+				colour = c_green;
+			if string_char_at(TextToDraw, i + 2) == "P"
+				colour = c_aqua;
+			if string_char_at(TextToDraw, i + 2) == "I"
+				colour = c_navy;
+			if string_char_at(TextToDraw, i + 2) == "V"
+				colour = c_fuchsia;
+			i += 1;
+			continue;
+		}
+		
 		colour = c_yellow;
 		//i += 2;
 		continue;

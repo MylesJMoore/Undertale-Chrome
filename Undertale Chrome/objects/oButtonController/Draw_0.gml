@@ -247,7 +247,7 @@ if (global.battleSelectionMenu > -1)
 			global.battleSelectionMenu -= 2;
 		}	
 		
-		if (down_key) {
+		if (down_key && array_length(global.item) > global.battleSelectionMenu) {
 			global.battleSelectionMenu += 2;
 		}	
 		
@@ -255,7 +255,7 @@ if (global.battleSelectionMenu > -1)
 			global.battleSelectionMenu -= 1;
 		}
 		
-		if (right_key) {
+		if (right_key && array_length(global.item) > global.battleSelectionMenu) {
 			global.battleSelectionMenu += 1;
 		}		
 	} else if(global.battleMenu == 4) {
@@ -296,11 +296,6 @@ if (global.battleSelectionMenu > -1)
 				
 		// Set the soul to be in a shooting state
 		global.soulCanShoot = true;
-	}
-	
-	//SOUL BATTLE MENU DEBUGGING
-	if(global.battleMenu == 3) {
-		show_debug_message("WILL CHANGE SOUL IN BATTLE TO: " + global.item[global.battleSelectionMenu]);
 	}
 	
 	// Confirm an input
@@ -373,8 +368,48 @@ if (global.battleSelectionMenu > -1)
 				// Item menu/Soul Menu
 				//UseItem(global.battleSelectionMenu); //USE ITEM BUT IN UNDERTALE CHROME THERE ARE NO ITEMS
 				
+				//BOSS FIGHT - FAILED HUMAN - Remove Available Souls from List
+				if(global.fighting_failed_human_boss) {
+					//**CANT SELECT RESILIENCE YET*
+					if(array_length(global.item) != 0 && global.item[global.battleSelectionMenu] == "Resilience") {
+						//Can't Select the Resilience soul until all other souls are removed
+						break;
+					}
+					
+					//**CHANGE TO SOUL THEN REMOVE SOUL FROM LIST && START BATTLE**
+					if(array_length(global.item) > 0) {
+						//Change Soul Selected
+						global.soul_selected = getSoulNameIndex(global.item[global.battleSelectionMenu]);
+						
+						//Remove Soul from the list
+						array_delete(global.item, global.battleSelectionMenu, 1);
+						
+						//Check if we are on last soul, if so set the flag to true
+						if(array_length(global.item) == 1) {
+							global.fighting_failed_human_boss_last_soul = true;
+						}
+				
+						// Start the Fight
+						global.MRN = 0;
+				
+						// FIGHT Command
+						with (global.monster[global.MRN]) {
+							global.monster[global.MRN].alarm[0] = 1;
+						}
+						global.battleMenu = -2;
+						global.battleSelectionMenu = -1;
+				
+						//Hide the Soul UI
+						oBulletBoard.SoulL.visible = false;
+						oBulletBoard.SoulR.visible = false;
+				
+						// Set the soul to be in a shooting state
+						global.soulCanShoot = true;
+						break;
+					}
+				}
+				
 				//Change Soul Selected
-				show_debug_message("CHANGING SOUL TO INDEX (" + string(getSoulNameIndex(global.item[global.battleSelectionMenu])) + "): " + global.item[global.battleSelectionMenu]);
 				global.soul_selected = getSoulNameIndex(global.item[global.battleSelectionMenu]);
 				
 				// Start the Fight

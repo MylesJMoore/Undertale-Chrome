@@ -141,8 +141,41 @@ if (current_width == 570 && current_height == 120) {
 			var _soulName = getSoulName(global.soul_selected);
 			SoulL = instance_create_depth(border_left + 50, border_up + 0, -100, oTextElement); //-4300
 			for (var i = 0; i < array_length(global.item); i += 2) {
-				if(global.item[i] == _soulName) {
+				if(global.item[i] == _soulName && !global.fighting_failed_human_boss) { //Added a validation for boss battle
 					SoulL.TextToDraw += "^(" + global.item[i] + ")&";
+				} else if(global.item[i] == "Resilience" && global.fighting_failed_human_boss && array_length(global.item) == 1) { //We are on the last soul option
+					SoulL.TextToDraw += "^" + global.item[i] + "&";
+				} else if(global.fighting_failed_human_boss && array_length(global.item) > 1) { //Set the default soul colors in this boss battle
+					var _soulColor = "";
+					switch (global.item[i])
+					{
+					    case "Resilience":
+					        _soulColor = "R";
+					    break;
+					    case "Determination":
+					        _soulColor = "D";
+					    break;
+						case "Bravery":
+					        _soulColor = "B";
+					    break;
+						case "Justice":
+					        _soulColor = "J";
+					    break;
+						case "Kindness":
+					        _soulColor = "K";
+					    break;
+						case "Patience":
+					        _soulColor = "P";
+					    break;
+						case "Integrity":
+					        _soulColor = "I";
+					    break;
+						case "Perseverance":
+					        _soulColor = "V";
+					    break;
+						
+					}
+					SoulL.TextToDraw += "^" + _soulColor + global.item[i] + "&";
 				} else {
 					SoulL.TextToDraw += "{* " + global.item[i] + "&";
 				}
@@ -155,7 +188,38 @@ if (current_width == 570 && current_height == 120) {
 			for (var i = 1; i < array_length(global.item); i += 2) {
 				if(global.item[i] == _soulName) {
 					SoulR.TextToDraw += "^(" + global.item[i] + ")&";
-				} else {
+				} else if(global.fighting_failed_human_boss && array_length(global.item) > 1) { //Set the default soul colors in this boss battle
+					var _soulColor = "";
+					switch (global.item[i])
+					{
+					    case "Resilience":
+					        _soulColor = "R";
+					    break;
+					    case "Determination":
+					        _soulColor = "D";
+					    break;
+						case "Bravery":
+					        _soulColor = "B";
+					    break;
+						case "Justice":
+					        _soulColor = "J";
+					    break;
+						case "Kindness":
+					        _soulColor = "K";
+					    break;
+						case "Patience":
+					        _soulColor = "P";
+					    break;
+						case "Integrity":
+					        _soulColor = "I";
+					    break;
+						case "Perseverance":
+					        _soulColor = "V";
+					    break;
+						
+					}
+					SoulR.TextToDraw += "^" + _soulColor + global.item[i] + "&";
+				}  else {
 					SoulR.TextToDraw += "{* " + global.item[i] + "&";
 				}
 			}

@@ -88,12 +88,12 @@ global.top_of_inventory_menu = false;
 //Player Information
 global.save_player_x = 0;
 global.save_player_y = 0;
-global.player_hp = 50;
-global.player_max_hp = 50;
+global.player_hp = 1;
+global.player_max_hp = 1;
 global.player_exp = 0;
 global.player_level = 1;
 global.player_gold = 0;
-global.player_name = "Balto";
+global.player_name = "Prisma";
 global.player_base_attack = 1;
 global.player_base_defense = 1;
 global.player_attack = 0;
@@ -114,6 +114,10 @@ global.player_step_count = 0;
 global.random_encounter_index = 0;
 global.random_encounter_index_range = irandom_range(0,2); //Modify this based on global.random_encounter values
 global.random_encounter = [180, 360, 480]; //Modify this to set number of frames for an encounter to start
+
+//Battle Triggering
+global.enemy_to_battle = global.enemy_macros[0];
+global.randomize_enemy_battle = false;
 
 //Battle System
 global.bypass_battle_menu = false;
@@ -161,3 +165,8 @@ global.monster_bullet_pattern = 0;
 //Cutscenes
 global.start_prologue_cutscene = false;
 global.start_prologue_open_chrome_jar = false;
+
+//BOSS FIGHT - Failed Human
+global.fighting_failed_human_boss = true;
+global.fighting_failed_human_boss_last_soul = false;
+global.battle_turn = 0;

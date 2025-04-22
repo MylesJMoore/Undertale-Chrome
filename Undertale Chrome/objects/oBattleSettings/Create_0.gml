@@ -33,7 +33,7 @@ Soul.visible = false;
 
 //Create Monsters
 //global.monster[0] = instance_create_depth(265, 100,0,oTestMonster); //-3100
-global.monster[0] = instance_create_depth(265, 100,0,global.current_enemy_macro); //-3100
+global.monster[0] = instance_create_depth(300, 100,0,global.enemy_to_battle); //-3100
 
 //Create the Monster Soul
 instance_create_depth(266, 100,-100,oMonsterSoul); //-3100

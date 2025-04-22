@@ -65,6 +65,7 @@ if (flashing_complete) {
 			global.battle_trigger_object = noone;
 		}
 		// Trigger the transition to the battle scene
-		StartBattle(noone, noone, true);
+		
+		StartBattle(global.enemy_to_battle, noone, global.randomize_enemy_battle);
 	}
 }

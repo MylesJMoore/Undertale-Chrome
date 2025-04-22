@@ -57,8 +57,6 @@ if (souls_converge) {
     }
 }
 
-show_debug_message("Chrome Alpha: " + string(chrome_soul_alpha));
-
 // Countdown to next cutscene trigger
 if (souls_absorbed && chrome_soul_complete_delay > 0) {
     chrome_soul_complete_delay--;

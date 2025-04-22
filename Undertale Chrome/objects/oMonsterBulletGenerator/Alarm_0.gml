@@ -17,6 +17,14 @@ if(global.hide_battle_menu) {
 //Menu Defaults
 SetBattleMenuDefaults();
 
+//Increment turn count
+global.battle_turn++;
+
+//START PLAYING ENEMY BOSS MUSIC
+if(global.fighting_failed_human_boss && global.battle_turn == 1) {
+	oSFX.enemyBattleThemeLoop = true;
+}
+
 //Cleanup Objects
 CleanupBattleObjects();
 

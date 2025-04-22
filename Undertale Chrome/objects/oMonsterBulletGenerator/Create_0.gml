@@ -2,7 +2,17 @@
 default_spawn_interval = 30;
 spawn_interval = 30; // Adjust as needed for faster/slower spawn rate
 spawn_timer = spawn_interval;
-alarm[0] = 240;
+
+if(global.fighting_failed_human_boss && global.battle_turn == 0) {
+	audio_play_sound(snd_bergentruckung_slowed, 10, false);
+	audio_timestamp = 0;
+	intro_phase = 0;
+	anim_timer = 0;
+	toggle_state = 1;
+} else {
+	alarm[0] = 240;
+}
+
 
 //Make Monster Soul Visible
 oMonsterSoul.image_alpha = 1;

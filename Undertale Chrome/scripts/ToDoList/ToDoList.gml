@@ -2,21 +2,17 @@
 PROLOGUE 
 //Loads it from: C:\Users\Myles\AppData\Local\Undertale_Chrome or search for %localappdata%
 
-
-Dialogue
-- In Dialogue only battles, automatically progress dialogue
-
-Cutscenes
-- Chrome Soul
-- Initial Rosey Human Clones
-- Failed Clones Introduction
-- Post Battle Cutscene
-- Credits
-
 Battle/Enemies
 - Create Boss
 - Create Boss Bullet Patterns
-- Boss Music
+
+Cutscenes
+- Post Battle Cutscene
+- Credits
+
+Polish
+- Full Playthrough
+- Take Notes where to polish
 
 Last Stuff
 - Playthrough
@@ -84,6 +80,7 @@ Dialogue
 - Add Dialogue to Environment in Room 6
 - Add Dialogue to Environment in Room 7
 - Add Dialogue to Environment in Room 8
+- [NOT DOING] In Dialogue only battles, automatically progress dialogue
 
 Battle/Enemies
 - Set up battle triggers in areas of true lab
@@ -91,6 +88,9 @@ Battle/Enemies
 - Create Enemies [NOT DOING]
 - Create Enemy Bullet Patterns [NOT DOING]
 - Enemy Music [NOT DOING]
+- Boss Music
 
 Cutscenes
--
+- Chrome Soul
+- Initial Rosey Human Clones
+- Failed Clones Introduction
