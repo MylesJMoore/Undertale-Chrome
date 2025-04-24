@@ -2,6 +2,7 @@ TextToDraw = "";
 TextDelay = 2;
 CurrentDelay = 0;
 CanAdvance = true;
+DisableSkipping = false;
 TextQueue = array_create(0);
 NumInQueue = 0;
 IsWriting = true;

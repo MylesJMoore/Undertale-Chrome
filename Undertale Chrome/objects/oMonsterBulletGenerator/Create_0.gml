@@ -3,6 +3,15 @@ default_spawn_interval = 30;
 spawn_interval = 30; // Adjust as needed for faster/slower spawn rate
 spawn_timer = spawn_interval;
 
+//For Knife Spawning
+target_width = 20;
+target_height = 20;
+target_width_restore = 120;
+target_height_restore = 120;
+if (!variable_global_exists("knife_spawn_angles")) {
+	global.knife_spawn_angles = ds_list_create();
+}
+
 if(global.fighting_failed_human_boss && global.battle_turn == 0) {
 	audio_play_sound(snd_bergentruckung_slowed, 10, false);
 	audio_timestamp = 0;
@@ -50,7 +59,7 @@ pattern = global.monster_bullet_pattern; // 0 = Straight line, 1 = Circle, 2 = R
 
 // Other properties for bullets
 bullet_speed = 2;
-bullet_damage = 10;
+bullet_damage = 0; //ADJUST DAMAGE HERE FOR ALL BULLET PATTERNS GLOBALLY
 
 //Flag for playing sequences
 sequence_is_playing = false;

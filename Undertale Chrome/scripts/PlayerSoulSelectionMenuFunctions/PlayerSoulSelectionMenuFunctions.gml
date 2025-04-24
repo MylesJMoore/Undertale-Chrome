@@ -168,3 +168,18 @@ function getSoulDefenseBonus(soul_id) {
         default: return 99999;
     }
 }
+
+/// @function getSoulBattleFlavorText
+function getSoulBattleFlavorText(soul_id) {
+    switch(soul_id) {
+        case 1: return "Determination tried to resist.&It wasn't enough.";
+        case 2: return "Bravery stepped forward.&And was the first to fall.";
+        case 3: return "Justice held out its hand.&The blade didn't care.";
+        case 4: return "Kindness stayed behind.&Maybe it thought that was mercy.";
+        case 5: return "Patience watched. Waited. Faded.";
+        case 6: return "Integrity didn't flinch.&That's why it shattered.";
+        case 7: return "Perseverance stayed with you.&Until it couldn't.";
+        case 0: return "Only the Chrome Soul remains.";
+        default: return "A soul fragment is missing.";
+    }
+}

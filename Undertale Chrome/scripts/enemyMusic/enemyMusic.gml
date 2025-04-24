@@ -4,6 +4,6 @@ function createEnemyMusic() {
     global.enemy_music_list = [
             ["Toriel", [snd_toriel_battle_1, snd_toriel_battle_2]],
             ["Solara", [snd_dustbunny_battle_1, snd_dustbunny_battle_2]],
-			["???", [snd_asgore_slowed, snd_asgore_slowed]]
+			["Failed Human", [snd_asgore_slowed, snd_asgore_slowed]]
         ];
 }

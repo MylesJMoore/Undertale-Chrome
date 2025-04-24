@@ -18,6 +18,13 @@ ButtonSprites[1] = sMenuAct;
 ButtonSprites[2] = sMenuSoul;
 ButtonSprites[3] = sMenuMercy;
 
+//Boss Sprites
+BossButtonSprites[0] = sMenuLive;
+BossButtonSprites[1] = sMenuCry;
+BossButtonSprites[2] = sMenuSoulBoss;
+BossButtonSprites[3] = sMenuMercyBroken;
+
+
 MonsterReferenceNum = 0;
 BelowUIReferenceNum = 0;
 

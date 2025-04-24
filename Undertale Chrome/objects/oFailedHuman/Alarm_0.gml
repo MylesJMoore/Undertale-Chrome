@@ -20,7 +20,8 @@ SpeechBubbleDialogue.NumInQueue = 0; // Start from the first line of dialogue
 SpeechBubbleDialogue.TextToDraw = SpeechBubbleDialogue.TextQueue[SpeechBubbleDialogue.NumInQueue];
 
 // Configure the speech bubble's appearance
-SpeechBubbleDialogue.CanAdvance = true; 
+SpeechBubbleDialogue.CanAdvance = false; 
+SpeechBubbleDialogue.DisableSkipping = true;
 SpeechBubbleDialogue.IsBubbleText = true;
 SpeechBubbleDialogue.DefaultColour = c_black;
 SpeechBubbleDialogue.DefaultFont = fUndertale;
@@ -34,5 +35,9 @@ instance_create_depth(_speechx, _speechy, -9000, obj_speech_bubble);
 
 //Enemy Bullet Creation
 global.monster_bullet_pattern = irandom_range(0,11); //Randomly Select a Bullet Pattern
-global.dialogue_only_bullet_pattern = true; //Only Show Dialogue in Bullet Pattern
+if(global.battle_turn == 0) {
+	global.dialogue_only_bullet_pattern = true; //Only Show Dialogue in Bullet Pattern
+} else {
+	global.dialogue_only_bullet_pattern = false;
+}
 instance_create_depth(x, y, 3000, oMonsterBulletGenerator);

@@ -73,7 +73,10 @@ if (current_width == 570 && current_height == 120) {
 			// GetStatusText() will fetch the text depending on your encounter
 			if(!battleEnd) {
 				Dialogue = instance_create_depth(border_left + 30, border_up + 15, -100, oTextElement); //-4000
-				Dialogue.TextToDraw = "* You can feel the weight of this& tutorial...";
+				Dialogue.TextToDraw = "* You know you need to customize this. Come on!";
+				if(global.fighting_failed_human_boss) {
+					Dialogue.TextToDraw = global.last_soul_removed_flavor_text;
+				}
 				Dialogue.CanAdvance = false;
 			}
 			

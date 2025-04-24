@@ -6,7 +6,7 @@ direction = 0; // Default direction (can be changed later)
 alarm[0] = 120; // Bullet will disappear after 60 frames
 
 // Bullet damage
-damage = 0;
+damage = 1;
 
 //Disappear on contact set to false
 disappearOnContact = false;

@@ -5,13 +5,17 @@ if(global.monster[0].MyHP > 0) {
 		global.enemy_invisible_frames -= 1;
 		if(global.enemy_invisible_frames == 30) {
 			image_index = 0;
-			global.monster[0].image_index = 0;
+			if(!global.fighting_failed_human_boss) {
+				global.monster[0].image_index = 0;
+			}
 		}
 	} else {
 		image_speed = 0;
 		image_index = 0;
-		global.monster[0].image_index = 0;
-		global.monster[0].image_speed = 0;
+		if(!global.fighting_failed_human_boss) {
+			global.monster[0].image_index = 0;
+			global.monster[0].image_speed = 0;
+		}
 	}
 	
 	// Midpoint and amplitude for the X oscillation

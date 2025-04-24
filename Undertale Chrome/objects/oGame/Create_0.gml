@@ -167,6 +167,10 @@ global.start_prologue_cutscene = false;
 global.start_prologue_open_chrome_jar = false;
 
 //BOSS FIGHT - Failed Human
+global.failed_human_boss_intro_done = false;
+global.failed_human_knife_fadeout = false;
 global.fighting_failed_human_boss = true;
 global.fighting_failed_human_boss_last_soul = false;
 global.battle_turn = 0;
+global.last_soul_removed = "Resilience";
+global.last_soul_removed_flavor_text = "Eight souls. One heartbeat.";

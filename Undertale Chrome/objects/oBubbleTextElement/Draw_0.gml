@@ -83,8 +83,10 @@ if IsWriting {
 		}
 	}
 	if (keyboard_check(ord("X")) || keyboard_check(ord("C")) || (gamepad_button_check_pressed(0, gp_face2))) {
-		TextLength = string_length(TextToDraw);
-		IsWriting = false;
+		if(!DisableSkipping) {
+			TextLength = string_length(TextToDraw);
+			IsWriting = false;
+		}
 	}
 }
 else {

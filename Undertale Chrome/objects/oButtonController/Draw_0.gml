@@ -126,13 +126,25 @@
 		//ButtonSprites[2] = sMenuNoItems;
 	}
 	
-	// Draw every button sprite with the "Unselected" form
-	for (var i = 0; i < 4; i++) 
-	{
-		if(!oBulletBoard.game_has_ended && !global.hide_battle_menu) {
-			draw_sprite(ButtonSprites[i], 0, ButtonPositions_X[i], 430);
+	//Boss Menu: Check if this is the failed human boss fight and draw the special menu items
+	if(global.fighting_failed_human_boss) {
+		for (var i = 0; i < 4; i++) 
+		{
+			if(!oBulletBoard.game_has_ended && !global.hide_battle_menu) {
+				draw_sprite(BossButtonSprites[i], 0, ButtonPositions_X[i], 430);
+			}
+		}
+	} else {
+		// Normal Menu: Draw every button sprite with the "Unselected" form
+		for (var i = 0; i < 4; i++) 
+		{
+			if(!oBulletBoard.game_has_ended && !global.hide_battle_menu) {
+				draw_sprite(ButtonSprites[i], 0, ButtonPositions_X[i], 430);
+			}
 		}
 	}
+	
+	
 #endregion
 
 // To make sure that our menu is navigatable, we set the battleSelectionMenu variable to -1 when we don't want it
@@ -142,31 +154,40 @@ if (global.battleSelectionMenu > -1)
 #region Menu Display
 		// Main menu
 		if (global.battleMenu == 0) {
-			if (left_key) {
-				//Check for no items
-				if(array_length(global.item) == 0 && global.battleSelectionMenu == 3) 
-				{
-					global.battleSelectionMenu -= 2;
-				} else {
-					global.battleSelectionMenu -= 1;
+			// BOSS BATTLE - Failed Human (Default to Soul Menu ONLY)
+			if(global.fighting_failed_human_boss) {
+				global.battleSelectionMenu = 2;
+			} else {
+				if (left_key) {
+					//Check for no items
+					if(array_length(global.item) == 0 && global.battleSelectionMenu == 3) 
+					{
+						global.battleSelectionMenu -= 2;
+					} else {
+						global.battleSelectionMenu -= 1;
+					}
+					audio_play_sound(snd_menu_move, 1, false);
 				}
-				audio_play_sound(snd_menu_move, 1, false);
-			}
-			if (right_key) {
-				//Check for no items
-				if(array_length(global.item) == 0 && global.battleSelectionMenu == 1) 
-				{
-					global.battleSelectionMenu += 2;
-				} else {
-					global.battleSelectionMenu += 1;
+				if (right_key) {
+					//Check for no items
+					if(array_length(global.item) == 0 && global.battleSelectionMenu == 1) 
+					{
+						global.battleSelectionMenu += 2;
+					} else {
+						global.battleSelectionMenu += 1;
+					}
+					audio_play_sound(snd_menu_move, 1, false);
 				}
-				audio_play_sound(snd_menu_move, 1, false);
 			}
 			
 			global.battleSelectionMenu = clamp(global.battleSelectionMenu, 0, 3);
 			for (var i = 0; i < 4; i++) {
 				if(!oBulletBoard.game_has_ended && !global.hide_battle_menu) {
-					draw_sprite(ButtonSprites[i], (global.battleSelectionMenu == i && !instance_exists(oMonsterSequenceGenerator)), ButtonPositions_X[i], 430);
+					if(global.fighting_failed_human_boss) {
+						draw_sprite(BossButtonSprites[i], 0, ButtonPositions_X[i], 430);
+					} else {
+						draw_sprite(ButtonSprites[i], (global.battleSelectionMenu == i && !instance_exists(oMonsterSequenceGenerator)), ButtonPositions_X[i], 430);
+					}
 				}
 			}
 		}
@@ -284,6 +305,7 @@ if (global.battleSelectionMenu > -1)
 		}	
 	}
 	
+	
 	//Start Battle Immediately (Boss Fights or Cutscene Fights)
 	if(global.bypass_battle_menu && !oBulletBoard.game_has_ended) {
 		// FIGHT Command
@@ -371,8 +393,29 @@ if (global.battleSelectionMenu > -1)
 				//BOSS FIGHT - FAILED HUMAN - Remove Available Souls from List
 				if(global.fighting_failed_human_boss) {
 					//**CANT SELECT RESILIENCE YET*
-					if(array_length(global.item) != 0 && global.item[global.battleSelectionMenu] == "Resilience") {
+					if(array_length(global.item) != 1 && global.item[global.battleSelectionMenu] == "Resilience") {
 						//Can't Select the Resilience soul until all other souls are removed
+						break;
+					}
+					
+					//**WE CAN FINALLY SELECT RESILIENCE**
+					if(array_length(global.item) == 1 && global.fighting_failed_human_boss_last_soul && global.item[global.battleSelectionMenu] == "Resilience") {
+						// Start the Fight
+						global.MRN = 0;
+				
+						// FIGHT Command
+						with (global.monster[global.MRN]) {
+							global.monster[global.MRN].alarm[0] = 1;
+						}
+						global.battleMenu = -2;
+						global.battleSelectionMenu = -1;
+				
+						//Hide the Soul UI
+						oBulletBoard.SoulL.visible = false;
+						oBulletBoard.SoulR.visible = false;
+				
+						// Set the soul to be in a shooting state
+						global.soulCanShoot = true;
 						break;
 					}
 					
@@ -380,6 +423,8 @@ if (global.battleSelectionMenu > -1)
 					if(array_length(global.item) > 0) {
 						//Change Soul Selected
 						global.soul_selected = getSoulNameIndex(global.item[global.battleSelectionMenu]);
+						global.last_soul_removed = getSoulName(global.soul_selected);
+						global.last_soul_removed_flavor_text = getSoulBattleFlavorText(global.soul_selected);
 						
 						//Remove Soul from the list
 						array_delete(global.item, global.battleSelectionMenu, 1);
