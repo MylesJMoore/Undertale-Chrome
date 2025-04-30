@@ -400,6 +400,11 @@ if (global.battleSelectionMenu > -1)
 					
 					//**WE CAN FINALLY SELECT RESILIENCE**
 					if(array_length(global.item) == 1 && global.fighting_failed_human_boss_last_soul && global.item[global.battleSelectionMenu] == "Resilience") {
+						//Change Soul Selected
+						global.soul_selected = getSoulNameIndex(global.item[global.battleSelectionMenu]);
+						global.last_soul_removed = getSoulName(global.soul_selected);
+						global.last_soul_removed_flavor_text = getSoulBattleFlavorText(global.soul_selected);
+						
 						// Start the Fight
 						global.MRN = 0;
 				

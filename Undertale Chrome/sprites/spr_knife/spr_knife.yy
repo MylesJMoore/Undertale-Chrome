@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 3,
   "parent": {
-    "name": "Bullets",
-    "path": "folders/Battle System - Undertale/Sprites/Bullets.yy",
+    "name": "Failed Human",
+    "path": "folders/Battle System - Undertale/Sprites/Bullets/Failed Human.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

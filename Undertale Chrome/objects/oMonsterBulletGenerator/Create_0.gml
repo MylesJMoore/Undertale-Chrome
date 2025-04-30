@@ -19,7 +19,15 @@ if(global.fighting_failed_human_boss && global.battle_turn == 0) {
 	anim_timer = 0;
 	toggle_state = 1;
 } else {
-	alarm[0] = 240;
+	
+	
+	if(global.fighting_failed_human_boss) {
+		//BOSS BULLET PATTERN TIME - 6 SECONDS
+		alarm[0] = 360;
+	} else {
+		//Use Default Time to END Bullet Pattern
+		alarm[0] = 240;
+	}
 }
 
 

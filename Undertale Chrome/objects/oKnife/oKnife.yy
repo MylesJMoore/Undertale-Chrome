@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemy Bullets",
-    "path": "folders/Battle System - Undertale/Enemy Bullets.yy",
+    "name": "Default",
+    "path": "folders/Battle System - Undertale/Enemy Bullets/Default.yy",
   },
   "parentObjectId": {
     "name": "obj_enemy_projectile",

@@ -74,6 +74,41 @@ if (spawn_timer <= 0) {
 			//Horizontal Spear Right
             Bullet_Horizontal_Spear(0, 125);
             break;
+		case 12:
+			//BOSS: Failed Human - Determination
+            Bullet_Failed_Human_Determination();
+            break;
+		case 13:
+			//BOSS: Failed Human - Bravery
+            Bullet_Failed_Human_Bravery();
+            break;
+		case 14:
+			//BOSS: Failed Human - Justice
+            Bullet_Failed_Human_Justice();
+            break;
+		case 15:
+			//BOSS: Failed Human - Kindness
+            Bullet_Failed_Human_Kindness();
+            break;
+		case 16:
+			//BOSS: Failed Human - Patience
+            Bullet_Failed_Human_Patience();
+            break;
+		case 17:
+			//BOSS: Failed Human - Integrity
+            Bullet_Failed_Human_Integrity();
+            break;
+		case 18:
+			//BOSS: Failed Human - Perseverance
+			HideOutsideBattlebox();
+            Bullet_Failed_Human_Perseverance();
+            break;
+		case 19:
+			//BOSS: Failed Human - Resilience
+            //Random Large Horizontal Bullets explode to burst
+            HideOutsideBattlebox();
+            Bullet_Failed_Human_Horizontal_Large_Random_Burst();
+            break;
 		case 99:
 			//CUTSCENE OR BOSS FIGHT BYPASSING MAIN MENU
             HideOutsideBattlebox();
@@ -97,6 +132,9 @@ if(!global.failed_human_boss_intro_done) {
 	    show_debug_message("BOSS INTRO IS DONE");
 		global.failed_human_boss_intro_done = true;
 		global.failed_human_knife_fadeout = false;
+		global.dialogue_only_bullet_pattern = false;
+		global.bypass_battle_menu = false;
+		global.return_to_battle_menu = false;
 	    oFailedHuman.image_index = 6;
 	    alarm[0] = true;
 	} else {

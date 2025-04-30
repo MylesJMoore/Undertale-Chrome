@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 3,
   "parent": {
-    "name": "Bullets",
-    "path": "folders/Battle System - Undertale/Sprites/Bullets.yy",
+    "name": "Defaults",
+    "path": "folders/Battle System - Undertale/Sprites/Bullets/Defaults.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -3,8 +3,14 @@ PROLOGUE
 //Loads it from: C:\Users\Myles\AppData\Local\Undertale_Chrome or search for %localappdata%
 
 Battle/Enemies
-- Create Boss
-- Create Boss Bullet Patterns
+- Bullet Pattern - Determination
+- Bullet Pattern - Bravery
+- Bullet Pattern - Justice
+- Bullet Pattern - Kindness
+- Bullet Pattern - Patience
+- Bullet Pattern - Integrity
+- Bullet Pattern - Perseverance
+- Bullet Pattern - Resilience
 
 Cutscenes
 - Post Battle Cutscene
@@ -89,6 +95,7 @@ Battle/Enemies
 - Create Enemy Bullet Patterns [NOT DOING]
 - Enemy Music [NOT DOING]
 - Boss Music
+- Create Boss
 
 Cutscenes
 - Chrome Soul

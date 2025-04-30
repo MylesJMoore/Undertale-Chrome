@@ -3,8 +3,13 @@ if (global.enemy_invisible_frames <= 0) {
 	global.enemy_invisible_frames = 15;
 	global.monster[0].MyHP -= damage;
 	show_debug_message(global.monster[0].MyHP);
-	oMonsterSoul.image_index = 1;
-	global.monster[0].image_index = 1;
+	if(!global.fighting_failed_human_boss) {
+		oMonsterSoul.image_index = 1;
+		global.monster[0].image_index = 1;
+	} else {
+		oMonsterSoul.image_index = 1;
+		//Do not change the image index for the monster
+	}
 	audio_play_sound(snd_hurt, 11, false);
 	if (global.monster[0].MyHP <= 0) {
 		show_debug_message("ENEMY IS DEAD");
