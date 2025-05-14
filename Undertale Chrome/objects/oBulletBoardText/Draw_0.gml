@@ -66,9 +66,12 @@ if(!oBulletBoard.game_has_ended) {
 		if(global.fighting_failed_human_boss && !global.fighting_failed_human_boss_last_soul) {
 			draw_set_color(_soulNameColor);
 			//draw_text(380 + hp_barwidth, 400, string(global.player_hp) + " / ???");
-		} else if(global.fighting_failed_human_boss && global.fighting_failed_human_boss_last_soul && _soulName == "Resilience") {
-			draw_set_color(c_white);
-			draw_text(380 + hp_barwidth, 400, string(global.player_hp) + " / " + string(global.player_max_hp));
+		} else if(global.fighting_failed_human_boss && global.fighting_failed_human_boss_last_soul) {
+			if(global.failed_human_show_player_health && global.last_soul_removed = "Resilience" && global.resilience_pattern == 2 && oSoul.visible == true) {
+				draw_set_color(c_white);
+				draw_text(440, 400, "HP");
+				draw_text(520 + hp_barwidth, 400, string(global.player_hp) + " / " + string(global.player_max_hp));
+			}
 		} else {
 			//Reset Text Color
 			draw_set_color(c_white);

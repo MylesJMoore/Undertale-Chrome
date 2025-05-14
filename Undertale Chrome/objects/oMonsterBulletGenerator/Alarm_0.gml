@@ -14,6 +14,11 @@ if(global.hide_battle_menu) {
 	global.hide_battle_menu = false;
 }
 
+//Check if we are on final turn of the failed human boss battle
+if(global.fighting_failed_human_boss_last_soul) {
+	global.resilience_pattern++;
+}		
+
 //Menu Defaults
 SetBattleMenuDefaults();
 
@@ -23,6 +28,10 @@ global.battle_turn++;
 //START PLAYING ENEMY BOSS MUSIC
 if(global.fighting_failed_human_boss && global.battle_turn == 1) {
 	oSFX.enemyBattleThemeLoop = true;
+}
+
+if(global.fighting_failed_human_boss && global.battle_turn > 1) {
+	oFailedHuman.image_index = 4;
 }
 
 //Cleanup Objects

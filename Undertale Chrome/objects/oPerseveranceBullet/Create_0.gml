@@ -1,5 +1,5 @@
 // Set the initial speed and direction for the bullet
-speed = 2;
+speed = 1;
 direction = 0; // Default direction (can be changed later)
 
 // Set the lifespan of the bullet (optional, so it doesn’t stay forever)

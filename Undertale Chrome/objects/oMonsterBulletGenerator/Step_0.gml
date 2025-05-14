@@ -77,17 +77,23 @@ if (spawn_timer <= 0) {
 		case 12:
 			//BOSS: Failed Human - Determination
             Bullet_Failed_Human_Determination();
+			//Bullet_Circle();
             break;
 		case 13:
 			//BOSS: Failed Human - Bravery
-            Bullet_Failed_Human_Bravery();
+			HideOutsideBattlebox();
+            Bullet_Failed_Human_Bravery(); //Glove Left
+			Bullet_Failed_Human_Bravery(0, 125); //Glove Right
             break;
 		case 14:
 			//BOSS: Failed Human - Justice
-            Bullet_Failed_Human_Justice();
+			HideOutsideBattlebox();
+            Bullet_Failed_Human_Justice_Flowers();
+            Bullet_Failed_Human_Justice_Gun_Cross();
             break;
 		case 15:
 			//BOSS: Failed Human - Kindness
+			HideOutsideBattlebox();
             Bullet_Failed_Human_Kindness();
             break;
 		case 16:
@@ -96,6 +102,7 @@ if (spawn_timer <= 0) {
             break;
 		case 17:
 			//BOSS: Failed Human - Integrity
+			HideOutsideBattlebox();
             Bullet_Failed_Human_Integrity();
             break;
 		case 18:
@@ -105,10 +112,22 @@ if (spawn_timer <= 0) {
             break;
 		case 19:
 			//BOSS: Failed Human - Resilience
-            //Random Large Horizontal Bullets explode to burst
-            HideOutsideBattlebox();
-            Bullet_Failed_Human_Horizontal_Large_Random_Burst();
-            break;
+			switch (global.resilience_pattern) {
+			    case 0: //SHOW DIALOGUE ONLY, NO BULLETS
+					break;
+				case 1: //SHOW DIALOGUE ONLY, NO BULLETS
+					break;
+			    case 2: // TIME FOR FINAL BULLET PATTERN
+					//MAKE THIS LOOP INFINITE, PLAYER MUST DIE HERE
+					if(alarm[0] < 360) {
+						alarm[0] = 360;
+					}
+		            Bullet_Failed_Human_Resilience();
+		            break;
+			    default:
+			        Bullet_Horizontal_Spear();
+			        break;
+			}
 		case 99:
 			//CUTSCENE OR BOSS FIGHT BYPASSING MAIN MENU
             HideOutsideBattlebox();
@@ -128,6 +147,7 @@ if(hide_outside_box) {
 
 //BOSS INTRO MUSIC + ANIMATION
 if(!global.failed_human_boss_intro_done) {
+	audio_stop_sound(snd_bergentruckung_slowed); //DEBUGGING DELETE AFTER
 	if (global.fighting_failed_human_boss && global.battle_turn == 0 && !audio_is_playing(snd_bergentruckung_slowed)) {
 	    show_debug_message("BOSS INTRO IS DONE");
 		global.failed_human_boss_intro_done = true;
@@ -135,7 +155,7 @@ if(!global.failed_human_boss_intro_done) {
 		global.dialogue_only_bullet_pattern = false;
 		global.bypass_battle_menu = false;
 		global.return_to_battle_menu = false;
-	    oFailedHuman.image_index = 6;
+	    oFailedHuman.image_index = 4;
 	    alarm[0] = true;
 	} else {
 	    audio_timestamp++;

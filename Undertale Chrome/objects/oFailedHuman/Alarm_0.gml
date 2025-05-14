@@ -36,8 +36,17 @@ switch (global.last_soul_removed) {
     case "Perseverance": // Perseverance
         SpeechBubble[0] = "I hope you know.&The Purple path&led nowhere too.";
         break;
-	case "Resilience": // Perseverance
-        SpeechBubble[0] = "Enough.&The only way out&is by losing...&THE CHROME SOUL.";
+	case "Resilience": // Resilience
+		if(global.resilience_pattern == 0) {
+			SpeechBubble[0] = "Enough.";
+		} else if(global.resilience_pattern == 1) {
+			SpeechBubble[0] = "Sorry Prisma...&The only way out&is by losing &the Chrome Soul.";
+			audio_stop_sound(snd_asgore_slowed);
+		} else if(global.resilience_pattern == 2) {
+			SpeechBubble[0] = "Goodbye.";
+		} else {
+			SpeechBubble[0] = "...";
+		}
         break;
     default:
         SpeechBubble[0] = "...";

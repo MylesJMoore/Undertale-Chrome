@@ -1,0 +1,2 @@
+Bullet_Failed_Human_Horizontal_Kindness_Collision_Burst(x,y);
+instance_destroy();

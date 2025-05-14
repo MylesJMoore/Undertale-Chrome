@@ -404,6 +404,7 @@ if (global.battleSelectionMenu > -1)
 						global.soul_selected = getSoulNameIndex(global.item[global.battleSelectionMenu]);
 						global.last_soul_removed = getSoulName(global.soul_selected);
 						global.last_soul_removed_flavor_text = getSoulBattleFlavorText(global.soul_selected);
+						global.failed_human_show_player_health = true;
 						
 						// Start the Fight
 						global.MRN = 0;

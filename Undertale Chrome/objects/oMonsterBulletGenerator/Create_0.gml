@@ -19,15 +19,21 @@ if(global.fighting_failed_human_boss && global.battle_turn == 0) {
 	anim_timer = 0;
 	toggle_state = 1;
 } else {
-	
-	
 	if(global.fighting_failed_human_boss) {
 		//BOSS BULLET PATTERN TIME - 6 SECONDS
-		alarm[0] = 360;
+		//alarm[0] = 360;
+		alarm[0] = 60; //DEBUGGING REMOVE THIS
 	} else {
 		//Use Default Time to END Bullet Pattern
 		alarm[0] = 240;
 	}
+}
+
+if(global.fighting_failed_human_boss) {
+	//Move Monster Soul on top of failed human boss
+	oMonsterSoul.x = 327;
+	oMonsterSoul.y = 150;
+	oFailedHuman.image_index = 0;
 }
 
 
@@ -75,3 +81,9 @@ sequence_is_playing = false;
 //Draw Black Rectangles around battle box
 hide_outside_box = false;
 outside_hidden = false;
+
+//Failed human - Determination Bullet Pattern
+left_thorns = false;
+right_thorns = false;
+
+//Failed Human - Resilience Pattern

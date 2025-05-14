@@ -3,27 +3,34 @@ PROLOGUE
 //Loads it from: C:\Users\Myles\AppData\Local\Undertale_Chrome or search for %localappdata%
 
 Battle/Enemies
-- Bullet Pattern - Determination
-- Bullet Pattern - Bravery
-- Bullet Pattern - Justice
-- Bullet Pattern - Kindness
-- Bullet Pattern - Patience
-- Bullet Pattern - Integrity
-- Bullet Pattern - Perseverance
 - Bullet Pattern - Resilience
 
 Cutscenes
 - Post Battle Cutscene
+
+Ending
+- Mt. Ebbott
+- Fade to Title
 - Credits
 
 Polish
-- Full Playthrough
+- Run through Full Playthrough on keyboard
+- Run through Full Playthrough on controller
 - Take Notes where to polish
+- Polish Bullet Pattern - Determination
+- Polish Bullet Pattern - Bravery
+- Polish Bullet Pattern - Justice
+- Polish Bullet Pattern - Kindness
+- Polish Bullet Pattern - Patience
+- Polish Bullet Pattern - Integrity
+- Polish Bullet Pattern - Perseverance
+- Polish Bullet Pattern - Resilience
 
 Last Stuff
-- Playthrough
+- Playthrough again on keyboard
+- Playthrough again on controller
 - 3 Play Testers
-- PUT IT ON ITCH OR GAMEJOLT
+- PUT IT ON GAMEJOLT
 - Celebrate
 
 
@@ -96,6 +103,13 @@ Battle/Enemies
 - Enemy Music [NOT DOING]
 - Boss Music
 - Create Boss
+- Bullet Pattern - Perseverance
+- Bullet Pattern - Justice
+- Bullet Pattern - Bravery
+- Bullet Pattern - Kindness
+- Bullet Pattern - Patience
+- Bullet Pattern - Integrity
+- Bullet Pattern - Determination
 
 Cutscenes
 - Chrome Soul

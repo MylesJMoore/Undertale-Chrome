@@ -88,8 +88,8 @@ global.top_of_inventory_menu = false;
 //Player Information
 global.save_player_x = 0;
 global.save_player_y = 0;
-global.player_hp = 1;
-global.player_max_hp = 1;
+global.player_hp = 6;
+global.player_max_hp = 6;
 global.player_exp = 0;
 global.player_level = 1;
 global.player_gold = 0;
@@ -174,3 +174,7 @@ global.fighting_failed_human_boss_last_soul = false;
 global.battle_turn = 0;
 global.last_soul_removed = "Resilience";
 global.last_soul_removed_flavor_text = "Eight souls. One heartbeat.";
+
+//BOSS FIGHT - Failed Human FINAL ATTACK
+global.failed_human_show_player_health = false;
+global.resilience_pattern = 0;

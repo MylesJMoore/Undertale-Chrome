@@ -1,2 +1,2 @@
-Bullet_Collision_Burst(x,y);
+Bullet_Failed_Human_Horizontal_Perseverance_Collision_Burst(x,y);
 instance_destroy();

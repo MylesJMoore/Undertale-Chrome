@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Failed Human",
-    "path": "folders/Battle System - Undertale/Enemy Bullets/Failed Human.yy",
+    "name": "Perseverance",
+    "path": "folders/Battle System - Undertale/Enemy Bullets/Failed Human/Perseverance.yy",
   },
   "parentObjectId": {
     "name": "obj_enemy_projectile",

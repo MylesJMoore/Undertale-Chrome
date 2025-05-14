@@ -4,7 +4,7 @@
   "name": "spr_battle_boxes",
   "bbox_bottom": 129,
   "bbox_left": 0,
-  "bbox_right": 249,
+  "bbox_right": 259,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -20,13 +20,14 @@
   "height": 130,
   "HTile": false,
   "layers": [
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"58b8be23-2c85-4f0c-ba96-3dc993466aa0","blendMode":0,"displayName":"Layer 1","isLocked":false,"opacity":100.0,"visible":false,},
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d55dbb0a-e07b-4cd7-ac15-36348df084e2","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
   "parent": {
     "name": "Utility",
-    "path": "folders/Sprites/Utility.yy",
+    "path": "folders/Battle System - Undertale/Sprites/Utility.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -70,5 +71,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 250,
+  "width": 260,
 }

@@ -32,11 +32,16 @@ Soul.visible = false;
 //alarm[0] = 30;
 
 //Create Monsters
-//global.monster[0] = instance_create_depth(265, 100,0,oTestMonster); //-3100
-global.monster[0] = instance_create_depth(300, 100,0,global.enemy_to_battle); //-3100
+//global.monster[0] = instance_create_depth(265, 100,0,oTestMonster);
+global.monster[0] = instance_create_depth(300, 100,0,global.enemy_to_battle);
 
 //Create the Monster Soul
-instance_create_depth(266, 100,-100,oMonsterSoul); //-3100
+if(global.fighting_failed_human_boss) {
+	instance_create_depth(300, 100,-100,oMonsterSoul); 
+} else {
+	instance_create_depth(300, 100,-100,oMonsterSoul);
+}
+
 
 //Create Moving Monsters
 //global.monster[0] = instance_create_depth(265, 100,0,oTestMonsterBodyMoving);
