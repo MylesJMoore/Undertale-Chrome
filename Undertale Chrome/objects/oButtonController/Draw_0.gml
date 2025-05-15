@@ -240,8 +240,10 @@ if (global.battleSelectionMenu > -1)
 		global.battleMenu = 0;
 		global.battleSelectionMenu = BelowUIReferenceNum;
 	}
-	show_debug_message("Battle Menu = " + string(global.battleMenu));
-	show_debug_message("Battle Selection = " + string(global.battleSelectionMenu));
+	
+	//show_debug_message("Battle Menu = " + string(global.battleMenu));
+	//show_debug_message("Battle Selection = " + string(global.battleSelectionMenu));
+	
 	//Navigation Controls
 	if (global.battleMenu != 2 && global.battleMenu != 2.5 && global.battleMenu != 3 && global.battleMenu != 4) {
 		// Don't allow up and down on the Main Menu!

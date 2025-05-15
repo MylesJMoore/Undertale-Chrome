@@ -2,9 +2,9 @@
 PROLOGUE 
 //Loads it from: C:\Users\Myles\AppData\Local\Undertale_Chrome or search for %localappdata%
 
-Battle/Enemies
-- Bullet Pattern - Resilience
-
+-------------------------------------------------
+TODO
+-------------------------------------------------
 Cutscenes
 - Post Battle Cutscene
 
@@ -33,9 +33,8 @@ Last Stuff
 - PUT IT ON GAMEJOLT
 - Celebrate
 
-
-BONUS
-- Soul Door Puzzle
+-------------------------------------------------
+*************************************************
 -------------------------------------------------
 COMPLETED
 -------------------------------------------------
@@ -110,8 +109,12 @@ Battle/Enemies
 - Bullet Pattern - Patience
 - Bullet Pattern - Integrity
 - Bullet Pattern - Determination
+- Bullet Pattern - Resilience
 
 Cutscenes
 - Chrome Soul
 - Initial Rosey Human Clones
 - Failed Clones Introduction
+
+Ending
+- Mt. Ebbott

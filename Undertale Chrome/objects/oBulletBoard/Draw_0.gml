@@ -45,15 +45,30 @@ if (current_width == 570 && current_height == 120) {
 	}
 	
 	if (oButtonController.playerKilled) {
-		show_debug_message("PLAYER KILLED TEXT");
-		battleEndDelay = 90;
-		battleEnd = true;
-		start_game_over = true;
-		game_has_ended = true;
-		audio_stop_sound(global.current_enemy_music);
-		audio_play_sound(snd_monster_soul_destroyed, 11, false);
-		oButtonController.playerKilled = false;
-		global.battleMenu = -1;
+		//NORMAL ENEMY KILLS PLAYER
+		if(!global.fighting_failed_human_boss) {
+			show_debug_message("PLAYER KILLED TEXT");
+			battleEndDelay = 90;
+			battleEnd = true;
+			start_game_over = true;
+			game_has_ended = true;
+			audio_stop_sound(global.current_enemy_music);
+			audio_play_sound(snd_monster_soul_destroyed, 11, false);
+			oButtonController.playerKilled = false;
+			global.battleMenu = -1;
+		} else {
+			//FAILED HUMAN BOSS KILLS PLAYER
+			show_debug_message("FAILED HUMAN KILLED TEXT");
+			battleEndDelay = 90;
+			battleEnd = true;
+			start_game_over = true;
+			game_has_ended = true;
+			failed_human_boss_ended = true;
+			audio_stop_sound(global.current_enemy_music);
+			audio_play_sound(snd_failed_experiment_laugh, 11, false);
+			oButtonController.playerKilled = false;
+			global.battleMenu = -1;
+		}
 	}
 	
 	if(battleEnd && battleEndDelay != 0 && !battleEndDelayFinished) {
@@ -81,10 +96,16 @@ if (current_width == 570 && current_height == 120) {
 			}
 			
 			if(game_has_ended) {
-				audio_play_sound(snd_undertale_chrome_gameover, 9, false);
-				Dialogue = instance_create_depth(border_left + 30, border_up + 15, -100, oTextElement);
-				Dialogue.TextToDraw = "* You cannot give up!&* Rely on your... RESILIENCE";
-				Dialogue.CanAdvance = false;
+				if(global.fighting_failed_human_boss) {
+					Dialogue = instance_create_depth(border_left + 30, border_up + 15, -100, oTextElement);
+					Dialogue.TextToDraw = "* ...good luck Prisma.";
+					Dialogue.CanAdvance = false;
+				} else {
+					audio_play_sound(snd_undertale_chrome_gameover, 9, false);
+					Dialogue = instance_create_depth(border_left + 30, border_up + 15, -100, oTextElement);
+					Dialogue.TextToDraw = "* You cannot give up!&* Rely on your... RESILIENCE";
+					Dialogue.CanAdvance = false;
+				}
 			}
 		
 			// Fight Menu

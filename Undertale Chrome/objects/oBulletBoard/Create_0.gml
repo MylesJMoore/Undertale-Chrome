@@ -23,3 +23,4 @@ battleEndDelay = 120;
 battleEndDelayFinished = false;
 start_game_over = false;
 game_has_ended = false;
+failed_human_boss_ended = false;

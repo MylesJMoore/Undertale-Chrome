@@ -31,7 +31,11 @@ if(global.fighting_failed_human_boss && global.battle_turn == 1) {
 }
 
 if(global.fighting_failed_human_boss && global.battle_turn > 1) {
-	oFailedHuman.image_index = 4;
+	if(global.resilience_pattern > 0) {
+		oFailedHuman.image_index = 8;
+	} else {
+		oFailedHuman.image_index = 4;
+	}
 }
 
 //Cleanup Objects

@@ -11,6 +11,11 @@
 #macro TRUELAB_7 rm_true_lab_7
 #macro TRUELAB_8 rm_true_lab_8
 
+//Mt. Ebbot
+#macro MT_EBBOT_BASE rm_mt_ebbot_base
+#macro MT_EBBOT_SUMMIT rm_mt_ebbot_summit
+
+
 //Songs for each room
 #macro TRUELAB_2_MUSIC snd_Premonition
 #macro TRUELAB_3_MUSIC snd_Gasters_Theme
@@ -18,3 +23,5 @@
 #macro TRUELAB_5_MUSIC snd_Gasters_Theme
 #macro TRUELAB_6_MUSIC snd_Gasters_Theme
 #macro TRUELAB_7_MUSIC snd_Gasters_Theme
+#macro MT_EBBOT_BASE_MUSIC snd_waterfall_symphony
+#macro MT_EBBOT_SUMMIT_MUSIC snd_waterfall_symphony

@@ -29,16 +29,27 @@ if(global.fighting_failed_human_boss && global.battle_turn == 0) {
 	}
 }
 
+//FAILED HUMAN MONSTER SOUL AND SPRITES
 if(global.fighting_failed_human_boss) {
-	//Move Monster Soul on top of failed human boss
-	oMonsterSoul.x = 327;
-	oMonsterSoul.y = 150;
-	oFailedHuman.image_index = 0;
+	if(global.resilience_pattern == 0) {
+		//Move Monster Soul on top of failed human boss
+		oMonsterSoul.x = 327;
+		oMonsterSoul.y = 150;
+		
+		//Make Monster Soul Visible
+		oMonsterSoul.image_alpha = 1;
+		
+		//Failed Human Holds Hands
+		oFailedHuman.image_index = 0;
+	} else {
+		//WE ARE ON THE LAST BULLET PATTERN
+		//Hide Monster Soul
+		oMonsterSoul.image_alpha = 0;
+		
+		//Failed Human Head Down
+		oFailedHuman.image_index = 8;
+	}
 }
-
-
-//Make Monster Soul Visible
-oMonsterSoul.image_alpha = 1;
 
 //Check for special boss battle bypass
 if(global.bypass_battle_menu) {

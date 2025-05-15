@@ -33,4 +33,12 @@ switch (room)
         audio_stop_all();
     break;
 	
+	case MT_EBBOT_BASE:
+        setSongInGame(MT_EBBOT_BASE_MUSIC, 0, 0);
+    break;
+	
+	case MT_EBBOT_SUMMIT:
+        setSongInGame(MT_EBBOT_SUMMIT_MUSIC, 0, 0);
+    break;
+	
 }

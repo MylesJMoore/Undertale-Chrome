@@ -25,7 +25,7 @@ function Bullet_Failed_Human_Horizontal_Large_Random_Burst() {
 
 /// @function Bullet_Failed_Human_Collision_Burst
 function Bullet_Failed_Human_Collision_Burst(_x, _y) {
-    var num_bullets = 2; // Number of random bullets to spawn
+    var num_bullets = 0; // Number of random bullets to spawn
     for (var i = 0; i < num_bullets; i++) {
         var bullet = instance_create_layer(_x, _y, "Bullets", oMonsterBullet);
         bullet.direction = irandom_range(25, 90); // Random direction
