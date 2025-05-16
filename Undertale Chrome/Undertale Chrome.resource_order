@@ -99,6 +99,7 @@
     {"name":"Rooms","order":11,"path":"folders/Rooms.yy",},
     {"name":"Debug","order":11,"path":"folders/Rooms/Debug.yy",},
     {"name":"Example Rooms","order":15,"path":"folders/Rooms/Example Rooms.yy",},
+    {"name":"Mt Ebbot","order":22,"path":"folders/Rooms/Mt Ebbot.yy",},
     {"name":"True Lab","order":21,"path":"folders/Rooms/True Lab.yy",},
     {"name":"Utility","order":12,"path":"folders/Rooms/Utility.yy",},
     {"name":"Scripts","order":6,"path":"folders/Scripts.yy",},
@@ -140,7 +141,6 @@
     {"name":"Objects","order":2,"path":"folders/Title Opening/Objects.yy",},
     {"name":"Scripts","order":3,"path":"folders/Title Opening/Scripts.yy",},
     {"name":"Sprites","order":1,"path":"folders/Title Opening/Sprites.yy",},
-    {"name":"Mt Ebbot","order":22,"path":"folders/Rooms/Mt Ebbot.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"s_player_walk_down","order":4,"path":"sprites/s_player_walk_down/s_player_walk_down.yy",},

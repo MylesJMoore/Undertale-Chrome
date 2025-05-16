@@ -128,6 +128,7 @@ if (spawn_timer <= 0) {
 			        Bullet_Horizontal_Spear();
 			        break;
 			}
+			break;
 		case 99:
 			//CUTSCENE OR BOSS FIGHT BYPASSING MAIN MENU
             HideOutsideBattlebox();

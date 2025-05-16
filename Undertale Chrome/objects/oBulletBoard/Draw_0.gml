@@ -59,13 +59,14 @@ if (current_width == 570 && current_height == 120) {
 		} else {
 			//FAILED HUMAN BOSS KILLS PLAYER
 			show_debug_message("FAILED HUMAN KILLED TEXT");
-			battleEndDelay = 90;
+			battleEndDelay = 30;
 			battleEnd = true;
 			start_game_over = true;
 			game_has_ended = true;
 			failed_human_boss_ended = true;
 			audio_stop_sound(global.current_enemy_music);
 			audio_play_sound(snd_failed_experiment_laugh, 11, false);
+			audio_play_sound(snd_monster_soul_destroyed, 12, false);
 			oButtonController.playerKilled = false;
 			global.battleMenu = -1;
 		}
@@ -98,7 +99,7 @@ if (current_width == 570 && current_height == 120) {
 			if(game_has_ended) {
 				if(global.fighting_failed_human_boss) {
 					Dialogue = instance_create_depth(border_left + 30, border_up + 15, -100, oTextElement);
-					Dialogue.TextToDraw = "* ...good luck Prisma.";
+					Dialogue.TextToDraw = "* ...good luck Prisma.&* ...Please...&* ...Save the other humans...";
 					Dialogue.CanAdvance = false;
 				} else {
 					audio_play_sound(snd_undertale_chrome_gameover, 9, false);

@@ -7,6 +7,7 @@ function BattleFlee(_room = false, _x = false, _y = false) {
 		room_goto(rm_mt_ebbot_base);
 		global.player_previous_x = 100;
 		global.player_previous_y = 215;
+		global.player_previous_sprite_face = DOWN;
 		
 	} else {
 		//Return player back to previous Overworld
