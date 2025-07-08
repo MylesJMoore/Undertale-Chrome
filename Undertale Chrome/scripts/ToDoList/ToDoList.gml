@@ -5,13 +5,6 @@ PROLOGUE
 -------------------------------------------------
 TODO
 -------------------------------------------------
-Cutscenes
-- Post Battle Cutscene
-
-Ending
-- Mt. Ebbott
-- Fade to Title
-- Credits
 
 Polish
 - Run through Full Playthrough on keyboard
@@ -29,7 +22,6 @@ Polish
 Last Stuff
 - Playthrough again on keyboard
 - Playthrough again on controller
-- 3 Play Testers
 - PUT IT ON GAMEJOLT
 - Celebrate
 
@@ -115,6 +107,11 @@ Cutscenes
 - Chrome Soul
 - Initial Rosey Human Clones
 - Failed Clones Introduction
+- Arcadia Cutscene
 
 Ending
 - Mt. Ebbott
+- Credits
+
+Ending
+- Fade to Title

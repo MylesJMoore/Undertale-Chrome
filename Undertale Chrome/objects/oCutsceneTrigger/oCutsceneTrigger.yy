@@ -33,5 +33,5 @@
     "path": "sprites/spr_cutscene/spr_cutscene.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

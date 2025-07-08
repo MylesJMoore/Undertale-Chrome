@@ -30,7 +30,45 @@ function createSaveDialogueMessages() {
         // Return the formatted string with "&" and process the rest of the string
         return firstPart + "&  " + insertNewLines(remainingPart);
     }
-
+	
+	//Array of Prologue End Message
+	global.prologue_end_dialogue_messages = [
+		[
+		    insertNewLines("You know..."),
+	        insertNewLines("Even small stories have value."),
+	        insertNewLines("Small heroes... small moments."),
+	        insertNewLines("You can be nothing..."),
+	        insertNewLines("...and still have everything."),
+	        insertNewLines("You can hold everything..."),
+	        insertNewLines("...and still feel empty."),
+	        insertNewLines("What sets you apart?"),
+	        insertNewLines("What makes you a hero?"),
+	        insertNewLines("Your true self... your soul."),
+	        insertNewLines("What color is a soul?"),
+	        insertNewLines("Green... Red..."),
+	        insertNewLines("Perfect Light Blue..."),
+	        insertNewLines("Or the darkest Orange..."),
+	        insertNewLines("Chrome in the light..."),
+	        insertNewLines("Shows all colors..."),
+	        insertNewLines("But belongs to none."),
+	        insertNewLines("Beautiful... maddening."),
+	        insertNewLines("Whole, yet halved."),
+	        insertNewLines("Full, yet empty."),
+	        insertNewLines("But listen..."),
+	        insertNewLines("With Determination..."),
+	        insertNewLines("Bravery... Justice..."),
+	        insertNewLines("Kindness... Patience..."),
+	        insertNewLines("Integrity... Perseverance..."),
+	        insertNewLines("And Resilience..."),
+			insertNewLines("Ah yes. Resilience."),
+	        insertNewLines("You can overcome anything."),
+	        insertNewLines("You always could."),
+	        insertNewLines("I'll be waiting..."),
+			insertNewLines("*..."),
+	        insertNewLines("* You know what lies beyond the cave..."),
+			insertNewLines("* You're filled with...")
+	    ]
+	];
 
     // Array of main quotes and follow-up messages
     global.save_dialogue_messages = [

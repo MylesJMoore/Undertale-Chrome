@@ -2,10 +2,12 @@
 randomise();
 createSaveDialogueMessages();
 global.game_chapter = "Prologue";
+global.game_chapter_prologue_complete = false;
 global.game_chapter_description = "The Massacre at True Lab";
 global.in_title_intro = false;
 global.save_file = 0;
 global.show_title_after_chapter = false;
+global.show_credits = false;
 global.words_of_save_wisdom = 0;
 global.hide_all_followers = true;
 global.player_has_moved = false;
@@ -88,8 +90,8 @@ global.top_of_inventory_menu = false;
 //Player Information
 global.save_player_x = 0;
 global.save_player_y = 0;
-global.player_hp = 6;
-global.player_max_hp = 6;
+global.player_hp = 1;
+global.player_max_hp = 1;
 global.player_exp = 0;
 global.player_level = 1;
 global.player_gold = 0;
@@ -165,6 +167,7 @@ global.monster_bullet_pattern = 0;
 //Cutscenes
 global.start_prologue_cutscene = false;
 global.start_prologue_open_chrome_jar = false;
+global.mt_ebbot_longpath_cutscene_done = false;
 
 //BOSS FIGHT - Failed Human
 global.failed_human_boss_intro_done = false;

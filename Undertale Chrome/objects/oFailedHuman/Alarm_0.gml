@@ -41,7 +41,7 @@ switch (global.last_soul_removed) {
 			SpeechBubble[0] = "Enough.";
 		} else if(global.resilience_pattern == 1) {
 			SpeechBubble[0] = "Sorry Prisma...&The only way out&is by losing &the Chrome Soul.";
-			audio_stop_sound(snd_asgore_slowed);
+			audio_stop_sound(undertale_chrome_ost_The_Chrome_Soul);
 		} else if(global.resilience_pattern == 2) {
 			SpeechBubble[0] = "Goodbye.";
 		} else {

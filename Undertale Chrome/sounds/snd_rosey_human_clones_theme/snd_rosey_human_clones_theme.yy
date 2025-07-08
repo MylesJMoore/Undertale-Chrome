@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 284.87112,
   "parent": {
-    "name": "Score",
-    "path": "folders/Sounds/Score.yy",
+    "name": "placeholders",
+    "path": "folders/Sounds/Score/placeholders.yy",
   },
   "preload": false,
   "sampleRate": 44100,

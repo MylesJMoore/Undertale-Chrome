@@ -5,6 +5,7 @@ function BattleFlee(_room = false, _x = false, _y = false) {
 	if(oBulletBoard.failed_human_boss_ended) {
 		//Go to Mt. Ebbott
 		room_goto(rm_mt_ebbot_base);
+		global.game_chapter = "?????";
 		global.player_previous_x = 100;
 		global.player_previous_y = 215;
 		global.player_previous_sprite_face = DOWN;

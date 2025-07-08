@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_mt_ebbot_cave_entrance",
-  "bbox_bottom": 171,
+  "bbox_bottom": 229,
   "bbox_left": 0,
   "bbox_right": 319,
   "bbox_top": 0,
@@ -17,7 +17,7 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 172,
+  "height": 230,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"39d85c30-c44c-421d-8338-997a86266578","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},

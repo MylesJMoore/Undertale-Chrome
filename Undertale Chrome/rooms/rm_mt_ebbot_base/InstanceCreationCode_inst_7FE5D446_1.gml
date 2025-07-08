@@ -1,4 +1,4 @@
-target_x = 158;
-target_y = 140;
-target_room = rm_mt_ebbot_summit;
-target_face = UP;
+target_x = 60;
+target_y = 183;
+target_room = rm_mt_ebbot_longpath;
+target_face = RIGHT;

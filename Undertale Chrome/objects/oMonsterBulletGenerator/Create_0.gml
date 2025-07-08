@@ -13,7 +13,7 @@ if (!variable_global_exists("knife_spawn_angles")) {
 }
 
 if(global.fighting_failed_human_boss && global.battle_turn == 0) {
-	audio_play_sound(snd_bergentruckung_slowed, 10, false);
+	audio_play_sound(undertale_chrome_ost_Failed_Human, 10, false);
 	audio_timestamp = 0;
 	intro_phase = 0;
 	anim_timer = 0;

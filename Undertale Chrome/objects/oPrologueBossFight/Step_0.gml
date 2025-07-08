@@ -85,7 +85,7 @@ switch(Event) {
 			global.textbox_width = 200;
 			global.textbox_height = 60;
 			createTextbox("chrome_soul_determination");
-			setSongInGame(snd_undertale_ost_fallen_down_slowed_reverb, 0, 0);
+			setSongInGame(undertale_chrome_ost_Blue_Resort, 0, 0);
 	        Event = 4;
 		}
         break;

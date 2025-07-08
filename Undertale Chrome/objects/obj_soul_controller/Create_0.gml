@@ -39,7 +39,7 @@ chrome_scale_factor = chrome_scale_base;
 
 // Buffer for Soul Drawing
 xbuffer = 0;
-ybuffer = -35;
+ybuffer = -15;
 
 // Speed controls
 fade_speed = 0.01;

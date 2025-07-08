@@ -15,6 +15,7 @@ sprite[IDLEDOWN] = PLAYER_IDLEDOWN;
 face = DOWN;
 
 //Set sprite to the child sprite when we are in True Lab
+/*
 if(global.in_truelab && !global.player_set_to_child) {
 	obj_player.sprite[RIGHT] = s_prisma_child_walk_right;
 	obj_player.sprite[UP] = s_prisma_child_walk_up;
@@ -26,6 +27,7 @@ if(global.in_truelab && !global.player_set_to_child) {
 	obj_player.sprite[IDLEDOWN] = s_prisma_child_down;
 	global.player_set_to_child = true;
 }
+*/
 
 //Set sprite to Loafboy when doing announcements
 if(room == rm_true_lab_announcements) {

@@ -190,7 +190,7 @@ if (inventoryMenuCantMoveSound == true)
 if (titleOpeningLoop == true) 
 {
 	//Play Sound
-	var _snd = audio_play_sound(snd_undertale_intro, 8, true);
+	var _snd = audio_play_sound(undertale_chrome_ost_Once_Upon_A_Time, 8, true);
 	audio_sound_gain(_snd, _sfxVol, 0);
 	
 	//Reset Variable

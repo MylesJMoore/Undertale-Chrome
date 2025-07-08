@@ -6,9 +6,9 @@
 	if (keyboard_check_pressed(ord("X")) || keyboard_check_pressed(vk_shift))
 	{
 		//Stop Title Opening Music
-		if(audio_is_playing(snd_undertale_intro)) 
+		if(audio_is_playing(undertale_chrome_ost_Once_Upon_A_Time)) 
 		{
-			audio_stop_sound(snd_undertale_intro);
+			audio_stop_sound(undertale_chrome_ost_Once_Upon_A_Time);
 		}
 	    room_goto_next();
 	}
@@ -19,9 +19,9 @@
 	if (gamepad_button_check_pressed(0, gp_start) || gamepad_button_check_pressed(0, gp_face2))
 	{
 		//Stop Title Opening Music
-		if(audio_is_playing(snd_undertale_intro)) 
+		if(audio_is_playing(undertale_chrome_ost_Once_Upon_A_Time)) 
 		{
-			audio_stop_sound(snd_undertale_intro);
+			audio_stop_sound(undertale_chrome_ost_Once_Upon_A_Time);
 		}
 	    room_goto_next();
 	}
@@ -60,9 +60,9 @@ if(dialogue_text_delay == 0)
 	} else {
 		//We have finished the opening intro, go to next room
 		//Stop Title Opening Music
-		if(audio_is_playing(snd_undertale_intro)) 
+		if(audio_is_playing(undertale_chrome_ost_Once_Upon_A_Time)) 
 		{
-			audio_stop_sound(snd_undertale_intro);
+			audio_stop_sound(undertale_chrome_ost_Once_Upon_A_Time);
 		}
 		
 		//Reset Title Global

@@ -13,15 +13,18 @@
 
 //Mt. Ebbot
 #macro MT_EBBOT_BASE rm_mt_ebbot_base
+#macro MT_EBBOT_LONGPATH rm_mt_ebbot_longpath
+#macro MT_EBBOT_LONGPATH_CUTSCENE rm_mt_ebbot_longpath_cutscene
 #macro MT_EBBOT_SUMMIT rm_mt_ebbot_summit
 
 
 //Songs for each room
-#macro TRUELAB_2_MUSIC snd_Premonition
-#macro TRUELAB_3_MUSIC snd_Gasters_Theme
-#macro TRUELAB_4_MUSIC snd_Gasters_Theme
-#macro TRUELAB_5_MUSIC snd_Gasters_Theme
-#macro TRUELAB_6_MUSIC snd_Gasters_Theme
-#macro TRUELAB_7_MUSIC snd_Gasters_Theme
-#macro MT_EBBOT_BASE_MUSIC snd_waterfall_symphony
-#macro MT_EBBOT_SUMMIT_MUSIC snd_waterfall_symphony
+#macro TRUELAB_2_MUSIC undertale_chrome_ost_Lost_Human
+#macro TRUELAB_3_MUSIC undertale_chrome_ost_Lost_Human
+#macro TRUELAB_4_MUSIC undertale_chrome_ost_Lost_Human
+#macro TRUELAB_5_MUSIC undertale_chrome_ost_Lost_Human
+#macro TRUELAB_6_MUSIC undertale_chrome_ost_Lost_Human
+#macro TRUELAB_7_MUSIC undertale_chrome_ost_Lost_Human
+#macro MT_EBBOT_BASE_MUSIC undertale_chrome_ost_Undertale_Chrome
+#macro MT_EBBOT_SUMMIT_MUSIC undertale_chrome_ost_Undertale_Chrome
+#macro MT_EBBOT_LONGPATH_MUSIC undertale_chrome_ost_Undertale_Chrome

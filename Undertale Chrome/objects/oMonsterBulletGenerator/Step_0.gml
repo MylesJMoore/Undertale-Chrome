@@ -148,8 +148,8 @@ if(hide_outside_box) {
 
 //BOSS INTRO MUSIC + ANIMATION
 if(!global.failed_human_boss_intro_done) {
-	audio_stop_sound(snd_bergentruckung_slowed); //DEBUGGING DELETE AFTER
-	if (global.fighting_failed_human_boss && global.battle_turn == 0 && !audio_is_playing(snd_bergentruckung_slowed)) {
+	//audio_stop_sound(undertale_chrome_ost_Failed_Human); //DEBUGGING DELETE AFTER
+	if (global.fighting_failed_human_boss && global.battle_turn == 0 && !audio_is_playing(undertale_chrome_ost_Failed_Human)) {
 	    show_debug_message("BOSS INTRO IS DONE");
 		global.failed_human_boss_intro_done = true;
 		global.failed_human_knife_fadeout = false;

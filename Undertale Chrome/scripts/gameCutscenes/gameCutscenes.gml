@@ -1,3 +1,4 @@
 //Cutscenes
 #macro CUTSCENE_EXAMPLE oExampleCutscene
 #macro PROLOGUE_CHROME_SOUL_BOSS_FIGHT oPrologueBossFight
+#macro MT_EBOTT_ARCADIA_CONVERSATION oMtEbottArcadiaConvo

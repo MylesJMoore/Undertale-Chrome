@@ -37,8 +37,19 @@ switch (room)
         setSongInGame(MT_EBBOT_BASE_MUSIC, 0, 0);
     break;
 	
+	case MT_EBBOT_LONGPATH:
+        setSongInGame(MT_EBBOT_LONGPATH_MUSIC, 0, 0);
+    break;
+	
+	case MT_EBBOT_LONGPATH_CUTSCENE:
+		if(global.mt_ebbot_longpath_cutscene_done) {
+			//audio_stop_all();
+			//setSongInGame(MT_EBBOT_SUMMIT_MUSIC, 0, 0);
+		}
+		
+    break;
+	
 	case MT_EBBOT_SUMMIT:
         setSongInGame(MT_EBBOT_SUMMIT_MUSIC, 0, 0);
     break;
-	
 }

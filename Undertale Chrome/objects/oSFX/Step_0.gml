@@ -1,7 +1,7 @@
 //Stop Title Opening Music
-if(room != rm_title_introduction && audio_is_playing(snd_undertale_intro)) 
+if(room != rm_title_introduction && audio_is_playing(undertale_chrome_ost_Once_Upon_A_Time)) 
 {
-	audio_stop_sound(snd_undertale_intro);
+	audio_stop_sound(undertale_chrome_ost_Once_Upon_A_Time);
 }
 
 //Stop Battle Music

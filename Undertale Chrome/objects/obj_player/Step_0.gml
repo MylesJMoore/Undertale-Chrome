@@ -107,7 +107,6 @@ if (global.player_can_move) {
 	#endregion
 
 	#region Player Animation
-
 	//Calculate Player Direction based on speed
 	mask_index = sprite[DOWN];
 
