@@ -1,1 +1,1 @@
-text_id = "truelab_room_6b_amalgamate";
+text_id = "truelab_demon_8";

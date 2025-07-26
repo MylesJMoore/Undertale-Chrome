@@ -6,6 +6,107 @@ function gameText(_text_id) {
 		//=====================================================================//
 		//---------------------------------------------------------------------//
 		//=====================================================================//
+		//=====================       PROLOGUE         ========================//
+		//=====================================================================//
+		//=====================================================================//
+		//=====================       True Lab NPCs    ========================//
+		//=====================================================================//
+		case "truelab_demon_1": 
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* According to the latest numbers, the soul is...", noone, false, 0, noone, true);
+			setTextColor(0,100,c_yellow,c_yellow,c_yellow,c_yellow);
+			createTextPage("* Unstable.", noone, false, 0, noone, true);
+			setTextColor(0,100,c_yellow,c_yellow,c_yellow,c_yellow);
+			createTextPage("* Again. Sigh.", noone, false, 0, noone, true);
+			setTextColor(0,100,c_yellow,c_yellow,c_yellow,c_yellow);
+			break;
+		case "truelab_demon_2": 
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* Dr. Arcadia will not be happy.", noone, false, 0, noone, true);
+			setTextColor(0,100,c_purple,c_purple,c_purple,c_purple);
+			createTextPage("* But! We're on human trial 66!", noone, false, 0, noone, true);
+			setTextColor(0,100,c_purple,c_purple,c_purple,c_purple);
+			createTextPage("* That's a lucky number, right?", noone, false, 0, noone, true);
+			setTextColor(0,100,c_purple,c_purple,c_purple,c_purple);
+			break;
+		case "truelab_demon_3": 
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* I don't think this 66th human soul is the one.", noone, false, 0, noone, true);
+			setTextColor(0,100,c_orange,c_orange,c_orange,c_orange);
+			createTextPage("* We'll probably hit 100 humans before we find the right one.", noone, false, 0, noone, true);
+			setTextColor(0,100,c_orange,c_orange,c_orange,c_orange);
+			createTextPage("* I got money on 150!", noone, false, 0, noone, true);
+			setTextColor(0,100,c_orange,c_orange,c_orange,c_orange);
+			createTextPage("* I'd ask buddy over there but...", noone, false, 0, noone, true);
+			setTextColor(0,100,c_orange,c_orange,c_orange,c_orange);
+			createTextPage("* He just blows his money on Temmie Flakes.", noone, false, 0, noone, true);
+			setTextFloat(29,100);
+			setTextColor(0,100,c_orange,c_orange,c_orange,c_orange);
+			break;
+		case "truelab_demon_4": 
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* We should be classifying this as a Class S anomaly!", noone, false, 0, noone, true);
+			setTextColor(0,100,c_red,c_red,c_red,c_red);
+			break;
+		case "truelab_demon_5": 
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* I just want my lunch break.", noone, false, 0, noone, true);
+			setTextColor(0,100,c_green,c_green,c_green,c_green);
+			createTextPage("* I can't eat any more Temmie Flakes.", noone, false, 0, noone, true);
+			setTextFloat(23,100);
+			setTextColor(0,100,c_green,c_green,c_green,c_green);
+			createTextPage("* I. Just. Can't.", noone, false, 0, noone, true);
+			setTextColor(0,100,c_green,c_green,c_green,c_green);
+			createTextPage("* I need a full meal.", noone, false, 0, noone, true);
+			setTextColor(0,100,c_green,c_green,c_green,c_green);
+			createTextPage("* Or to complain to the Monster's Union.", noone, false, 0, noone, true);
+			setTextColor(0,100,c_green,c_green,c_green,c_green);
+			break;
+		case "truelab_demon_6": 
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* Technically the soul releasing pressure is normal.", noone, false, 0, noone, true);
+			setTextColor(0,100,c_blue,c_blue,c_blue,c_blue);
+			createTextPage("* You don't see all these screens going off?!", noone, false, 0, noone, true);
+			setTextColor(0,100,c_red,c_red,c_red,c_red);
+			createTextPage("* The lab is fine. We're fine. This isn't dangerous...", noone, false, 0, noone, true);
+			setTextColor(0,100,c_blue,c_blue,c_blue,c_blue);
+			createTextPage("* ...probably.", noone, false, 0, noone, true);
+			setTextColor(0,100,c_blue,c_blue,c_blue,c_blue);
+			break;
+		case "truelab_demon_7": 
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* Can you hear that buzzing?", noone, false, 0, noone, true);
+			setTextColor(0,100,c_red,c_red,c_red,c_red);
+			createTextPage("* That's the soul fusing.", noone, false, 0, noone, true);
+			setTextColor(0,100,c_red,c_red,c_red,c_red);
+			createTextPage("* Or crying.", noone, false, 0, noone, true);
+			setTextColor(0,100,c_red,c_red,c_red,c_red);
+			createTextPage("* Haha. I forget which.", noone, false, 0, noone, true);
+			setTextColor(0,100,c_red,c_red,c_red,c_red);
+			break;
+		case "truelab_demon_8": 
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* You ever see a really long hallway?", noone, false, 0, noone, true);
+			setTextColor(0,100,c_orange,c_orange,c_orange,c_orange);
+			createTextPage("* And then a small room?", noone, false, 0, noone, true);
+			setTextColor(0,100,c_orange,c_orange,c_orange,c_orange);
+			createTextPage("* That's a bad sign.", noone, false, 0, noone, true);
+			setTextColor(0,100,c_orange,c_orange,c_orange,c_orange);
+			setTextFloat(11,100);
+			break;
+		case "truelab_demon_9": 
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* This other guy keeps talking about bad signs.", noone, false, 0, noone, true);
+			setTextColor(0,100,c_fuchsia,c_fuchsia,c_fuchsia,c_fuchsia);
+			createTextPage("* He's such a bummer.", noone, false, 0, noone, true);
+			setTextColor(0,100,c_fuchsia,c_fuchsia,c_fuchsia,c_fuchsia);
+			createTextPage("* But I'd do whatever Humans do before something bad happens.", noone, false, 0, noone, true);
+			setTextColor(0,100,c_fuchsia,c_fuchsia,c_fuchsia,c_fuchsia);
+			createTextPage("* (Cough) Save (Cough)", noone, false, 0, noone, true);
+			setTextFloat(10,15);
+			setTextColor(0,100,c_fuchsia,c_fuchsia,c_fuchsia,c_fuchsia);
+			break;
+		//=====================================================================//
 		//=====================       True Lab 1       ========================//
 		//=====================================================================//
 		case "announcements": 
@@ -190,7 +291,7 @@ function gameText(_text_id) {
 			createTextPage("* ...", noone, false, 0, noone, true);
 			createTextPage("OVERRIDE ACTIVATED", noone, false, 0, noone, true);
 			setTextColor(0,100,c_yellow,c_yellow,c_yellow,c_yellow);
-			createTextPage("CHROME HEART PROTECTION: [DISENGAGED]", noone, false, 0, noone, true);
+			createTextPage("CHROME SOUL PROTECTION: [DISENGAGED]", noone, false, 0, noone, true);
 			setTextColor(0,25,c_yellow,c_yellow,c_yellow,c_yellow);
 			setTextColor(25,100,c_green,c_green,c_green,c_green);
 			createTextPage("Please proceed with EXTREME caution.", noone, false, 0, noone, true);
@@ -357,23 +458,23 @@ function gameText(_text_id) {
 
 		case "truelab_room_6_integrity_fused": 
 			createTextPage("* ...", noone, false, 0, noone, true);
-			createTextPage("* A soul forcibly fused from two others.", noone, false, 0, noone, true);
-			createTextPage("* You feel its conflicted judgment.", noone, false, 0, noone, true);
-			createTextPage("* This... should never have existed.", noone, false, 0, noone, true);
+			createTextPage("* (A soul forcibly fused from two others.)", noone, false, 0, noone, true);
+			createTextPage("* (You feel its conflicted judgment.)", noone, false, 0, noone, true);
+			createTextPage("* (This... should never have existed.)", noone, false, 0, noone, true);
 			break;
 
 		case "truelab_room_6_perserverance_fused": 
 			createTextPage("* ...", noone, false, 0, noone, true);
-			createTextPage("* A hybrid soul crackling with unstable energy.", noone, false, 0, noone, true);
-			createTextPage("* Its relentless determination feels unnatural.", noone, false, 0, noone, true);
-			createTextPage("* Only something monstrous could have done this.", noone, false, 0, noone, true);
+			createTextPage("* (A hybrid soul crackling with unstable energy.)", noone, false, 0, noone, true);
+			createTextPage("* (Its relentless determination feels unnatural.)", noone, false, 0, noone, true);
+			createTextPage("* (Only something monstrous could have done this.)", noone, false, 0, noone, true);
 			break;
 
 		case "truelab_room_6_machinery": 
 			createTextPage("* ...", noone, false, 0, noone, true);
-			createTextPage("* Complex machinery hums ominously.", noone, false, 0, noone, true);
-			createTextPage("* Wires snake around like veins.", noone, false, 0, noone, true);
-			createTextPage("* You can't help but feel it's still watching.", noone, false, 0, noone, true);
+			createTextPage("* (Complex machinery hums ominously.)", noone, false, 0, noone, true);
+			createTextPage("* (Wires snake around like veins.)", noone, false, 0, noone, true);
+			createTextPage("* (You can't help but feel it's still watching.)", noone, false, 0, noone, true);
 			break;
 		
 		//=====================================================================//
@@ -435,6 +536,7 @@ function gameText(_text_id) {
 			createTextPage("* You press the button firmly.", noone, false, 0, noone, true);
 			createTextPage("* A chill runs down your spine.", noone, false, 0, noone, true);
 			createTextPage("* You hear a faint alarm begin to echo.", noone, false, 0, noone, true);
+			audio_play_sound(snd_robot_loop, 10, false);
 			createTextPage("ALERRRRRRT!", noone, false, 0, noone, true);
 			setTextColor(0,100,c_red,c_red,c_red,c_red);
 			createTextPage("HUMAN IN THE PERFECTED SOUL CHAMBER!", noone, false, 0, noone, true);
@@ -453,6 +555,7 @@ function gameText(_text_id) {
 			createTextPage("* You sneeze uncontrollably.", noone, false, 0, noone, true);
 			createTextPage("* (Bless you.)", noone, false, 0, noone, true);
 			createTextPage("* Through watery eyes, you hear an alarm faintly.", noone, false, 0, noone, true);
+			audio_play_sound(snd_robot_loop, 10, false);
 			createTextPage("ALERRRRRRT!", noone, false, 0, noone, true);
 			setTextColor(0,100,c_red,c_red,c_red,c_red);
 			createTextPage("HUMAN IN THE PERFECTED SOUL CHAMBER!", noone, false, 0, noone, true);
@@ -472,6 +575,7 @@ function gameText(_text_id) {
 			createTextPage("* (<3)", noone, false, 0, noone, true);
 			createTextPage("* Irritated, you stomp your foot and hear a click beneath you.", noone, false, 0, noone, true);
 			createTextPage("* An alarm softly begins ringing.", noone, false, 0, noone, true);
+			audio_play_sound(snd_robot_loop, 10, false);
 			createTextPage("ALERRRRRRT!", noone, false, 0, noone, true);
 			setTextColor(0,100,c_red,c_red,c_red,c_red);
 			createTextPage("HUMAN IN THE PERFECTED SOUL CHAMBER!", noone, false, 0, noone, true);
@@ -622,6 +726,73 @@ function gameText(_text_id) {
 			break;
 			
 		//=====================================================================//
+		//===============    Mt. Ebbot Dialogue				  =================//
+		//=====================================================================//	
+		// Longpath 1
+		case "mt_ebbot_1":	
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* (The fence is cold but largely pristine.)", noone, false, 0, noone, true);
+			createTextPage("* (Whoever built it surely deserves a raise.)", noone, false, 0, noone, true);
+			break;
+		case "mt_ebbot_1b":	
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* (This is a frozen fence.)", noone, false, 0, noone, true);
+			createTextPage("* (It doesn't talk.)", noone, false, 0, noone, true);
+			createTextPage("* (But it might have more to say.)", noone, false, 0, noone, true);
+			createTextPage("* (If that makes sense.)", noone, false, 0, noone, true);
+			break;
+		case "mt_ebbot_2":	
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* (You look out past the cliff.)", noone, false, 0, noone, true);
+			createTextPage("* (It's hard to see through the dark frozen trees.)", noone, false, 0, noone, true);
+			createTextPage("* (Night-vision would be perfect here.)", noone, false, 0, noone, true);
+			break;
+		case "mt_ebbot_3":	
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* (You do see a beautiful gigantic frozen lake.)", noone, false, 0, noone, true);
+			createTextPage("* (Perfect for hockey.)", noone, false, 0, noone, true);
+			createTextPage("* (And freezing to death.)", noone, false, 0, noone, true);
+			createTextPage("* (But mostly hockey.)", noone, false, 0, noone, true);
+			break;
+		case "mt_ebbot_4":	
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* (Large trees block your way back.)", noone, false, 0, noone, true);
+			createTextPage("* (Good thing you like moving forward.)", noone, false, 0, noone, true);
+			break;
+		case "mt_ebbot_5":	
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* (This large tree does not block your way forward.)", noone, false, 0, noone, true);
+			createTextPage("* (So thoughtfully nice of it.)", noone, false, 0, noone, true);
+			break;
+		
+		//Long Path 2
+		case "mt_ebbot_6":	
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* (Snow is building up on the trees.)", noone, false, 0, noone, true);
+			createTextPage("* (You wonder if the tree is cold.)", noone, false, 0, noone, true);
+			break;
+		case "mt_ebbot_7":	
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* (Only darkness stares back at you.)", noone, false, 0, noone, true);
+			createTextPage("* (Yet it feels like someone is watching.)", noone, false, 0, noone, true);
+			createTextPage("* (Again, night-vision would be perfect here.)", noone, false, 0, noone, true);
+			break;
+		case "mt_ebbot_8":	
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* (This is a tree.)", noone, false, 0, noone, true);
+			break;
+		case "mt_ebbot_9":	
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* (This is a tree.)", noone, false, 0, noone, true);
+			createTextPage("* (Jinx!)", noone, false, 0, noone, true);
+			createTextPage("* (Unfortunately no one is here to claim their free soda.)", noone, false, 0, noone, true);
+			break;
+		case "mt_ebbot_10":	
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* (The snowy wind feels like it's picking up.)", noone, false, 0, noone, true);
+			createTextPage("* (You brace yourself for more cold.)", noone, false, 0, noone, true);
+			break;
+		//=====================================================================//
 		//===============    Prologue Pre-Boss Dialogue       =================//
 		//=====================================================================//
 		case "rosey_human_scared": 
@@ -703,7 +874,13 @@ function gameText(_text_id) {
 		//=====================================================================//
 		//===============    Prologue Arcadia Cutscene        =================//
 		//=====================================================================//
-		
+			//Environment
+			case "mt_ebbot_environment":	
+				createTextPage("* ...", noone, false, 0, noone, true);
+				createTextPage("* (Snow falls silently to the ground.)", noone, false, 0, noone, true);
+				createTextPage("* (The trees stand still.)", noone, false, 0, noone, true);
+				createTextPage("* (Nothing else to do but keep moving.)", noone, false, 0, noone, true);
+				break;
 			// ============================
 			// Arcadia Start (case 10)
 			case "arcadia_mt_ebbot_conversation_1":
@@ -943,6 +1120,8 @@ function gameText(_text_id) {
 				setTextShake(0,100);
 			    break;
 				
+			// ============================
+			// Arcadia Full Text	
 			case "arcadia_mt_ebbot_full_conversation": 
 				createTextPage("There's something peaceful yet foreboding about the snow.", noone, false, -110, noone, true, true);
 				createTextPage("It's been here longer than anything... yet it fades so quickly.", noone, false, -110, noone, true, true);

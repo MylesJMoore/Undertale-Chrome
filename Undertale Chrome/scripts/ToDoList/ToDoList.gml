@@ -7,9 +7,8 @@ TODO
 -------------------------------------------------
 
 Polish
-- Run through Full Playthrough on keyboard
 - Run through Full Playthrough on controller
-- Take Notes where to polish
+- Polish Notes 2
 - Polish Bullet Pattern - Determination
 - Polish Bullet Pattern - Bravery
 - Polish Bullet Pattern - Justice
@@ -20,10 +19,20 @@ Polish
 - Polish Bullet Pattern - Resilience
 
 Last Stuff
-- Playthrough again on keyboard
-- Playthrough again on controller
+- Playthrough #2 on keyboard
+- Playthrough #2 on controller
+
+Marketing
+- Record entire playthrough
+- Make Youtube Trailer
+- Make Playthrough no commentary video
+- Take Screenshots from Playthrough
+- Make Twitter Posts
+- Make Gamejolt Posts
+
+Finale!
 - PUT IT ON GAMEJOLT
-- Celebrate
+- Celebrate!
 
 -------------------------------------------------
 *************************************************
@@ -115,3 +124,7 @@ Ending
 
 Ending
 - Fade to Title
+
+Polish
+- Run through Full Playthrough on keyboard
+- Take Notes where to polish

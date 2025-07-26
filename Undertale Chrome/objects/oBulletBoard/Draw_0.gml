@@ -99,7 +99,7 @@ if (current_width == 570 && current_height == 120) {
 			if(game_has_ended) {
 				if(global.fighting_failed_human_boss) {
 					Dialogue = instance_create_depth(border_left + 30, border_up + 15, -100, oTextElement);
-					Dialogue.TextToDraw = "* ...good luck Prisma.&* ...Please...&* ...Save the other humans...";
+					Dialogue.TextToDraw = "* ...Prisma...&* ...save the other humans...";
 					Dialogue.CanAdvance = false;
 				} else {
 					audio_play_sound(snd_undertale_chrome_gameover, 9, false);

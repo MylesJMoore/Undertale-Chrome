@@ -54,7 +54,8 @@ switch (global.last_soul_removed) {
 }
 
 if(global.battle_turn == 0) {
-	SpeechBubble[0] = "8 Souls fused...&Chrome Soul...&I want it...";
+	//SpeechBubble[0] = "8 Souls fused...&Chrome Soul...&I want it...";
+	SpeechBubble[0] = "...";
 }
 
 // Clear any existing bubble text

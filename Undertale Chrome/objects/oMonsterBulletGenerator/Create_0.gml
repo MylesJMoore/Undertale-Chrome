@@ -21,8 +21,8 @@ if(global.fighting_failed_human_boss && global.battle_turn == 0) {
 } else {
 	if(global.fighting_failed_human_boss) {
 		//BOSS BULLET PATTERN TIME - 6 SECONDS
-		//alarm[0] = 360;
-		alarm[0] = 60; //DEBUGGING REMOVE THIS
+		alarm[0] = 360;
+		//alarm[0] = 60; //DEBUGGING REMOVE THIS
 	} else {
 		//Use Default Time to END Bullet Pattern
 		alarm[0] = 240;

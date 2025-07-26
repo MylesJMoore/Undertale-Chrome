@@ -17,7 +17,7 @@ menu_level = 0;
 option[0, 0] = "ITEM";
 option[0, 1] = "STAT";
 option[0, 2] = "SOUL";
-option[0, 3] = "BOND";
+//option[0, 3] = "BOND";
 
 //Main Menu Option Box
 menu_option_box_height = 3;

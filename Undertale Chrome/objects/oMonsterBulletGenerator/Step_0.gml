@@ -289,7 +289,7 @@ if(!global.failed_human_boss_intro_done) {
 		// Shuffle and spawn
 		ds_list_shuffle(global.knife_spawn_angles);
 
-		var num_knives = irandom_range(1, 6);
+		var num_knives = irandom_range(1, 15);
 		for (var i = 0; i < num_knives && i < ds_list_size(global.knife_spawn_angles); i++) {
 		    var angle = global.knife_spawn_angles[| i];
 

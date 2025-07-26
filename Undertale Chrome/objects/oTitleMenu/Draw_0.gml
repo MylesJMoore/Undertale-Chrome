@@ -43,7 +43,7 @@ for(var i = 0; i < option_length; i++)
 				_color = c_orange; 
 				break;
 		    case "Justice": 
-				_color = c_olive; 
+				_color = c_yellow; 
 				break;
 		    case "Kindness": 
 				_color = c_green; 
@@ -91,8 +91,8 @@ for(var i = 0; i < option_length; i++)
 						break;
 				    case "Justice":  
 						soul_text = "Fairness and Equality.";
-						soul_text_color = c_olive;
-						_color = c_olive;
+						soul_text_color = c_yellow;
+						_color = c_yellow;
 						_soul_text_x_buffer = -20;
 						break;
 				    case "Kindness": 

@@ -1,1 +1,1 @@
-text_id = "truelab_room_2_monitor_1";
+text_id = "truelab_room_2_monitor_2";

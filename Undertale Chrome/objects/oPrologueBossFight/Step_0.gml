@@ -526,13 +526,13 @@ switch(Event) {
 		global.battle_trigger_object = noone;
 	
 		//Check if we should bypass the battle menu
-		global.bypass_battle_menu = false;
+		global.bypass_battle_menu = true;
 	
 		//Check if we should hide the battle menu
-		global.hide_battle_menu = false;
+		global.hide_battle_menu = true;
 	
 		//Check if we should return to the battle menu after bypassing
-		global.return_to_battle_menu = false;
+		global.return_to_battle_menu = true;
 		
 		Event = 36;
 	    break;

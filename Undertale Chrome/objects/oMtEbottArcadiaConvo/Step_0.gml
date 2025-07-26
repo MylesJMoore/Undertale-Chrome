@@ -48,6 +48,8 @@ switch(Event) {
 	        global.textbox_width = 170;
 	        global.textbox_height = 60;
 
+			
+
 	        // Arcadia Start
 	        createTextbox("arcadia_mt_ebbot_conversation_1");
 	        oArcadiaTalk.image_index = 1;
@@ -369,6 +371,9 @@ switch(Event) {
 			oRoseyHumanCutscene.image_index = 0;
 	        Event = 10;
 			
+			//Play Arcadia's Theme
+			audio_play_sound(undertale_chrome_ost_Arcadias_Theme, 10, true);
+			
 			//Set Correct Snow Color
 			var white_snow = layer_get_id("Snow");
 			var yellow_snow = layer_get_id("YellowSnow");
@@ -447,6 +452,7 @@ switch(Event) {
 		
 	case 15:
 		if (!instance_exists(obj_textbox)) {
+			audio_stop_all();
 		    ResetTextboxGlobals();
 		    createTextbox("arcadia_mt_ebbot_conversation_13");
 		    oArcadiaTalk.image_index = 2;

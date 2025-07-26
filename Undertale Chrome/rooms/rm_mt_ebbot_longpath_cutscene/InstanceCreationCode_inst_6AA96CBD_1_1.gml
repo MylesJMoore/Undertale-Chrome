@@ -1,1 +1,0 @@
-text_id = "truelab_room_3_integrity";

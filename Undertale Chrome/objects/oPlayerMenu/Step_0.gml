@@ -90,9 +90,9 @@ if(global.open_menu && !global.open_stats && !global.open_soul_selection) {
 					//Open Items
 					case 0: 
 						removePlayerMenuTextbox();
-						global.open_items = true;
+						//global.open_items = true; //ITEMS ARE TURNED OFF
 						TurnOffPlayerMenu();
-						TurnOnInventoryMenu();
+						//TurnOnInventoryMenu(); //ITEMS ARE TURNED OFF
 						break;
 				
 					//Open Stats
