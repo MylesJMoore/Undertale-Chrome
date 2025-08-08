@@ -17,10 +17,11 @@ Long ago, a monster scientist named Arcadia secretly conducted inhumane experime
 Lost in a forgotten sector, they encounter Rosey—a seemingly playful yet unsettling guide—and Solara, a reluctant guardian with a past steeped in regret. As they explore, the trio slowly uncovers the terrifying truth: their souls were never whole to begin with. And one of the three friends... may be the key to everything.
 
 ⚙️ Features:
-🔹 Chrome SOUL Mechanic – Absorb, adapt, and evolve as you collect fragments of lost souls and other souls you may be familiar with! (Determination, Bravery, Justice, etc.)
-🔹 Dynamic Bullet Hell Combat – Face intense, story-driven battles with unique attack patterns.
-🔹 Narrative-Driven Choices – Spare, fight, or forge your own path—your decisions shape your fate.
-🔹 Deep Lore & Exploration – Uncover hidden truths about the Monster experiments on humans and the monsters trapped within.
+
+- 🔹 Chrome SOUL Mechanic – Absorb, adapt, and evolve as you collect fragments of lost souls and other souls you may be familiar with! (Determination, Bravery, Justice, etc.)
+- 🔹 Dynamic Bullet Hell Combat – Face intense, story-driven battles with unique attack patterns.
+- 🔹 Narrative-Driven Choices – Spare, fight, or forge your own path—your decisions shape your fate.
+- 🔹 Deep Lore & Exploration – Uncover hidden truths about the Monster experiments on humans and the monsters trapped within.
 
 When the past refuses to stay buried, will you piece yourself back together—or let the darkness consume you?
 
