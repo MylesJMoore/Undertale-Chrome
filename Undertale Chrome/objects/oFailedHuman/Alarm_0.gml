@@ -16,31 +16,31 @@ var _speechy = y;
 //Set the bubble text
 switch (global.last_soul_removed) {
     case "Determination": // Determination
-        SpeechBubble[0] = "You're no Frisk.&Not even close.";
+        SpeechBubble[0] = "You're no Frisk.";
         break;
     case "Bravery": // Bravery
-        SpeechBubble[0] = "You've died&before.Why keep&coming back?";
+        SpeechBubble[0] = "Brave ones fall.";
         break;
     case "Justice": // Justice
-        SpeechBubble[0] = "Like the Yellow&one...&You think I fear&bullets?";
+        SpeechBubble[0] = "Clover missed.";
         break;
     case "Kindness": // Kindness
-        SpeechBubble[0] = "The Green one&cried...&then vanished.";
+        SpeechBubble[0] = "Green cried too.";
         break;
     case "Patience": // Patience
-        SpeechBubble[0] = "Patience breaks&before bones do.";
+        SpeechBubble[0] = "Patience breaks.";
         break;
     case "Integrity": // Integrity
-        SpeechBubble[0] = "The Blue human&showed Integrity.&It meant NOTHING&to me.";
+        SpeechBubble[0] = "Mel shattered.";
         break;
     case "Perseverance": // Perseverance
-        SpeechBubble[0] = "I hope you know.&The Purple path&led nowhere too.";
+        SpeechBubble[0] = "Batty vanished.";
         break;
 	case "Resilience": // Resilience
 		if(global.resilience_pattern == 0) {
 			SpeechBubble[0] = "Enough.";
 		} else if(global.resilience_pattern == 1) {
-			SpeechBubble[0] = "Sorry Prisma...&The only way out&is by losing &the Chrome Soul.";
+			SpeechBubble[0] = "You're all that's left.&Just a glitch.";
 			audio_stop_sound(undertale_chrome_ost_The_Chrome_Soul);
 		} else if(global.resilience_pattern == 2) {
 			SpeechBubble[0] = "Goodbye.";

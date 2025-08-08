@@ -500,9 +500,11 @@ switch(Event) {
 	            audio_play_sound(snd_failed_experiment_laugh, 5, false);
 	        }
 
-	        // Shake camera while laugh sound is active
+	        // Shake camera while laugh sound is active [NOT WORKNG]
 	        if (t >= 120 && audio_is_playing(snd_failed_experiment_laugh)) {
 	            with (oCutsceneCamera) {
+					original_camera_x = obj_player.x;
+					original_camera_y = obj_player.y;
 	                screen_shake_timer = 1;
 	                screen_shake_magnitude = 4; // You can increase this to 4–6 if you want bigger shakes
 	            }
@@ -522,7 +524,7 @@ switch(Event) {
 	    // TRIGGER SOUL FLASH THEN BOSS BATTLE
 		global.enemy_to_battle = global.enemy_macros[2]; //Failed Human Macro
 		global.fighting_failed_human_boss = true; //Set flag for this boss battle to true so we can override normal battle things
-		instance_create_depth(obj_player.x - 5, obj_player.y + 5, -99999, oSoulFlash);
+		instance_create_depth(obj_player.x - 5, obj_player.y - 5, -99999, oSoulFlash);
 		global.battle_trigger_object = noone;
 	
 		//Check if we should bypass the battle menu

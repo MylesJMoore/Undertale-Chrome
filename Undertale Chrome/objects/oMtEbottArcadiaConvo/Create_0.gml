@@ -4,3 +4,7 @@ alarm[0] = 30;
 cutscene_delay = 2;
 npc_steps = 0;
 //HidePlayerAndFollowers();
+
+//Cutscene Camera
+original_camera_y = 0;
+original_camera_x = 0;

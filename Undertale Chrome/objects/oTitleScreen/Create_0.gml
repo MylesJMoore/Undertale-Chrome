@@ -71,7 +71,7 @@ credits_lines = [
 	"",
     "",
 	"",
-    "I love this part."
+    "I love this part of the song."
 ];
 
 //Prologue is completed/Show pulsing Soul

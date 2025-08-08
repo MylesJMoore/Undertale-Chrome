@@ -7,20 +7,7 @@ TODO
 -------------------------------------------------
 
 Polish
-- Run through Full Playthrough on controller
-- Polish Notes 2
-- Polish Bullet Pattern - Determination
-- Polish Bullet Pattern - Bravery
-- Polish Bullet Pattern - Justice
-- Polish Bullet Pattern - Kindness
-- Polish Bullet Pattern - Patience
-- Polish Bullet Pattern - Integrity
-- Polish Bullet Pattern - Perseverance
-- Polish Bullet Pattern - Resilience
 
-Last Stuff
-- Playthrough #2 on keyboard
-- Playthrough #2 on controller
 
 Marketing
 - Record entire playthrough
@@ -128,3 +115,14 @@ Ending
 Polish
 - Run through Full Playthrough on keyboard
 - Take Notes where to polish
+- Playthrough #2 on keyboard
+- Polish Notes #2
+- Polish Bullet Pattern - Determination
+- Polish Bullet Pattern - Bravery
+- Polish Bullet Pattern - Justice
+- Polish Bullet Pattern - Kindness
+- Polish Bullet Pattern - Patience
+- Polish Bullet Pattern - Integrity
+- Polish Bullet Pattern - Perseverance
+- Polish Bullet Pattern - Resilience
+- Run through Full Playthrough on controller

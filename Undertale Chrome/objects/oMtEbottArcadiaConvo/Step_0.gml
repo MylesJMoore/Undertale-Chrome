@@ -47,8 +47,10 @@ switch(Event) {
 	        global.textbox_y_adjustment = 124;
 	        global.textbox_width = 170;
 	        global.textbox_height = 60;
-
 			
+			//Set Camera Shake References for x,y
+			oCutsceneCamera.original_camera_x = oCutsceneCamera.x;
+			oCutsceneCamera.original_camera_y = oCutsceneCamera.y;
 
 	        // Arcadia Start
 	        createTextbox("arcadia_mt_ebbot_conversation_1");
@@ -97,6 +99,12 @@ switch(Event) {
 			oRoseyHumanCutscene.image_index = 0;
 	        Event = 5.2;
 			
+			//Shake the Camera
+			with(oCutsceneCamera) {
+			screen_shake_magnitude = 1;
+			screen_shake_timer = 45;
+			}
+			
 			//Set Correct Snow Color
 			var white_snow = layer_get_id("Snow");
 			var yellow_snow = layer_get_id("YellowSnow");
@@ -117,6 +125,12 @@ switch(Event) {
 			oRoseyHumanCutscene.image_index = 0;
 	        Event = 5.3;
 			
+			//Shake the Camera
+			with(oCutsceneCamera) {
+			screen_shake_magnitude = 3;
+			screen_shake_timer = 45;
+			}
+			
 			//Set Correct Snow Color
 			var white_snow = layer_get_id("Snow");
 			var yellow_snow = layer_get_id("YellowSnow");
@@ -136,6 +150,12 @@ switch(Event) {
 	        oRoseyHumanCutscene.image_speed = 0;
 			oRoseyHumanCutscene.image_index = 0;
 	        Event = 6;
+			
+			//Shake the Camera
+			with(oCutsceneCamera) {
+			screen_shake_magnitude = 5;
+			screen_shake_timer = 45;
+			}
 			
 			//Set Correct Snow Color
 			var white_snow = layer_get_id("Snow");
@@ -284,6 +304,12 @@ switch(Event) {
 			oRoseyHumanCutscene.image_index = 0;
 	        Event = 7.6;
 			
+			//Shake the Camera
+			with(oCutsceneCamera) {
+			screen_shake_magnitude = 1;
+			screen_shake_timer = 45;
+			}
+			
 			//Set Correct Snow Color
 			var white_snow = layer_get_id("Snow");
 			var yellow_snow = layer_get_id("YellowSnow");
@@ -305,6 +331,12 @@ switch(Event) {
 			oRoseyHumanCutscene.image_index = 0;
 	        Event = 7.7;
 			
+			//Shake the Camera
+			with(oCutsceneCamera) {
+			screen_shake_magnitude = 3;
+			screen_shake_timer = 45;
+			}
+			
 			//Set Correct Snow Color
 			var white_snow = layer_get_id("Snow");
 			var yellow_snow = layer_get_id("YellowSnow");
@@ -325,6 +357,12 @@ switch(Event) {
 	        oRoseyHumanCutscene.image_speed = 0;
 			oRoseyHumanCutscene.image_index = 0;
 	        Event = 8;
+			
+			//Shake the Camera
+			with(oCutsceneCamera) {
+			screen_shake_magnitude = 5;
+			screen_shake_timer = 45;
+			}
 			
 			//Set Correct Snow Color
 			var white_snow = layer_get_id("Snow");
@@ -359,6 +397,12 @@ switch(Event) {
 	        oRoseyHumanCutscene.image_speed = 0;
 			oRoseyHumanCutscene.image_index = 0;
 	        Event = 9.5;
+			
+			//Shake the Camera
+			with(oCutsceneCamera) {
+			screen_shake_magnitude = 5;
+			screen_shake_timer = 45;
+			}
 	    }
 	    break;
 		
@@ -447,6 +491,12 @@ switch(Event) {
 			oRoseyHumanCutscene.image_speed = 0;
 			oRoseyHumanCutscene.image_index = 0;
 		    Event = 15;
+			
+			//Shake the Camera
+			with(oCutsceneCamera) {
+			screen_shake_magnitude = 5;
+			screen_shake_timer = 45;
+			}
 		}
 		break;
 		
@@ -487,6 +537,12 @@ switch(Event) {
 		    createTextbox("arcadia_mt_ebbot_conversation_13c");
 		    oArcadiaTalk.image_index = 3;
 		    Event = 16;
+			
+			//Shake the Camera
+			with(oCutsceneCamera) {
+			screen_shake_magnitude = 5;
+			screen_shake_timer = 45;
+			}
 		}
 		break;
 		

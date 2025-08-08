@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "snd_rosey_human_clones_theme.mp3",
   "type": 0,
-  "volume": 0.3,
+  "volume": 0.5,
 }

@@ -13,6 +13,7 @@ function gameText(_text_id) {
 		//=====================================================================//
 		case "truelab_demon_1": 
 			createTextPage("* ...", noone, false, 0, noone, true);
+			setTextColor(0,100,c_yellow,c_yellow,c_yellow,c_yellow);
 			createTextPage("* According to the latest numbers, the soul is...", noone, false, 0, noone, true);
 			setTextColor(0,100,c_yellow,c_yellow,c_yellow,c_yellow);
 			createTextPage("* Unstable.", noone, false, 0, noone, true);
@@ -22,6 +23,7 @@ function gameText(_text_id) {
 			break;
 		case "truelab_demon_2": 
 			createTextPage("* ...", noone, false, 0, noone, true);
+			setTextColor(0,100,c_purple,c_purple,c_purple,c_purple);
 			createTextPage("* Dr. Arcadia will not be happy.", noone, false, 0, noone, true);
 			setTextColor(0,100,c_purple,c_purple,c_purple,c_purple);
 			createTextPage("* But! We're on human trial 66!", noone, false, 0, noone, true);
@@ -31,6 +33,7 @@ function gameText(_text_id) {
 			break;
 		case "truelab_demon_3": 
 			createTextPage("* ...", noone, false, 0, noone, true);
+			setTextColor(0,100,c_orange,c_orange,c_orange,c_orange);
 			createTextPage("* I don't think this 66th human soul is the one.", noone, false, 0, noone, true);
 			setTextColor(0,100,c_orange,c_orange,c_orange,c_orange);
 			createTextPage("* We'll probably hit 100 humans before we find the right one.", noone, false, 0, noone, true);
@@ -45,11 +48,13 @@ function gameText(_text_id) {
 			break;
 		case "truelab_demon_4": 
 			createTextPage("* ...", noone, false, 0, noone, true);
+			setTextColor(0,100,c_red,c_red,c_red,c_red);
 			createTextPage("* We should be classifying this as a Class S anomaly!", noone, false, 0, noone, true);
 			setTextColor(0,100,c_red,c_red,c_red,c_red);
 			break;
 		case "truelab_demon_5": 
 			createTextPage("* ...", noone, false, 0, noone, true);
+			setTextColor(0,100,c_green,c_green,c_green,c_green);
 			createTextPage("* I just want my lunch break.", noone, false, 0, noone, true);
 			setTextColor(0,100,c_green,c_green,c_green,c_green);
 			createTextPage("* I can't eat any more Temmie Flakes.", noone, false, 0, noone, true);
@@ -64,6 +69,7 @@ function gameText(_text_id) {
 			break;
 		case "truelab_demon_6": 
 			createTextPage("* ...", noone, false, 0, noone, true);
+			setTextColor(0,100,c_blue,c_blue,c_blue,c_blue);
 			createTextPage("* Technically the soul releasing pressure is normal.", noone, false, 0, noone, true);
 			setTextColor(0,100,c_blue,c_blue,c_blue,c_blue);
 			createTextPage("* You don't see all these screens going off?!", noone, false, 0, noone, true);
@@ -75,6 +81,7 @@ function gameText(_text_id) {
 			break;
 		case "truelab_demon_7": 
 			createTextPage("* ...", noone, false, 0, noone, true);
+			setTextColor(0,100,c_red,c_red,c_red,c_red);
 			createTextPage("* Can you hear that buzzing?", noone, false, 0, noone, true);
 			setTextColor(0,100,c_red,c_red,c_red,c_red);
 			createTextPage("* That's the soul fusing.", noone, false, 0, noone, true);
@@ -86,6 +93,7 @@ function gameText(_text_id) {
 			break;
 		case "truelab_demon_8": 
 			createTextPage("* ...", noone, false, 0, noone, true);
+			setTextColor(0,100,c_orange,c_orange,c_orange,c_orange);
 			createTextPage("* You ever see a really long hallway?", noone, false, 0, noone, true);
 			setTextColor(0,100,c_orange,c_orange,c_orange,c_orange);
 			createTextPage("* And then a small room?", noone, false, 0, noone, true);
@@ -96,6 +104,7 @@ function gameText(_text_id) {
 			break;
 		case "truelab_demon_9": 
 			createTextPage("* ...", noone, false, 0, noone, true);
+			setTextColor(0,100,c_fuchsia,c_fuchsia,c_fuchsia,c_fuchsia);
 			createTextPage("* This other guy keeps talking about bad signs.", noone, false, 0, noone, true);
 			setTextColor(0,100,c_fuchsia,c_fuchsia,c_fuchsia,c_fuchsia);
 			createTextPage("* He's such a bummer.", noone, false, 0, noone, true);
@@ -155,8 +164,13 @@ function gameText(_text_id) {
 		case "truelab_wall_1": 
 			createTextPage("* ...", noone, false, 0, noone, true);
 			createTextPage("* A flickering screen shows a message: ", noone, false, 0, noone, true);
-			createTextPage("EXPERIMENT 32 FAILED", noone, false,0); 
-			setTextColor(0,100,c_red,c_red,c_red,c_red);
+			createTextPage("EXPERIMENT 65 STATUS: FAILED", noone, false,0); 
+			setTextColor(0,21,c_yellow,c_yellow,c_yellow,c_yellow);
+			setTextColor(22,100,c_red,c_red,c_red,c_red);
+			createTextPage("EXPERIMENT 66 STATUS: ERROR", noone, false,0); 
+			setTextColor(0,21,c_yellow,c_yellow,c_yellow,c_yellow);
+			setTextColor(22,100,c_red,c_red,c_red,c_red);
+			setTextFloat(22,100);
 			createTextPage("WARNING: INSTABILITY DETECTED", noone, false,0); 
 			setTextColor(0,9,c_yellow,c_yellow,c_yellow,c_yellow);
 			setTextColor(9,100,c_red,c_red,c_red,c_red);
@@ -165,29 +179,30 @@ function gameText(_text_id) {
 			break;
 		case "truelab_bookcase_1": 
 			createTextPage("* ...", noone, false, 0, noone, true);
-			createTextPage("* (A lot of books here)", noone, false, 0, noone, true);
+			createTextPage("* (A lot of books here.)", noone, false, 0, noone, true);
 			createTextPage("* (None of which particularly fun to read...)", noone, false,0); 
-			createTextPage("* (...except this one)", noone, false, 0, noone, true);
+			createTextPage("* (...except this one.)", noone, false, 0, noone, true);
 			createTextPage("\"Anatomy of a Human\"", noone, false,0); 
 			setTextColor(0,100,c_red,c_red,c_red,c_red);
 			createTextPage("Written By Arcadia, MD", noone, false,0); 
-			setTextColor(11,100,c_red,c_red,c_red,c_red);
+			setTextColor(11,100,c_yellow,c_yellow,c_yellow,c_yellow);
 			setTextFloat(11,100);
 			createTextPage("* (Who is that?)", noone, false,0);
 			break;
 		case "truelab_bookcase_2": 
 			createTextPage("* ...", noone, false, 0, noone, true);
-			createTextPage("* (One of the books catches your eye)", noone, false, 0, noone, true);
+			createTextPage("* (One of the books catches your eye.)", noone, false, 0, noone, true);
 			createTextPage("\"Creating A New Monster World\"", noone, false,0); 
 			setTextColor(0,100,c_red,c_red,c_red,c_red);
-			createTextPage("* (The name Alphys is scribbled on the first page)", noone, false,0); 
+			createTextPage("* (The name Alphys is scribbled on the first page.)", noone, false,0); 
+			setTextColor(12,18,c_yellow,c_yellow,c_yellow,c_yellow);
 			setTextFloat(12,18);
 			break;
 		case "truelab_room_1": 
 			createTextPage("* ...", noone, false, 0, noone, true);
-			createTextPage("* (The room is cold)", noone, false,0); 
-			createTextPage("* (But you can feel a little bit of warmth in your hands)", noone, false,0); 
-			createTextPage("* (... Not much though)", noone, false,0); 
+			createTextPage("* (The room is cold.)", noone, false,0); 
+			createTextPage("* (But you can feel a little bit of warmth in your hands.)", noone, false,0); 
+			createTextPage("* (... Not much though.)", noone, false,0); 
 			break;
 		//=====================================================================//
 		//=====================       True Lab 2       ========================//
@@ -196,17 +211,19 @@ function gameText(_text_id) {
 			createTextPage("* ...", noone, false, 0, noone, true);
 			createTextPage("WELCOME TO TRUE LAB", noone, false, 0, noone, true);
 			setTextColor(0,100,c_yellow,c_yellow,c_yellow,c_yellow);
-			createTextPage("SYSTEM STATUS: [CORRUPTED]", noone, false,0);
+			createTextPage("SYSTEM STATUS: CORRUPTED", noone, false,0);
 			setTextColor(0,15,c_yellow,c_yellow,c_yellow,c_yellow);
 			setTextColor(15,100,c_red,c_red,c_red,c_red);
+			setTextShake(15,100);
 			break;
 		case "truelab_room_2_monitor_2": 
 			createTextPage("* ...", noone, false, 0, noone, true);
 			createTextPage("SOUL EXPERIMENTATION IN PROGRESS", noone, false, 0, noone, true);
 			setTextColor(0,100,c_yellow,c_yellow,c_yellow,c_yellow);
-			createTextPage("Subject Status: [DATA CORRUPTED]", noone, false, 0, noone, true);
+			createTextPage("Subject Status: DATA CORRUPTED", noone, false, 0, noone, true);
 			setTextColor(0,16,c_yellow,c_yellow,c_yellow,c_yellow);
 			setTextColor(16,100,c_red,c_red,c_red,c_red);
+			setTextShake(16,100);
 			createTextPage("Facility Lead: Arcadia", noone, false,0); 
 			setTextColor(0,15,c_yellow,c_yellow,c_yellow,c_yellow);
 			setTextColor(15,100,c_red,c_red,c_red,c_red);
@@ -292,10 +309,11 @@ function gameText(_text_id) {
 			createTextPage("OVERRIDE ACTIVATED", noone, false, 0, noone, true);
 			setTextColor(0,100,c_yellow,c_yellow,c_yellow,c_yellow);
 			createTextPage("CHROME SOUL PROTECTION: [DISENGAGED]", noone, false, 0, noone, true);
-			setTextColor(0,25,c_yellow,c_yellow,c_yellow,c_yellow);
-			setTextColor(25,100,c_green,c_green,c_green,c_green);
+			setTextColor(0,24,c_yellow,c_yellow,c_yellow,c_yellow);
+			setTextColor(24,100,c_green,c_green,c_green,c_green);
 			createTextPage("Please proceed with EXTREME caution.", noone, false, 0, noone, true);
 			setTextColor(0,20,c_yellow,c_yellow,c_yellow,c_yellow);
+			setTextFloat(20,27);
 			setTextColor(20,27,c_red,c_red,c_red,c_red);
 			setTextColor(27,100,c_yellow,c_yellow,c_yellow,c_yellow);
 			break;
@@ -309,7 +327,7 @@ function gameText(_text_id) {
 			createTextPage("* (There's a book titled...)", noone, false, 0, noone, true);
 			createTextPage("\"The Limits of a Soul\"", noone, false, 0, noone, true);
 			setTextColor(0,100,c_red,c_red,c_red,c_red);
-			createTextPage("* (Most pages are torn, but you catch one sentence)", noone, false, 0, noone, true);
+			createTextPage("* (Most pages are torn, but you catch one sentence.)", noone, false, 0, noone, true);
 			createTextPage("Fragmentation tests by Arcadia yield promising results.", noone, false, 0, noone, true);
 			setTextColor(0,100,c_yellow,c_yellow,c_yellow,c_yellow);
 			break;
@@ -319,7 +337,7 @@ function gameText(_text_id) {
 			createTextPage("* (You see a thick journal titled...)", noone, false, 0, noone, true);
 			createTextPage("\"Rosey: Experimental Log\"", noone, false, 0, noone, true);
 			setTextColor(0,100,c_red,c_red,c_red,c_red);
-			createTextPage("* (Almost all pages are blacked out except one)", noone, false, 0, noone, true);
+			createTextPage("* (Almost all pages are blacked out except one.)", noone, false, 0, noone, true);
 			createTextPage("Rosey's cognitive abilities exceed initial expectations.", noone, false, 0, noone, true);
 			setTextColor(0,100,c_yellow,c_yellow,c_yellow,c_yellow);
 			break;
@@ -329,7 +347,7 @@ function gameText(_text_id) {
 			createTextPage("* (A book catches your eye...)", noone, false, 0, noone, true);
 			createTextPage("\"Soul Fusion Theory\"", noone, false, 0, noone, true);
 			setTextColor(0,100,c_red,c_red,c_red,c_red);
-			createTextPage("* (The first page has frantic notes scribbled)", noone, false, 0, noone, true);
+			createTextPage("* (The first page has frantic notes scribbled.)", noone, false, 0, noone, true);
 			createTextPage("Fusion unstable without Chrome Heart catalyst.", noone, false, 0, noone, true);
 			setTextColor(0,100,c_yellow,c_yellow,c_yellow,c_yellow);
 			break;
@@ -339,7 +357,7 @@ function gameText(_text_id) {
 			createTextPage("* (You pull out a dusty manual titled...)", noone, false, 0, noone, true);
 			createTextPage("\"Human-Monster Symbiosis\"", noone, false, 0, noone, true);
 			setTextColor(0,100,c_red,c_red,c_red,c_red);
-			createTextPage("* (A bookmark has scribbling on it)", noone, false, 0, noone, true);
+			createTextPage("* (A bookmark has scribbling on it.)", noone, false, 0, noone, true);
 			createTextPage("What is Arcadia's ultimate goal? I don't know. Perfect harmony? Total control?", noone, false, 0, noone, true);
 			setTextColor(0,100,c_yellow,c_yellow,c_yellow,c_yellow);
 			break;
@@ -375,12 +393,12 @@ function gameText(_text_id) {
 		case "truelab_room_5_experiment_bench_1": 
 			createTextPage("* ...", noone, false, 0, noone, true);
 			createTextPage("* (A cold examination table)", noone, false, 0, noone, true);
-			createTextPage("* (You shiver imagining what experiments took place here)", noone, false, 0, noone, true);
+			createTextPage("* (You shiver imagining what experiments took place here.)", noone, false, 0, noone, true);
 			break;
 
 		case "truelab_room_5_experiment_bench_2": 
 			createTextPage("* ...", noone, false, 0, noone, true);
-			createTextPage("* (Another bench stained with something you hope isn't blood)", noone, false, 0, noone, true);
+			createTextPage("* (Another bench stained with something you hope isn't blood.)", noone, false, 0, noone, true);
 			setTextColor(55,60,c_red,c_red,c_red,c_red);
 			setTextFloat(55,60);
 			createTextPage("* (A label reads...)", noone, false, 0, noone, true);
@@ -604,11 +622,15 @@ function gameText(_text_id) {
 			case "determination - yes": 
 				createTextPage("* Wonderful!", noone, false, 30, noone, true, true);
 				createTextPage("* I'll take just enough to make sure you can't quit when you really want to.", noone, false, 30, noone, true, true);
+				createTextPage("(You lose your sense of Determination.)", noone, false, 30, noone, true, true);
+				setTextColor(0,100,c_red,c_red,c_red,c_red);
 			break;
 
 			case "determination - no": 
 				createTextPage("* Oh, that's cute.", noone, false, 30, noone, true, true);
 				createTextPage("* You think you had a choice.", noone, false, 30, noone, true, true);
+				createTextPage("(You lose your sense of Determination.)", noone, false, 30, noone, true, true);
+				setTextColor(0,100,c_red,c_red,c_red,c_red);
 			break;
 		case "chrome_soul_bravery": 
 			createTextPage("* ...", noone, false, 30, noone, true, true);
@@ -621,11 +643,15 @@ function gameText(_text_id) {
 			case "bravery - yes": 
 				createTextPage("* Perfect.", noone, false, 30, noone, true, true);
 				createTextPage("* Recklessness suits you... and me.", noone, false, 30, noone, true, true);
+				createTextPage("(You no longer feel Brave.)", noone, false, 30, noone, true, true);
+				setTextColor(0,100,c_orange,c_orange,c_orange,c_orange);
 			break;
 
 			case "bravery - no": 
 				createTextPage("* Too late now!", noone, false, 30, noone, true, true);
 				createTextPage("* Dragons awake, and I'm holding the leash.", noone, false, 30, noone, true, true);
+				createTextPage("(You no longer feel Brave.)", noone, false, 30, noone, true, true);
+				setTextColor(0,100,c_orange,c_orange,c_orange,c_orange);
 			break;
 		case "chrome_soul_justice": 
 			createTextPage("* ...", noone, false, 30, noone, true, true);
@@ -637,11 +663,15 @@ function gameText(_text_id) {
 			case "justice - yes": 
 				createTextPage("* Marvelous.", noone, false, 30, noone, true, true);
 				createTextPage("* I'll ensure justice is served... selectively.", noone, false, 30, noone, true, true);
+				createTextPage("(You question what true Justice is now.)", noone, false, 30, noone, true, true);
+				setTextColor(0,100,c_yellow,c_yellow,c_yellow,c_yellow);
 			break;
 
 			case "justice - no": 
 				createTextPage("* Interesting.", noone, false, 30, noone, true, true);
 				createTextPage("* You think you still can tell what's right and what's wrong.", noone, false, 30, noone, true, true);
+				createTextPage("(You question what true Justice is now.)", noone, false, 30, noone, true, true);
+				setTextColor(0,100,c_yellow,c_yellow,c_yellow,c_yellow);
 			break;
 		case "chrome_soul_kindness": 
 			createTextPage("* ...", noone, false, 30, noone, true, true);
@@ -654,11 +684,15 @@ function gameText(_text_id) {
 			case "kindness - yes": 
 				createTextPage("* Delightful!", noone, false, 30, noone, true, true);
 				createTextPage("* I'll use it responsibly... or not.", noone, false, 30, noone, true, true);
+				createTextPage("(You no longer feel Kindness.)", noone, false, 30, noone, true, true);
+				setTextColor(0,100,c_green,c_green,c_green,c_green);
 			break;
 
 			case "kindness - no": 
 				createTextPage("* ...", noone, false, 30, noone, true, true);
 				createTextPage("* Sweetness isn't really my style, but your soul tastes delicious.", noone, false, 30, noone, true, true);
+				createTextPage("(You no longer feel Kindness.)", noone, false, 30, noone, true, true);
+				setTextColor(0,100,c_green,c_green,c_green,c_green);
 			break;
 		case "chrome_soul_integrity": 
 			createTextPage("* ...", noone, false, 30, noone, true, true);
@@ -670,11 +704,15 @@ function gameText(_text_id) {
 			case "integrity - yes": 
 				createTextPage("* You're so trusting.", noone, false, 30, noone, true, true);
 				createTextPage("* I'd almost feel bad if I wasn't me.", noone, false, 30, noone, true, true);
+				createTextPage("(You lose your sense of Integrity.)", noone, false, 30, noone, true, true);
+				setTextColor(0,100,c_navy,c_navy,c_navy,c_navy);
 			break;
 
 			case "integrity - no": 
 				createTextPage("* As do I.", noone, false, 30, noone, true, true);
 				createTextPage("* So I lied and took it anyways!", noone, false, 30, noone, true, true);
+				createTextPage("(You lose your sense of Integrity.)", noone, false, 30, noone, true, true);
+				setTextColor(0,100,c_navy,c_navy,c_navy,c_navy);
 			break;
 		case "chrome_soul_perseverance": 
 			createTextPage("* ...", noone, false, 30, noone, true, true);
@@ -686,11 +724,15 @@ function gameText(_text_id) {
 			case "perseverance - yes": 
 				createTextPage("* Excellent.", noone, false, 30, noone, true, true);
 				createTextPage("* I'll make sure you never rest again.", noone, false, 30, noone, true, true);
+				createTextPage("(You no longer feel the importance of Perseverance.)", noone, false, 30, noone, true, true);
+				setTextColor(0,100,c_purple,c_purple,c_purple,c_purple);
 			break;
 
 			case "perseverance - no": 
 				createTextPage("* Too late.", noone, false, 30, noone, true, true);
 				createTextPage("* I'm even more stubborn than you.", noone, false, 30, noone, true, true);
+				createTextPage("(You no longer feel the importance of Perseverance.)", noone, false, 30, noone, true, true);
+				setTextColor(0,100,c_purple,c_purple,c_purple,c_purple);
 			break;
 		case "chrome_soul_patience": 
 			createTextPage("* ...", noone, false, 30, noone, true, true);
@@ -703,11 +745,23 @@ function gameText(_text_id) {
 			case "patience - yes": 
 				createTextPage("* Beautiful.", noone, false, 30, noone, true, true);
 				createTextPage("* Hope you're prepared to wait... forever.", noone, false, 30, noone, true, true);
+				createTextPage("(Your sense of Patience exists no more.)", noone, false, 30, noone, true, true);
+				setTextColor(0,100,c_aqua,c_aqua,c_aqua,c_aqua);
+				createTextPage("...", noone, false, 30, noone, true, true);
+				setTextColor(0,100,c_red,c_red,c_red,c_red);
+				createTextPage("(There is nothing left of you.)", noone, false, 30, noone, true, true);
+				setTextColor(0,100,c_red,c_red,c_red,c_red);
 			break;
 
 			case "patience - no": 
 				createTextPage("* ...", noone, false, 30, noone, true, true);
 				createTextPage("* Oh, believe me, waiting won't help you now.", noone, false, 30, noone, true, true);
+				createTextPage("(Your sense of Patience exists no more.)", noone, false, 30, noone, true, true);
+				setTextColor(0,100,c_aqua,c_aqua,c_aqua,c_aqua);
+				createTextPage("...", noone, false, 30, noone, true, true);
+				setTextColor(0,100,c_red,c_red,c_red,c_red);
+				createTextPage("(There is nothing left of you.)", noone, false, 30, noone, true, true);
+				setTextColor(0,100,c_red,c_red,c_red,c_red);
 			break;
 		case "chrome_soul_end": 
 			createTextPage("* ...", noone, false, 30, noone, true, true);
@@ -783,9 +837,9 @@ function gameText(_text_id) {
 			break;
 		case "mt_ebbot_9":	
 			createTextPage("* ...", noone, false, 0, noone, true);
-			createTextPage("* (This is a tree.)", noone, false, 0, noone, true);
-			createTextPage("* (Jinx!)", noone, false, 0, noone, true);
-			createTextPage("* (Unfortunately no one is here to claim their free soda.)", noone, false, 0, noone, true);
+			createTextPage("* (More trees.)", noone, false, 0, noone, true);
+			createTextPage("* (Wait. You see something...)", noone, false, 0, noone, true);
+			createTextPage("* (Just kidding. It was a tree. Sorry!)", noone, false, 0, noone, true);
 			break;
 		case "mt_ebbot_10":	
 			createTextPage("* ...", noone, false, 0, noone, true);
@@ -797,7 +851,7 @@ function gameText(_text_id) {
 		//=====================================================================//
 		case "rosey_human_scared": 
 			createTextPage("* ...", noone, false, 0, noone, true);
-			createTextPage("* You should run.", noone, false, 0, noone, true);
+			createTextPage("(You should run.)", noone, false, 0, noone, true);
 			setTextColor(0,100,c_red,c_red,c_red,c_red);
 			break;
 		// Rosey Human Clones
@@ -884,36 +938,38 @@ function gameText(_text_id) {
 			// ============================
 			// Arcadia Start (case 10)
 			case "arcadia_mt_ebbot_conversation_1":
-			    createTextPage("There's something peaceful yet foreboding about the snow.", "Arcadia", false, -110, noone, true, true);
-			    createTextPage("It's been here longer than anything... yet it fades so quickly.", "Arcadia", false, -110, noone, true, true);
-			    createTextPage("...", "Arcadia", false, -110, noone, true, true);
-			    createTextPage("You've failed me Rosey.", "Arcadia", false, -110, noone, true, true);
+			    createTextPage("Snow is so peaceful.", "Arcadia", false, -113, noone, true, true);
+			    createTextPage("Yet foreboding.", "Arcadia", false, -113, noone, true, true);
+				createTextPage("It has been here longer than anything.", "Arcadia", false, -113, noone, true, true);
+			    createTextPage("But it fades so quickly.", "Arcadia", false, -113, noone, true, true);
+				createTextPage("...", "Arcadia", false, -113, noone, true, true);
+			    createTextPage("You have failed me Rosey.", "Arcadia", false, -113, noone, true, true);
 			    break;
 
 			// ============================
 			// Rosey 1
 			case "arcadia_mt_ebbot_conversation_2":
-			    createTextPage("I take full responsibility Dr. Arcadia.", "Rosey", false, 30, noone, true, true);
+			    createTextPage(" I take full responsibility Dr. Arcadia.", "Rosey", false, 30, noone, true, true);
 			    break;
 
 			// ============================
 			// Arcadia 2
 			case "arcadia_mt_ebbot_conversation_3":
-			    createTextPage("...", "Arcadia", false, -110, noone, true, true);
-			    createTextPage("I have but one question for you.", "Arcadia", false, -110, noone, true, true);
-			    createTextPage("...", "Arcadia", false, -110, noone, true, true);
-			    createTextPage("What do you think", "Arcadia", false, -110, noone, true, true);
+			    createTextPage("...", "Arcadia", false, -113, noone, true, true);
+			    createTextPage("I have but one question for you.", "Arcadia", false, -113, noone, true, true);
+			    createTextPage("...", "Arcadia", false, -113, noone, true, true);
+			    createTextPage("What do you think", "Arcadia", false, -113, noone, true, true);
 			    break;
 			case "arcadia_mt_ebbot_conversation_3a":
-			    createTextPage("is stopping me", "Arcadia", false, -110, noone, true, true);
+			    createTextPage("is stopping me", "Arcadia", false, -113, noone, true, true);
 			    setTextColor(0,100,c_yellow,c_yellow,c_yellow,c_yellow);
 			    break;
 			case "arcadia_mt_ebbot_conversation_3b":
-			    createTextPage("from taking your", "Arcadia", false, -110, noone, true, true);
+			    createTextPage("from taking your", "Arcadia", false, -113, noone, true, true);
 			    setTextColor(0,100,c_orange,c_orange,c_orange,c_orange);
 			    break;
 			case "arcadia_mt_ebbot_conversation_3c":
-			    createTextPage("monster soul?", "Arcadia", false, -110, noone, true, true);
+			    createTextPage("monster soul?", "Arcadia", false, -113, noone, true, true);
 			    setTextColor(0,100,c_red,c_red,c_red,c_red);
 				setTextShake(0,100);
 			    break;
@@ -921,36 +977,36 @@ function gameText(_text_id) {
 			// ============================
 			// Rosey 2
 			case "arcadia_mt_ebbot_conversation_4":
-			    createTextPage("...", "Rosey", false, 30, noone, true, true);
+			    createTextPage(" ...", "Rosey", false, 30, noone, true, true);
 			    break;
 
 			// ============================
 			// Arcadia 3
 			case "arcadia_mt_ebbot_conversation_5": //Red Snow
-			    createTextPage("Hmm?", "Arcadia", false, -110, noone, true, true);
+			    createTextPage("Hmm?", "Arcadia", false, -113, noone, true, true);
 				setTextColor(0,100,c_red,c_red,c_red,c_red);
-				createTextPage("Shall I go through my list?", "Arcadia", false, -110, noone, true, true);
+				createTextPage("Shall I go through my list?", "Arcadia", false, -113, noone, true, true);
 				setTextColor(0,100,c_red,c_red,c_red,c_red);
-			    createTextPage("Human 066 escapes.", "Arcadia", false, -110, noone, true, true);
+			    createTextPage("Human 066 escapes.", "Arcadia", false, -113, noone, true, true);
 				setTextColor(0,100,c_red,c_red,c_red,c_red);
 				break;
 				
 			case "arcadia_mt_ebbot_conversation_5a": //White Snow
-			    createTextPage("I believe her name was...", "Arcadia", false, -110, noone, true, true);
-				createTextPage("Prisma.", "Arcadia", false, -110, noone, true, true);
+			    createTextPage("I believe her name was...", "Arcadia", false, -113, noone, true, true);
+				createTextPage("Prisma.", "Arcadia", false, -113, noone, true, true);
 				setTextColor(0,100,c_yellow,c_yellow,c_yellow,c_yellow);
 				setTextFloat(0,100);
-				createTextPage("...not a bad name for a human.", "Arcadia", false, -110, noone, true, true);
-				createTextPage("Despite having a great name...", "Arcadia", false, -110, noone, true, true);
+				createTextPage("...not a bad name for a human.", "Arcadia", false, -113, noone, true, true);
+				createTextPage("Despite having a great name...", "Arcadia", false, -113, noone, true, true);
 				break;
 				
 			case "arcadia_mt_ebbot_conversation_5b": //Yellow Snow
-			    createTextPage("My Human Clone experiment was destroyed.", "Arcadia", false, -110, noone, true, true);
+			    createTextPage("My Human Clone experiment was destroyed.", "Arcadia", false, -113, noone, true, true);
 				setTextColor(0,100,c_yellow,c_yellow,c_yellow,c_yellow);
 				setTextFloat(0,100);
-				createTextPage("Yes we did capture a true human soul.", "Arcadia", false, -110, noone, true, true);
-				createTextPage("But...", "Arcadia", false, -110, noone, true, true);
-			    createTextPage("The Chrome Soul captured was not the true soul.", "Arcadia", false, -110, noone, true, true);
+				createTextPage("Yes we did capture a true human soul.", "Arcadia", false, -113, noone, true, true);
+				createTextPage("But...", "Arcadia", false, -113, noone, true, true);
+			    createTextPage("The Chrome Soul captured was not the true soul.", "Arcadia", false, -113, noone, true, true);
 				setTextColor(4,15,c_yellow,c_yellow,c_yellow,c_yellow);
 				setTextFloat(4,15);
 				setTextFloat(37,100);
@@ -958,71 +1014,71 @@ function gameText(_text_id) {
 				break;
 			
 			case "arcadia_mt_ebbot_conversation_5c": //Orange Snow
-				createTextPage("Resilience.", "Arcadia", false, -110, noone, true, true);
+				createTextPage("Resilience.", "Arcadia", false, -113, noone, true, true);
 				setTextColor(0,100,c_grey,c_grey,c_grey,c_grey);
 				setTextFloat(0,100);
-				createTextPage("Much harder to control than Determination.", "Arcadia", false, -110, noone, true, true);
+				createTextPage("Much harder to control than Determination.", "Arcadia", false, -113, noone, true, true);
 				setTextColor(28,100,c_red,c_red,c_red,c_red);
 				setTextFloat(28,100);
-				createTextPage("Bravery was a powerful soul but too simple.", "Arcadia", false, -110, noone, true, true);
+				createTextPage("Bravery was a powerful soul but too simple.", "Arcadia", false, -113, noone, true, true);
 				setTextColor(0,8,c_orange,c_orange,c_orange,c_orange);
 				setTextFloat(0,8);
-				createTextPage("Justice. Interesting soul but not one I could harness.", "Arcadia", false, -110, noone, true, true);
+				createTextPage("Justice. Interesting soul but not one I could harness.", "Arcadia", false, -113, noone, true, true);
 				setTextColor(0,8,c_yellow,c_yellow,c_yellow,c_yellow);
 				setTextFloat(0,8);
-				createTextPage("Kindness. Same goes for that one.", "Arcadia", false, -110, noone, true, true);
+				createTextPage("Kindness. Same goes for that one.", "Arcadia", false, -113, noone, true, true);
 				setTextColor(0,9,c_green,c_green,c_green,c_green);
 				setTextFloat(0,9);
-				createTextPage("Patience. I liked this one but the power was too dormant.", "Arcadia", false, -110, noone, true, true);
+				createTextPage("Patience. I liked this one but the power was too dormant.", "Arcadia", false, -113, noone, true, true);
 				setTextColor(0,9,c_aqua,c_aqua,c_aqua,c_aqua);
 				setTextFloat(0,9);
-				createTextPage("Integrity. Confusing soul. I wanted more research time.", "Arcadia", false, -110, noone, true, true);
+				createTextPage("Integrity. Confusing soul. I wanted more research time.", "Arcadia", false, -113, noone, true, true);
 				setTextColor(0,10,c_navy,c_navy,c_navy,c_navy);
 				setTextFloat(0,10);
-				createTextPage("Perseverance. Trickiest one of all but I did figure it out.", "Arcadia", false, -110, noone, true, true);
+				createTextPage("Perseverance. Trickiest one of all but I did figure it out.", "Arcadia", false, -113, noone, true, true);
 				setTextColor(0,13,c_purple,c_purple,c_purple,c_purple);
 				setTextFloat(0,13);
-				createTextPage("Research on all of these souls was completed.", "Arcadia", false, -110, noone, true, true);
-				createTextPage("What did we learn?", "Arcadia", false, -110, noone, true, true);
-				createTextPage("There was a soul that could harness them all.", "Arcadia", false, -110, noone, true, true);
-				createTextPage("Resilience...Chrome Soul...", "Arcadia", false, -110, noone, true, true);
+				createTextPage("Research on all of these souls was completed.", "Arcadia", false, -113, noone, true, true);
+				createTextPage("What did we learn?", "Arcadia", false, -113, noone, true, true);
+				createTextPage("There was a soul that could harness them all.", "Arcadia", false, -113, noone, true, true);
+				createTextPage("Resilience...Chrome Soul...", "Arcadia", false, -113, noone, true, true);
 				setTextColor(0,100,c_grey,c_grey,c_grey,c_grey);
 				setTextFloat(0,10);
 				setTextFloat(13,24);
-				createTextPage("...", "Arcadia", false, -110, noone, true, true);
+				createTextPage("...", "Arcadia", false, -113, noone, true, true);
 				setTextColor(0,15,c_orange,c_orange,c_orange,c_orange);
-				createTextPage("The Chrome Soul eludes me.", "Arcadia", false, -110, noone, true, true);
+				createTextPage("The Chrome Soul eludes me.", "Arcadia", false, -113, noone, true, true);
 				setTextColor(0,100,c_orange,c_orange,c_orange,c_orange);
 				setTextFloat(0,100);
-				createTextPage("This angers me greatly.", "Arcadia", false, -110, noone, true, true);
+				createTextPage("This angers me greatly.", "Arcadia", false, -113, noone, true, true);
 				setTextShake(15,22);
 				setTextColor(0,100,c_orange,c_orange,c_orange,c_orange);
 				break;
 				
 			case "arcadia_mt_ebbot_conversation_5d": //White Snow
-				createTextPage("...", "Arcadia", false, -110, noone, true, true);
-				createTextPage("Rosey.", "Arcadia", false, -110, noone, true, true);
+				createTextPage("...", "Arcadia", false, -113, noone, true, true);
+				createTextPage("Rosey.", "Arcadia", false, -113, noone, true, true);
 				break;
 				
 			case "arcadia_mt_ebbot_conversation_5e": //Yellow Snow	
-			    createTextPage("My lab is in shambles.", "Arcadia", false, -110, noone, true, true);
+			    createTextPage("My lab is in shambles.", "Arcadia", false, -113, noone, true, true);
 			    setTextColor(0,100,c_yellow,c_yellow,c_yellow,c_yellow);
-				createTextPage("Tell me Rosey.", "Arcadia", false, -110, noone, true, true);
+				createTextPage("Tell me Rosey.", "Arcadia", false, -113, noone, true, true);
 			    setTextColor(0,100,c_yellow,c_yellow,c_yellow,c_yellow);
 				break;
 				
 			case "arcadia_mt_ebbot_conversation_5f": //Orange Snow	
-			    createTextPage("What's stopping me from", "Arcadia", false, -110, noone, true, true);
+			    createTextPage("What's stopping me from", "Arcadia", false, -113, noone, true, true);
 			    setTextColor(0,100,c_orange,c_orange,c_orange,c_orange);
 				break;
 				
 			case "arcadia_mt_ebbot_conversation_5g": //Red Snow	
-			    createTextPage("destroying everything?", "Arcadia", false, -110, noone, true, true);
+			    createTextPage("destroying everything?", "Arcadia", false, -113, noone, true, true);
 			    setTextColor(0,100,c_red,c_red,c_red,c_red);
 				setTextShake(0,100);
-			    createTextPage("Along with Gaster and silly Alphys...", "Arcadia", false, -110, noone, true, true);
+			    createTextPage("Along with Gaster and silly Alphys...", "Arcadia", false, -113, noone, true, true);
 				setTextColor(0,100,c_red,c_red,c_red,c_red);
-			    createTextPage("Hmm? Any idea my humble servant?", "Arcadia", false, -110, noone, true, true);
+			    createTextPage("Hmm? Any idea my humble servant?", "Arcadia", false, -113, noone, true, true);
 				setTextColor(0,100,c_red,c_red,c_red,c_red);
 				setTextShake(0,100);
 			    break;
@@ -1030,91 +1086,94 @@ function gameText(_text_id) {
 			// ============================
 			// Rosey 3
 			case "arcadia_mt_ebbot_conversation_6":
-			    createTextPage("Dr. Arcadia...I...", "Rosey", false, 30, noone, true, true);
+			    createTextPage(" Dr. Arcadia...I...", "Rosey", false, 30, noone, true, true);
 			    break;
 
 			// ============================
 			// Arcadia 4
 			case "arcadia_mt_ebbot_conversation_7": //Red Snow
-			    createTextPage("Silence please.", "Arcadia", false, -110, noone, true, true);
+			    createTextPage("Silence please.", "Arcadia", false, -113, noone, true, true);
 			    setTextColor(0,100,c_red,c_red,c_red,c_red);
-			    createTextPage("...", "Arcadia", false, -110, noone, true, true);
-			    createTextPage("The answer is...", "Arcadia", false, -110, noone, true, true);
+			    createTextPage("...", "Arcadia", false, -113, noone, true, true);
+			    createTextPage("The answer is...", "Arcadia", false, -113, noone, true, true);
 				break;
 				
 			case "arcadia_mt_ebbot_conversation_7b": //White Snow
-			    createTextPage("Hope.", "Arcadia", false, -110, noone, true, true);
-			    createTextPage("You've given me hope of what the true Chrome Soul looks like.", "Arcadia", false, -110, noone, true, true);
-			    createTextPage("Resilience.", "Arcadia", false, -110, noone, true, true);
+			    createTextPage("Hope.", "Arcadia", false, -113, noone, true, true);
+				setTextFloat(0,100);
+			    createTextPage("You've given me hope of what the true Chrome Soul looks like.", "Arcadia", false, -113, noone, true, true);
+			    createTextPage("Resilience.", "Arcadia", false, -113, noone, true, true);
 			    setTextColor(0,100,c_grey,c_grey,c_grey,c_grey);
 				setTextFloat(0,100);
-			    createTextPage("All the other monsters blinded by the other humans souls lack TRUE vision.", "Arcadia", false, -110, noone, true, true);
-			    createTextPage("No. I see it.", "Arcadia", false, -110, noone, true, true);
-			    createTextPage("And I thank you for that, Rosey.", "Arcadia", false, -110, noone, true, true);
+			    createTextPage("All the other monsters are blind.", "Arcadia", false, -113, noone, true, true);
+			    createTextPage("Blinded by those other human souls.", "Arcadia", false, -113, noone, true, true);
+				createTextPage("They lack TRUE vision.", "Arcadia", false, -113, noone, true, true);
+				createTextPage("No. I see it.", "Arcadia", false, -113, noone, true, true);
+			    createTextPage("And I thank you for that, Rosey.", "Arcadia", false, -113, noone, true, true);
 			    break;
 
 			// ============================
 			// Rosey 4
 			case "arcadia_mt_ebbot_conversation_8":
-			    createTextPage("Of-of course sir!", "Rosey", false, 30, noone, true, true);
+			    createTextPage(" Of-of course sir!", "Rosey", false, 30, noone, true, true);
 			    break;
 
 			// ============================
 			// Arcadia 5
 			case "arcadia_mt_ebbot_conversation_9":
-			    createTextPage("You know the true plan and I expect you to keep it secret.", "Arcadia", false, -110, noone, true, true);
-			    createTextPage("Not Asgore. Not Alphys. Not even Gaster.", "Arcadia", false, -110, noone, true, true);
-			    createTextPage("Especially not Nubert", "Arcadia", false, -110, noone, true, true);
+			    createTextPage("You know the true plan and I expect you to keep it secret.", "Arcadia", false, -113, noone, true, true);
+			    createTextPage("Not Asgore. Not Alphys. Not even Gaster.", "Arcadia", false, -113, noone, true, true);
+			    createTextPage("Especially not Nubert", "Arcadia", false, -113, noone, true, true);
 			    setTextFloat(15,100);
 			    break;
 
 			// ============================
 			// Rosey 5
 			case "arcadia_mt_ebbot_conversation_10":
-			    createTextPage("Who's Nubert...?", "Rosey", false, 30, noone, true, true);
+			    createTextPage(" Who's Nubert...?", "Rosey", false, 30, noone, true, true);
 			    setTextFloat(6,15);
 			    break;
 
 			// ============================
 			// Arcadia 6
 			case "arcadia_mt_ebbot_conversation_11":
-			    createTextPage("...", "Arcadia", false, -110, noone, true, true);
-			    createTextPage("...What I want you to do is extend your reach.", "Arcadia", false, -110, noone, true, true);
-			    createTextPage("Lure Prisma back here to Mt Ebbot.", "Arcadia", false, -110, noone, true, true);
+			    createTextPage("...", "Arcadia", false, -113, noone, true, true);
+			    createTextPage("...What I want you to do is extend your reach.", "Arcadia", false, -113, noone, true, true);
+			    createTextPage("Lure Prisma back here to Mt Ebbot.", "Arcadia", false, -113, noone, true, true);
 				setTextFloat(25,100);
 			    setTextColor(25,100,c_yellow,c_yellow,c_yellow,c_yellow);
-			    createTextPage("You know what to do after that.", "Arcadia", false, -110, noone, true, true);
-			    createTextPage("I want the Chrome Soul delivered to me by any means possible.", "Arcadia", false, -110, noone, true, true);
+			    createTextPage("You know what to do after that.", "Arcadia", false, -113, noone, true, true);
+			    createTextPage("I want the Chrome Soul delivered to me by any means possible.", "Arcadia", false, -113, noone, true, true);
 			    setTextColor(11,22,c_yellow,c_yellow,c_yellow,c_yellow);
 				setTextFloat(11,22);
-			    createTextPage("Do not fail me.", "Arcadia", false, -110, noone, true, true);
+			    createTextPage("Do not fail me.", "Arcadia", false, -113, noone, true, true);
 				break;
 				
 			// ============================
 			// Rosey 6
 			case "arcadia_mt_ebbot_conversation_12":
-			    createTextPage("Yes Dr. Arcadia.", "Rosey", false, 30, noone, true, true);
+			    createTextPage(" Yes Dr. Arcadia.", "Rosey", false, 30, noone, true, true);
 				break;
 			case "arcadia_mt_ebbot_conversation_12b":
-				createTextPage("Go.", "Arcadia", false, -110, noone, true, true);
+				createTextPage("Go.", "Arcadia", false, -113, noone, true, true);
 				setTextColor(0,100,c_red,c_red,c_red,c_red);
 				break;
 				
 			// ============================
 			// Arcadia End
 			case "arcadia_mt_ebbot_conversation_13":	
-			    createTextPage("...", "Arcadia", false, -110, noone, true, true);
-			    createTextPage("Good luck, Chrome Soul...", "Arcadia", false, -110, noone, true, true);
+			    createTextPage("...", "Arcadia", false, -113, noone, true, true);
+			    createTextPage("Good luck, Chrome Soul...", "Arcadia", false, -113, noone, true, true);
 			    setTextColor(11,25,c_yellow,c_yellow,c_yellow,c_yellow);
 				setTextFloat(11,25);
 			    break;
 			case "arcadia_mt_ebbot_conversation_13b":	
-				createTextPage("...", "Arcadia", false, -110, noone, true, true);
-				createTextPage("...", "Arcadia", false, -110, noone, true, true);
-				createTextPage("...", "Arcadia", false, -110, noone, true, true);
+				createTextPage("...", "Arcadia", false, -113, noone, true, true);
+				createTextPage("...", "Arcadia", false, -113, noone, true, true);
+				createTextPage("...", "Arcadia", false, -113, noone, true, true);
 			    break;
 			case "arcadia_mt_ebbot_conversation_13c":	
-			    createTextPage("...are you listening Prisma?", "Arcadia", false, -110, noone, true, true);
+			    createTextPage("...are you listening Prisma?", "Arcadia", false, -113, noone, true, true);
 			    setTextColor(0,100,c_red,c_red,c_red,c_red);
 			    //setTextFloat(0,100);
 				setTextShake(0,100);
@@ -1123,78 +1182,78 @@ function gameText(_text_id) {
 			// ============================
 			// Arcadia Full Text	
 			case "arcadia_mt_ebbot_full_conversation": 
-				createTextPage("There's something peaceful yet foreboding about the snow.", noone, false, -110, noone, true, true);
-				createTextPage("It's been here longer than anything... yet it fades so quickly.", noone, false, -110, noone, true, true);
-				createTextPage("...", noone, false, -110, noone, true, true);
-				createTextPage("You've failed me Rosey.", noone, false, -110, noone, true, true);
+				createTextPage("There's something peaceful yet foreboding about the snow.", noone, false, -113, noone, true, true);
+				createTextPage("It's been here longer than anything... yet it fades so quickly.", noone, false, -113, noone, true, true);
+				createTextPage("...", noone, false, -113, noone, true, true);
+				createTextPage("You've failed me Rosey.", noone, false, -113, noone, true, true);
 				
 				createTextPage("<- I take full responsibility Dr. Arcadia.", noone, false, 50, noone, true, true);
-				createTextPage("...", noone, false, -110, noone, true, true);
-				createTextPage("I have but one question for you.", noone, false, -110, noone, true, true);
-				createTextPage("...", noone, false, -110, noone, true, true);
-				createTextPage("What do you think", noone, false, -110, noone, true, true);
-				createTextPage("is stopping me", noone, false, -110, noone, true, true);
+				createTextPage("...", noone, false, -113, noone, true, true);
+				createTextPage("I have but one question for you.", noone, false, -113, noone, true, true);
+				createTextPage("...", noone, false, -113, noone, true, true);
+				createTextPage("What do you think", noone, false, -113, noone, true, true);
+				createTextPage("is stopping me", noone, false, -113, noone, true, true);
 				setTextColor(0,100,c_yellow,c_yellow,c_yellow,c_yellow);
-				createTextPage("from taking your", noone, false, -110, noone, true, true);
+				createTextPage("from taking your", noone, false, -113, noone, true, true);
 				setTextColor(0,100,c_orange,c_orange,c_orange,c_orange);
-				createTextPage("monster soul?", noone, false, -110, noone, true, true);
+				createTextPage("monster soul?", noone, false, -113, noone, true, true);
 				setTextColor(0,100,c_red,c_red,c_red,c_red);
-				createTextPage("Hmm?", noone, false, -110, noone, true, true);
+				createTextPage("Hmm?", noone, false, -113, noone, true, true);
 				setTextColor(0,100,c_red,c_red,c_red,c_red);
-				createTextPage("Human 066 escapes.", noone, false, -110, noone, true, true);
-				createTextPage("Prisma... not a bad name for a human.", noone, false, -110, noone, true, true);
-				createTextPage("Chrome Soul captured was not the true soul.", noone, false, -110, noone, true, true);
-				createTextPage("Failed human experiment was... disposed of.", noone, false, -110, noone, true, true);
-				createTextPage("My lab in shambles. Tell me.", noone, false, -110, noone, true, true);
+				createTextPage("Human 066 escapes.", noone, false, -113, noone, true, true);
+				createTextPage("Prisma... not a bad name for a human.", noone, false, -113, noone, true, true);
+				createTextPage("Chrome Soul captured was not the true soul.", noone, false, -113, noone, true, true);
+				createTextPage("Failed human experiment was... disposed of.", noone, false, -113, noone, true, true);
+				createTextPage("My lab in shambles. Tell me.", noone, false, -113, noone, true, true);
 				setTextColor(0,100,c_yellow,c_yellow,c_yellow,c_yellow);
-				createTextPage("What's stopping me from", noone, false, -110, noone, true, true);
+				createTextPage("What's stopping me from", noone, false, -113, noone, true, true);
 				setTextColor(0,100,c_orange,c_orange,c_orange,c_orange);
-				createTextPage("destroying everything?", noone, false, -110, noone, true, true);
+				createTextPage("destroying everything?", noone, false, -113, noone, true, true);
 				setTextColor(0,100,c_red,c_red,c_red,c_red);
-				createTextPage("Along with Gaster and silly Alphys...", noone, false, -110, noone, true, true);
-				createTextPage("Hmm? Any idea my humble servant?", noone, false, -110, noone, true, true);
+				createTextPage("Along with Gaster and silly Alphys...", noone, false, -113, noone, true, true);
+				createTextPage("Hmm? Any idea my humble servant?", noone, false, -113, noone, true, true);
 
 				createTextPage("<- No Dr. Arcadia...", noone, false, 50, noone, true, false);
 
-				createTextPage("Silence please.", noone, false, -110, noone, true, true);
+				createTextPage("Silence please.", noone, false, -113, noone, true, true);
 				setTextColor(0,100,c_red,c_red,c_red,c_red);
-				createTextPage("...", noone, false, -110, noone, true, true);
-				createTextPage("The answer is...", noone, false, -110, noone, true, true);
-				createTextPage("Hope.", noone, false, -110, noone, true, true);
-				createTextPage("You've given me hope of what the true Chrome Soul looks like.", noone, false, -110, noone, true, true);
-				createTextPage("Resilience.", noone, false, -110, noone, true, true);
+				createTextPage("...", noone, false, -113, noone, true, true);
+				createTextPage("The answer is...", noone, false, -113, noone, true, true);
+				createTextPage("Hope.", noone, false, -113, noone, true, true);
+				createTextPage("You've given me hope of what the true Chrome Soul looks like.", noone, false, -113, noone, true, true);
+				createTextPage("Resilience.", noone, false, -113, noone, true, true);
 				setTextColor(0,100,c_yellow,c_yellow,c_yellow,c_yellow);
-				createTextPage("All the other monsters blinded by other humans yet lack vision.", noone, false, -110, noone, true, true);
-				createTextPage("No. I see it.", noone, false, -110, noone, true, true);
-				createTextPage("And I thank you for that, Rosey.", noone, false, -110, noone, true, true);
+				createTextPage("All the other monsters blinded by other humans yet lack vision.", noone, false, -113, noone, true, true);
+				createTextPage("No. I see it.", noone, false, -113, noone, true, true);
+				createTextPage("And I thank you for that, Rosey.", noone, false, -113, noone, true, true);
 
 				createTextPage("<- But of-of course sir!", noone, false, 50, noone, true, true);
 
-				createTextPage("You know the true plan and I expect you to keep it secret.", noone, false, -110, noone, true, true);
-				createTextPage("Not Asgore. Not Alphys. Not even Gaster.", noone, false, -110, noone, true, true);
-				createTextPage("Especially not Nubert", noone, false, -110, noone, true, true);
+				createTextPage("You know the true plan and I expect you to keep it secret.", noone, false, -113, noone, true, true);
+				createTextPage("Not Asgore. Not Alphys. Not even Gaster.", noone, false, -113, noone, true, true);
+				createTextPage("Especially not Nubert", noone, false, -113, noone, true, true);
 				setTextFloat(15,100);
 
 				createTextPage("<- Who's Nubert...?", noone, false, 50, noone, true, true);
 				setTextFloat(9,15);
 
-				createTextPage("...", noone, false, -110, noone, true, true);
-				createTextPage("...What I want you to do is extend your reach.", noone, false, -110, noone, true, true);
-				createTextPage("Lure Prisma back to Mt. Ebbot.", noone, false, -110, noone, true, true);
+				createTextPage("...", noone, false, -113, noone, true, true);
+				createTextPage("...What I want you to do is extend your reach.", noone, false, -113, noone, true, true);
+				createTextPage("Lure Prisma back to Mt. Ebbot.", noone, false, -113, noone, true, true);
 				setTextColor(20,100,c_yellow,c_yellow,c_yellow,c_yellow);
-				createTextPage("You know what to do after that.", noone, false, -110, noone, true, true);
-				createTextPage("I want the Chrome Soul delivered to me by any means possible.", noone, false, -110, noone, true, true);
+				createTextPage("You know what to do after that.", noone, false, -113, noone, true, true);
+				createTextPage("I want the Chrome Soul delivered to me by any means possible.", noone, false, -113, noone, true, true);
 				setTextColor(11,22,c_yellow,c_yellow,c_yellow,c_yellow);
-				createTextPage("Do not fail me.", noone, false, -110, noone, true, true);
+				createTextPage("Do not fail me.", noone, false, -113, noone, true, true);
 
 				createTextPage("<- Yes Dr. Arcadia.", noone, false, 50, noone, true, true);
 
-				createTextPage("Go.", noone, false, -110, noone, true, true);
+				createTextPage("Go.", noone, false, -113, noone, true, true);
 				setTextColor(0,100,c_red,c_red,c_red,c_red);
-				createTextPage("...", noone, false, -110, noone, true, true);
-				createTextPage("Good luck, Chrome Soul...", noone, false, -110, noone, true, true);
+				createTextPage("...", noone, false, -113, noone, true, true);
+				createTextPage("Good luck, Chrome Soul...", noone, false, -113, noone, true, true);
 				setTextColor(11,25,c_yellow,c_yellow,c_yellow,c_yellow);
-				createTextPage("...are you listening Prisma?", noone, false, -110, noone, true, true);
+				createTextPage("...are you listening Prisma?", noone, false, -113, noone, true, true);
 				setTextColor(19,27,c_silver,c_silver,c_silver,c_silver);
 				setTextFloat(19,27);
 			break;
