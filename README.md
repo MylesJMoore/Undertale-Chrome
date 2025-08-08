@@ -4,7 +4,7 @@
 It was coded entirely from scratch and features original music, mechanics, and story elements, while paying homage to the style and themes of the original game.
 
 🎮 **Play the game here:** [GameJolt Release](https://gamejolt.com/games/undertale-chrome/975414)  
-🎥 **Trailer / Gameplay Preview:** [YouTube Link](TBD)
+🎥 **Trailer / Gameplay Preview:** TBD
 
 ---
 
