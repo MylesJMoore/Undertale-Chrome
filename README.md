@@ -45,9 +45,11 @@ When the past refuses to stay buried, will you piece yourself back together—or
 
 ## 📜 Credits
 
-**Game Development:** Myles Moore
-**Music:** Myles Moore & Sato Tosho  
-**Special Thanks:** Toby Fox for _Undertale_, and the Undertale community for inspiration and support.
+- **Game Development:** Myles Moore
+
+- **Music:** Myles Moore & Sato Tosho
+
+- **Special Thanks:** Toby Fox for _Undertale_, and the Undertale community for inspiration and support.
 
 ### Asset Credits
 
