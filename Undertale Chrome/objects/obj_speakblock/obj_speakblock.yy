@@ -33,5 +33,5 @@
     "path": "sprites/spr_speakblock/spr_speakblock.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

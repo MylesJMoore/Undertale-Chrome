@@ -228,6 +228,34 @@ function gameText(_text_id) {
 			setTextColor(0,15,c_yellow,c_yellow,c_yellow,c_yellow);
 			setTextColor(15,100,c_red,c_red,c_red,c_red);
 			break;
+		//Environment Dialogue	
+		case "truelab_room_2_environment_1": 
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* (The door to your room.)", noone, false, 0, noone, true);
+			createTextPage("* (You're not sure how long this has been 'your room'.)", noone, false, 0, noone, true);
+			break;
+		case "truelab_room_2_environment_2": 
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* (There's a lot of flashing lights.)", noone, false, 0, noone, true);
+			createTextPage("* (You like the green color.)", noone, false, 0, noone, true);
+			break;
+		case "truelab_room_2_environment_3": 
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* (The walls are cold and lifeless.)", noone, false, 0, noone, true);
+			createTextPage("* (But you hear voices and movement.)", noone, false, 0, noone, true);
+			break;
+		case "truelab_room_2_environment_4": 
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* (The walls are stained yet feel clean.)", noone, false, 0, noone, true);
+			createTextPage("* (You think sterile is a better word for it.)", noone, false, 0, noone, true);
+			createTextPage("* (Better keep moving.)", noone, false, 0, noone, true);
+			break;
+		case "truelab_room_2_environment_5": 
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* (You find it odd how cool the air from the fan is.)", noone, false, 0, noone, true);
+			createTextPage("* (Yet so quiet.)", noone, false, 0, noone, true);
+			createTextPage("* (You don't want to see what these fans are really used for.)", noone, false, 0, noone, true);
+			break;
 		
 		//=====================================================================//
 		//=====================       True Lab 3       ========================//
@@ -289,6 +317,17 @@ function gameText(_text_id) {
 			createTextPage("* ...", noone, false, -50,noone,true,true);
 			createTextPage("* ...ready to press forward.", noone, false,-50,noone,true,true);
 			break;
+		//Environment	
+		case "truelab_room_3_environment_1": 
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* (These powerful fans line the walls behind the containers.)", noone, false, 0, noone, true);
+			createTextPage("* (This room is cold.)", noone, false, 0, noone, true);
+			createTextPage("* (Too cold.)", noone, false, 0, noone, true);
+			createTextPage("* (You don't see how any normal human would like this cold room.)", noone, false, 0, noone, true);
+			setTextFloat(32,38);
+			createTextPage("* (You think that human might be the key word here.)", noone, false, 0, noone, true);
+			setTextFloat(18,24);
+			break;
 		
 		//=====================================================================//
 		//=====================       True Lab 4       ========================//
@@ -317,10 +356,39 @@ function gameText(_text_id) {
 			setTextColor(20,27,c_red,c_red,c_red,c_red);
 			setTextColor(27,100,c_yellow,c_yellow,c_yellow,c_yellow);
 			break;
+		//Environment	
+		case "truelab_room_4_environment_1": 
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* (You can hear voices in the next room over.)", noone, false, 0, noone, true);
+			createTextPage("* (And see shelves of books.)", noone, false, 0, noone, true);
+			break;
+		case "truelab_room_4_environment_2": 
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* (Noises around the lab start to get louder.)", noone, false, 0, noone, true);
+			createTextPage("* (You hear alarms, buzzing, and movement everywhere.)", noone, false, 0, noone, true);
+			createTextPage("* (You feel as though something is happening.)", noone, false, 0, noone, true);
+			setTextFloat(22,32);
+			break;
+		case "truelab_room_4_environment_3": 
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* (The lab is coming to life.)", noone, false, 0, noone, true);
+			createTextPage("* (But it feels like something is off.)", noone, false, 0, noone, true);
+			createTextPage("* (You're not sure what it is.)", noone, false, 0, noone, true);
+			createTextPage("* (But you feel it.)", noone, false, 0, noone, true);
+			setTextFloat(11,16);
+			break;
 		
 		//=====================================================================//
 		//=====================       True Lab 5       ========================//
 		//=====================================================================//
+		// Flower
+		case "truelab_room_5_flower": 
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* (This flower hasn't been watered in years.)", noone, false, 0, noone, true);
+			createTextPage("* (For some reason that's okay.)", noone, false, 0, noone, true);
+			createTextPage("* (It seems happy to just be here.)", noone, false, 0, noone, true);
+			break;
+			
 		// Bookcases
 		case "truelab_room_5_bookcase_1": 
 			createTextPage("* ...", noone, false, 0, noone, true);
@@ -348,7 +416,7 @@ function gameText(_text_id) {
 			createTextPage("\"Soul Fusion Theory\"", noone, false, 0, noone, true);
 			setTextColor(0,100,c_red,c_red,c_red,c_red);
 			createTextPage("* (The first page has frantic notes scribbled.)", noone, false, 0, noone, true);
-			createTextPage("Fusion unstable without Chrome Heart catalyst.", noone, false, 0, noone, true);
+			createTextPage("Fusion unstable without Chrome Soul catalyst.", noone, false, 0, noone, true);
 			setTextColor(0,100,c_yellow,c_yellow,c_yellow,c_yellow);
 			break;
 
@@ -500,17 +568,53 @@ function gameText(_text_id) {
 		//=====================================================================//
 		case "truelab_room_6b_amalgamate": 
 			createTextPage("* ...", noone, false, 0, noone, true);
-			createTextPage("* It flickers softly.", noone, false, 0, noone, true);
-			createTextPage("* For a moment, it almost seemed... alive.", noone, false, 0, noone, true);
-			setTextFloat(35,41);
-			createTextPage("* Best not to linger here.", noone, false, 0, noone, true);
+			createTextPage("* (The hallway goes on for what feels like forever.)", noone, false, 0, noone, true);
+			createTextPage("* (Well not technically forever.)", noone, false, 0, noone, true);
+			createTextPage("* (But that's a matter of perspective.)", noone, false, 0, noone, true);
+			createTextPage("* (To a fly, a week is an eternity.)", noone, false, 0, noone, true);
+			createTextPage("* (To an elf, 100 years is a minute.)", noone, false, 0, noone, true);
+			createTextPage("* (Unfortunately you're neither of those.)", noone, false, 0, noone, true);
+			createTextPage("* (Just a human in a long hallway.)", noone, false, 0, noone, true);
+			createTextPage("* (Just a human in a long hallway.)", noone, false, 0, noone, true);
+			break;
+		case "truelab_6b_environment_1": 
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* (The hallway goes on for what feels like forever.)", noone, false, 0, noone, true);
+			createTextPage("* (Well not technically forever.)", noone, false, 0, noone, true);
+			createTextPage("* (But that's a matter of perspective.)", noone, false, 0, noone, true);
+			createTextPage("* (To a fly, a week is an eternity.)", noone, false, 0, noone, true);
+			createTextPage("* (To an elf, 100 years is a minute.)", noone, false, 0, noone, true);
+			createTextPage("* (Unfortunately you're neither of those.)", noone, false, 0, noone, true);
+			createTextPage("* (Just a human in a long hallway.)", noone, false, 0, noone, true);
+			createTextPage("* (With a really long thought.)", noone, false, 0, noone, true);
+			createTextPage("* (Sigh. Best to keep walking.)", noone, false, 0, noone, true);
 			break;
 		
 		//=====================================================================//
 		//=====================       True Lab 7       ========================//
 		//=====================================================================//
 		
-		/* NONE NEEDED FOR THIS ROOM */
+		case "truelab_7_environment_1": 
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* (I hope you saved.)", noone, false, 0, noone, true);
+			createTextPage("* (Or don't.)", noone, false, 0, noone, true);
+			createTextPage("* (Totally your decision.)", noone, false, 0, noone, true);
+			createTextPage("* (Is what you think to yourself as you look at the wall.)", noone, false, 0, noone, true);
+			break;
+		case "truelab_7_environment_2": 
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* (As much as you would love to go to the right...)", noone, false, 0, noone, true);
+			createTextPage("* (You know you can't.)", noone, false, 0, noone, true);
+			createTextPage("* (Really unfortunate.)", noone, false, 0, noone, true);
+			createTextPage("* (Is what you hear in your mind.)", noone, false, 0, noone, true);
+			break;
+		case "truelab_7_environment_3": 
+			createTextPage("* ...", noone, false, 0, noone, true);
+			createTextPage("* (As much as you would love to go down...)", noone, false, 0, noone, true);
+			createTextPage("* (The realization hits that you can't.)", noone, false, 0, noone, true);
+			createTextPage("* (So sorry.)", noone, false, 0, noone, true);
+			createTextPage("* (Is what you think to yourself.)", noone, false, 0, noone, true);
+			break;
 		
 		//=====================================================================//
 		//=====================       True Lab 8       ========================//
@@ -829,7 +933,7 @@ function gameText(_text_id) {
 			createTextPage("* ...", noone, false, 0, noone, true);
 			createTextPage("* (Only darkness stares back at you.)", noone, false, 0, noone, true);
 			createTextPage("* (Yet it feels like someone is watching.)", noone, false, 0, noone, true);
-			createTextPage("* (Again, night-vision would be perfect here.)", noone, false, 0, noone, true);
+			createTextPage("* (Night-vision would be great.)", noone, false, 0, noone, true);
 			break;
 		case "mt_ebbot_8":	
 			createTextPage("* ...", noone, false, 0, noone, true);
@@ -906,23 +1010,39 @@ function gameText(_text_id) {
 			createTextPage("* Now then.", noone, false, 0, noone, true);
 			createTextPage("* I just have one question for you.", noone, false, 0, noone, true);
 			createTextPage("* What happens when a human loses their soul?", noone, false, 0, noone, true);
-			createOption("(Run)", "prologue boss - yes"); 
-			createOption("(Seriously. RUN.)", "prologue boss - no");
+			createOption("(Uhhh... Nothing?)", "prologue boss - yes"); 
+			createOption("(ChatGPT?)", "prologue boss - no");
 			break;
-			case "prologue boss - yes": 
-				createTextPage("* I can't wait to see.", noone, false, 15, noone, true, true);
+			case "prologue boss - yes":
+				createTextPage("* Ooh, brave AND wrong.", noone, false, 15, noone, true, true);
+				setTextFloat(0,100);
+				createTextPage("* No my dear.", noone, false, 0, noone, true);
+				createTextPage("* The correct answer is everything.", noone, false, 0, noone, true);
 				setTextColor(0,100,c_red,c_red,c_red,c_red);
-				setTextShake(0,100);
-				createTextPage("* Also try not to scream please.", noone, false, 0, noone, true);
-				createTextPage("* It ruins the data.", noone, false, 0, noone, true);
+				createTextPage("* The human is captured against their will.", noone, false, 0, noone, true);
+				createTextPage("* The human loses their soul.", noone, false, 0, noone, true);
+				createTextPage("* The human ceases to exist.", noone, false, 0, noone, true);
+				setTextColor(0,100,c_red,c_red,c_red,c_red);
+				createTextPage("* An important learning moment, sweetheart!", noone, false, 0, noone, true);
+				createTextPage("* Now please do me a favor.", noone, false, 0, noone, true);
+				createTextPage("* Try not to scream.", noone, false, 0, noone, true);
+				createTextPage("* It ruins the data AND my ears.", noone, false, 0, noone, true);
+				setTextFloat(20,100);
 			break;
 
-			case "prologue boss - no": 
-				createTextPage("* I can't wait to see.", noone, false, 15, noone, true, true);
+			case "prologue boss - no":
+				createTextPage("* Ah. A fellow believer in recent technological advancements.",  noone, false, 0, noone, true);
+				createTextPage("* It told me I needed therapy.", noone, false, 0, noone, true);
+				setTextFloat(22,100);
+				createTextPage("* Instead, I helped build a secret lab.", noone, false, 0, noone, true);
+				createTextPage("* Captured humans. Extracted souls.", noone, false, 0, noone, true);
+				createTextPage("* How's that for therapy?", noone, false, 0, noone, true);
 				setTextColor(0,100,c_red,c_red,c_red,c_red);
 				setTextShake(0,100);
-				createTextPage("* Also try not to scream please.", noone, false, 0, noone, true);
-				createTextPage("* It ruins the data.", noone, false, 0, noone, true);
+				createTextPage("* Anyway, my dear Prisma. Please don't scream.", noone, false, 0, noone, true);
+				createTextPage("* It ruins the data. And the aesthetic.", noone, false, 0, noone, true);
+				createTextPage("* Form over function.", noone, false, 0, noone, true);
+				setTextFloat(0,100);
 			break;
 			
 		//=====================================================================//

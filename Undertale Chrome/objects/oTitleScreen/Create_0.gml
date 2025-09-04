@@ -54,24 +54,24 @@ credits_lines = [
     "",
     "Special Thanks",
 	"My Wife Caroline",
-	"r/Undertale",
-    "SPRITERS RESOURCE",
-    "Undertale Modding Discord",
-    "YoyoGames / GameMaker Devs",
+	"Brandon Sen",
+    "Spriters Resource",
+    "r/Undertale",
+    "YoyoGames / Gamejolt",
     "Deviant Art",
 	"",
     "Custom Sprites Based On",
     "Assets by Toby Fox",
     "and Fan Edits Online",
 	"",
-    "Thank you for playing",
+    "THANK YOU for playing",
     "the 'Prologue'",
 	"",
 	"Means a lot!",
 	"",
     "",
 	"",
-    "I love this part of the song."
+    "Grand finish!"
 ];
 
 //Prologue is completed/Show pulsing Soul

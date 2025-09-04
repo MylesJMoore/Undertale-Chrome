@@ -41,6 +41,7 @@
     {"name":"inst_37587B3A","path":"rooms/rm_true_lab_3/rm_true_lab_3.yy",},
     {"name":"inst_6AA96CBD","path":"rooms/rm_true_lab_3/rm_true_lab_3.yy",},
     {"name":"inst_7372C5F","path":"rooms/rm_true_lab_3/rm_true_lab_3.yy",},
+    {"name":"inst_5102F007","path":"rooms/rm_true_lab_3/rm_true_lab_3.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -52,7 +53,8 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_37587B3A","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_speakblock","path":"objects/obj_speakblock/obj_speakblock.yy",},"properties":[],"rotation":0.0,"scaleX":1.3750001,"scaleY":1.0,"x":461.0,"y":148.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6AA96CBD","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_speakblock","path":"objects/obj_speakblock/obj_speakblock.yy",},"properties":[],"rotation":0.0,"scaleX":1.375,"scaleY":1.0,"x":552.0,"y":147.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7372C5F","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_speakblock","path":"objects/obj_speakblock/obj_speakblock.yy",},"properties":[],"rotation":0.0,"scaleX":1.4375,"scaleY":1.0,"x":637.0,"y":147.0,},
-      ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":false,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5102F007","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_speakblock","path":"objects/obj_speakblock/obj_speakblock.yy",},"properties":[],"rotation":0.0,"scaleX":37.5625,"scaleY":1.0,"x":77.0,"y":82.0,},
+      ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Fog","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1E143232","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_fog","path":"objects/obj_fog/obj_fog.yy",},"properties":[],"rotation":0.0,"scaleX":11.796875,"scaleY":1.796875,"x":2.0,"y":96.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":false,},

@@ -20,16 +20,18 @@ if(global.current_room == rm_true_lab_1 || global.current_room == rm_true_lab_2 
 	obj_player.sprite[IDLEUP] = s_prisma_child_up;
 	obj_player.sprite[IDLELEFT] = s_prisma_child_left;
 	obj_player.sprite[IDLEDOWN] = s_prisma_child_down;
-} else if(instance_exists(obj_player)) {
-	//Adult Player Sprites
-	obj_player.sprite[RIGHT] = PLAYER_RIGHT;
-	obj_player.sprite[UP] = PLAYER_UP;
-	obj_player.sprite[LEFT] = PLAYER_LEFT;
-	obj_player.sprite[DOWN] = PLAYER_DOWN;
-	obj_player.sprite[IDLERIGHT] = PLAYER_IDLERIGHT;
-	obj_player.sprite[IDLEUP] = PLAYER_IDLEUP;
-	obj_player.sprite[IDLELEFT] = PLAYER_IDLELEFT;
-	obj_player.sprite[IDLEDOWN] = PLAYER_IDLEDOWN;
+} else {
+	if(instance_exists(obj_player)) {
+		//Adult Player Sprites
+		obj_player.sprite[RIGHT] = PLAYER_RIGHT;
+		obj_player.sprite[UP] = PLAYER_UP;
+		obj_player.sprite[LEFT] = PLAYER_LEFT;
+		obj_player.sprite[DOWN] = PLAYER_DOWN;
+		obj_player.sprite[IDLERIGHT] = PLAYER_IDLERIGHT;
+		obj_player.sprite[IDLEUP] = PLAYER_IDLEUP;
+		obj_player.sprite[IDLELEFT] = PLAYER_IDLELEFT;
+		obj_player.sprite[IDLEDOWN] = PLAYER_IDLEDOWN;
+	}
 }
 
 //Check if prologue flag for boss cutscene was set and trigger the cutscene

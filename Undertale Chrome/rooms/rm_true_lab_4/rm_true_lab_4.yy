@@ -26,6 +26,9 @@
     {"name":"inst_D9F6620","path":"rooms/rm_true_lab_4/rm_true_lab_4.yy",},
     {"name":"inst_62E5A926","path":"rooms/rm_true_lab_4/rm_true_lab_4.yy",},
     {"name":"inst_717DD320","path":"rooms/rm_true_lab_4/rm_true_lab_4.yy",},
+    {"name":"inst_6A690C96","path":"rooms/rm_true_lab_4/rm_true_lab_4.yy",},
+    {"name":"inst_4603EBA4","path":"rooms/rm_true_lab_4/rm_true_lab_4.yy",},
+    {"name":"inst_24125659","path":"rooms/rm_true_lab_4/rm_true_lab_4.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -37,7 +40,10 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3CF2745E","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_speakblock","path":"objects/obj_speakblock/obj_speakblock.yy",},"properties":[],"rotation":0.0,"scaleX":1.0625,"scaleY":2.0625,"x":124.0,"y":375.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3DA0EABC","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_speakblock","path":"objects/obj_speakblock/obj_speakblock.yy",},"properties":[],"rotation":0.0,"scaleX":2.5,"scaleY":2.0,"x":263.0,"y":371.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_D9F6620","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_speakblock","path":"objects/obj_speakblock/obj_speakblock.yy",},"properties":[],"rotation":0.0,"scaleX":1.0625,"scaleY":2.0,"x":153.0,"y":376.0,},
-      ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":false,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6A690C96","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_speakblock","path":"objects/obj_speakblock/obj_speakblock.yy",},"properties":[],"rotation":0.0,"scaleX":4.375,"scaleY":2.0,"x":320.0,"y":374.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4603EBA4","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_speakblock","path":"objects/obj_speakblock/obj_speakblock.yy",},"properties":[],"rotation":0.0,"scaleX":1.5,"scaleY":19.9375,"x":149.0,"y":24.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_24125659","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_speakblock","path":"objects/obj_speakblock/obj_speakblock.yy",},"properties":[],"rotation":0.0,"scaleX":1.5,"scaleY":19.9375,"x":251.0,"y":24.0,},
+      ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Battle","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3244130E_1_1_1","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oBattleStartTrigger","path":"objects/oBattleStartTrigger/oBattleStartTrigger.yy",},"properties":[],"rotation":0.0,"scaleX":5.0,"scaleY":2.0625,"x":32.0,"y":96.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":false,},

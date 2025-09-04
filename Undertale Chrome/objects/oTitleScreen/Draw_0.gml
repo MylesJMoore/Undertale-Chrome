@@ -103,8 +103,11 @@ if(show_pulsing_soul) {
 	            draw_sprite_ext(soul_sprites[i], 0, soul_x, soul_y + ybuffer, chrome_scale_base, chrome_scale_base, 0, c_white, soul_alpha[i]);
 	        }
 	    }
-		
+		draw_set_color(c_yellow);
 		draw_text_ext_transformed(64, 150, "See you in Chapter 1!", 500, 500, 1, 1, 0);
+		draw_set_color(c_white);
+		draw_text_ext_transformed(70, 175, "* You can leave now.", 500, 500, 1, 1, 0);
+
 
 	    // Reset alpha to default
 	    draw_set_alpha(1);

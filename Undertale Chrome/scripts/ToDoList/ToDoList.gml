@@ -6,19 +6,21 @@ PROLOGUE
 TODO
 -------------------------------------------------
 
-Polish
-
-
 Marketing
+- Build game and send it to Dylan, maybe Zach, Bsen
+- Build Game and do a playthrough
 - Record entire playthrough
-- Make Youtube Trailer
+- Make Youtube Trailer from playthrough
 - Make Playthrough no commentary video
 - Take Screenshots from Playthrough
-- Make Twitter Posts
-- Make Gamejolt Posts
+- Post Trailer on Twitter
+- Post Trailer on Instagram
+- Post Trailer on Tiktok
+- Post Trailer on Gamejolt
+- Post Trailer on Reddit
 
 Finale!
-- PUT IT ON GAMEJOLT
+- PUT THE GAME ON GAMEJOLT
 - Celebrate!
 
 -------------------------------------------------

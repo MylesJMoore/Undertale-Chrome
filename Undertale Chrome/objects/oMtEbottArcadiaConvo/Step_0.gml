@@ -622,6 +622,10 @@ switch(Event) {
 			layer_set_visible(orange_snow, false);
 			layer_set_visible(red_snow, false);
 			
+			//Turn off Cutscene LUT Filter
+			var cutscene_lut = layer_get_id("CutsceneLut");
+			layer_set_visible(cutscene_lut, false);
+			
 			instance_destroy(oArcadiaTalk);
 			instance_destroy(oRoseyHumanCutscene);
 	        audio_play_sound(MT_EBBOT_SUMMIT_MUSIC, 5, true);

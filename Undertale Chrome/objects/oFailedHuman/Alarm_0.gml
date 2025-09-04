@@ -16,31 +16,38 @@ var _speechy = y;
 //Set the bubble text
 switch (global.last_soul_removed) {
     case "Determination": // Determination
-        SpeechBubble[0] = "You're no Frisk.";
+        //SpeechBubble[0] = "You're no Frisk.";
+		SpeechBubble[0] = "Determination.";
         break;
     case "Bravery": // Bravery
-        SpeechBubble[0] = "Brave ones fall.";
+        //SpeechBubble[0] = "Brave ones fall.";
+		SpeechBubble[0] = "Bravery.";
         break;
     case "Justice": // Justice
-        SpeechBubble[0] = "Clover missed.";
+        //SpeechBubble[0] = "Clover missed.";
+		SpeechBubble[0] = "Justice.";
         break;
     case "Kindness": // Kindness
-        SpeechBubble[0] = "Green cried too.";
+        //SpeechBubble[0] = "Green cried too.";
+		SpeechBubble[0] = "Kindness.";
         break;
     case "Patience": // Patience
-        SpeechBubble[0] = "Patience breaks.";
+        //SpeechBubble[0] = "Patience breaks.";
+		SpeechBubble[0] = "Patience.";
         break;
     case "Integrity": // Integrity
-        SpeechBubble[0] = "Mel shattered.";
+        //SpeechBubble[0] = "Mel shattered.";
+		SpeechBubble[0] = "Integrity.";
         break;
     case "Perseverance": // Perseverance
-        SpeechBubble[0] = "Batty vanished.";
+        //SpeechBubble[0] = "Batty vanished.";
+		SpeechBubble[0] = "Perseverance.";
         break;
 	case "Resilience": // Resilience
 		if(global.resilience_pattern == 0) {
 			SpeechBubble[0] = "Enough.";
 		} else if(global.resilience_pattern == 1) {
-			SpeechBubble[0] = "You're all that's left.&Just a glitch.";
+			SpeechBubble[0] = "Prisma...";
 			audio_stop_sound(undertale_chrome_ost_The_Chrome_Soul);
 		} else if(global.resilience_pattern == 2) {
 			SpeechBubble[0] = "Goodbye.";

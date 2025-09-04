@@ -3,7 +3,8 @@ xspeed = 0;
 yspeed = 0;
 move_speed = 1;
 
-//Player Sprites with Macros
+/*
+//Player Adult Sprites with Macros
 sprite[RIGHT] = PLAYER_RIGHT;
 sprite[UP] = PLAYER_UP;
 sprite[LEFT] = PLAYER_LEFT;
@@ -13,21 +14,18 @@ sprite[IDLEUP] = PLAYER_IDLEUP;
 sprite[IDLELEFT] = PLAYER_IDLELEFT;
 sprite[IDLEDOWN] = PLAYER_IDLEDOWN;
 face = DOWN;
-
-//Set sprite to the child sprite when we are in True Lab
-/*
-if(global.in_truelab && !global.player_set_to_child) {
-	obj_player.sprite[RIGHT] = s_prisma_child_walk_right;
-	obj_player.sprite[UP] = s_prisma_child_walk_up;
-	obj_player.sprite[LEFT] = s_prisma_child_walk_left;
-	obj_player.sprite[DOWN] = s_prisma_child_walk_down;
-	obj_player.sprite[IDLERIGHT] = s_prisma_child_right;
-	obj_player.sprite[IDLEUP] = s_prisma_child_up;
-	obj_player.sprite[IDLELEFT] = s_prisma_child_left;
-	obj_player.sprite[IDLEDOWN] = s_prisma_child_down;
-	global.player_set_to_child = true;
-}
 */
+
+//Set Child Sprite
+obj_player.sprite[RIGHT] = s_prisma_child_walk_right;
+obj_player.sprite[UP] = s_prisma_child_walk_up;
+obj_player.sprite[LEFT] = s_prisma_child_walk_left;
+obj_player.sprite[DOWN] = s_prisma_child_walk_down;
+obj_player.sprite[IDLERIGHT] = s_prisma_child_right;
+obj_player.sprite[IDLEUP] = s_prisma_child_up;
+obj_player.sprite[IDLELEFT] = s_prisma_child_left;
+obj_player.sprite[IDLEDOWN] = s_prisma_child_down;
+face = DOWN;
 
 //Set sprite to Loafboy when doing announcements
 if(room == rm_true_lab_announcements) {
