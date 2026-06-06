@@ -12,14 +12,14 @@ if(global.current_room == rm_true_lab_1 || global.current_room == rm_true_lab_2 
 	global.current_room == rm_true_lab_6b || global.current_room == rm_true_lab_7 || global.current_room == rm_true_lab_8) 
 {
 	//Child Sprites
-	obj_player.sprite[RIGHT] = s_prisma_child_walk_right;
-	obj_player.sprite[UP] = s_prisma_child_walk_up;
-	obj_player.sprite[LEFT] = s_prisma_child_walk_left;
-	obj_player.sprite[DOWN] = s_prisma_child_walk_down;
-	obj_player.sprite[IDLERIGHT] = s_prisma_child_right;
-	obj_player.sprite[IDLEUP] = s_prisma_child_up;
-	obj_player.sprite[IDLELEFT] = s_prisma_child_left;
-	obj_player.sprite[IDLEDOWN] = s_prisma_child_down;
+	obj_player.sprite[RIGHT] = s_prisma2_child_walk_right;
+	obj_player.sprite[UP] = s_prisma2_child_walk_up;
+	obj_player.sprite[LEFT] = s_prisma2_child_walk_left;
+	obj_player.sprite[DOWN] = s_prisma2_child_walk_down;
+	obj_player.sprite[IDLERIGHT] = s_prisma2_child_right;
+	obj_player.sprite[IDLEUP] = s_prisma2_child_up;
+	obj_player.sprite[IDLELEFT] = s_prisma2_child_left;
+	obj_player.sprite[IDLEDOWN] = s_prisma2_child_down;
 } else {
 	if(instance_exists(obj_player)) {
 		//Adult Player Sprites

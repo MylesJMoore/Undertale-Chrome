@@ -7,16 +7,7 @@ TODO
 -------------------------------------------------
 
 Marketing
-- Build game and send it to Dylan, maybe Zach, Bsen
-- Build Game and do a playthrough
-- Record entire playthrough
-- Make Youtube Trailer from playthrough
-- Make Playthrough no commentary video
-- Take Screenshots from Playthrough
 - Post Trailer on Twitter
-- Post Trailer on Instagram
-- Post Trailer on Tiktok
-- Post Trailer on Gamejolt
 - Post Trailer on Reddit
 
 Finale!
@@ -128,3 +119,14 @@ Polish
 - Polish Bullet Pattern - Perseverance
 - Polish Bullet Pattern - Resilience
 - Run through Full Playthrough on controller
+
+Marketing
+- Build game and send it to Dylan, maybe Zach, Bsen
+- Build Game and do a playthrough
+- Record entire playthrough
+- Make Youtube Trailer from playthrough
+- Make Playthrough no commentary video
+- Take Screenshots from Playthrough
+- Post Trailer on Instagram
+- Post Trailer on Tiktok
+- Post Trailer on Gamejolt

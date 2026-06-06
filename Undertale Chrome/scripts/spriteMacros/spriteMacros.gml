@@ -1,4 +1,7 @@
+//-------------------------------------------
 //Player Sprites
+// Prisma V1
+/*
 #macro PLAYER_RIGHT s_prisma_walk_right
 #macro PLAYER_UP s_prisma_walk_up
 #macro PLAYER_LEFT s_prisma_walk_left
@@ -7,7 +10,20 @@
 #macro PLAYER_IDLEUP s_prisma_up
 #macro PLAYER_IDLELEFT s_prisma_left
 #macro PLAYER_IDLEDOWN s_prisma_down
-/*
+*/
+
+// Prisma V2
+#macro PLAYER_RIGHT s_prisma2_walk_right
+#macro PLAYER_UP s_prisma2_walk_up
+#macro PLAYER_LEFT s_prisma2_walk_left
+#macro PLAYER_DOWN s_prisma2_walk_down
+#macro PLAYER_IDLERIGHT s_prisma2_right
+#macro PLAYER_IDLEUP s_prisma2_up
+#macro PLAYER_IDLELEFT s_prisma2_left
+#macro PLAYER_IDLEDOWN s_prisma2_down
+
+
+/* Balto
 #macro PLAYER_RIGHT s_balto_walk_right
 #macro PLAYER_UP s_balto_walk_up
 #macro PLAYER_LEFT s_balto_walk_left
@@ -18,6 +34,7 @@
 #macro PLAYER_IDLEDOWN s_balto_down
 */
 
+//-------------------------------------------
 //Follower Sprites
 #macro FOLLOWER_1_RIGHT s_balto_walk_right
 #macro FOLLOWER_1_UP s_balto_walk_up

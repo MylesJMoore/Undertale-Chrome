@@ -57,7 +57,7 @@ if(global.open_soul_selection) {
 	if (global.soul_selection_cooldown == 0) {
         // Handle left key input
         if (left_key && global.soul_selected > 0) {
-            global.soul_selected--;
+            //global.soul_selected--; //TODO: DISABLING FOR THE PROLOGUE. ENABLE DURING CHAPTER 1.
             global.arrow_left_offset = -5;  // Move the left arrow slightly left
             global.arrow_left_color = c_white;  // Change arrow color to yellow
             global.arrow_right_color = c_white;  // Reset right arrow color
@@ -66,7 +66,7 @@ if(global.open_soul_selection) {
 
         // Handle right key input
         else if (right_key && global.soul_selected < array_length(global.soul_lookup) - 1) {
-            global.soul_selected++;
+            //global.soul_selected++; //TODO: DISABLING FOR THE PROLOGUE. ENABLE DURING CHAPTER 1.
             global.arrow_right_offset = 5;  // Move the right arrow slightly right
             global.arrow_right_color = c_white;  // Change arrow color to yellow
             global.arrow_left_color = c_white;  // Reset left arrow color

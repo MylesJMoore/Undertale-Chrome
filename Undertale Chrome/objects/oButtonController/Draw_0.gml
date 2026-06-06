@@ -327,7 +327,7 @@ if (global.battleSelectionMenu > -1)
 		// Leave battle if battle has ended 
 		if(oBulletBoard.battleEnd && oBulletBoard.battleEndDelay == 0) {
 			oBulletBoard.battleEnd = false;
-			oBulletBoard.battleEndDelay = 120;
+			oBulletBoard.battleEndDelay = 90; //120 was previous value
 			BattleFlee();
 		}
 		

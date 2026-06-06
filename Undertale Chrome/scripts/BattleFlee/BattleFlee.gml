@@ -3,7 +3,11 @@
 function BattleFlee(_room = false, _x = false, _y = false) {
 	//Return player to Overworld based on if it is a normal fight or failed human boss fight
 	if(oBulletBoard.failed_human_boss_ended) {
+		//Set the Game Chapter (We are almost done prologue)
 		global.game_chapter = "?????";
+		
+		//Set Player Health to 1
+		global.player_hp = 1;
 		
 		//Go to Mt. Ebbott
 		/* Mt Ebbot BASE 
